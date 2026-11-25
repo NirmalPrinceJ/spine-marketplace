@@ -1,0 +1,9 @@
+{
+  "marketplace": "internal",
+  "category": "MCP",
+  "published": true,
+  "packages": [
+    {"id": "tenant-mcp-pool", "name": "Tenant MCP Pool", "kind": "service", "market": "internal", "category": "MCP", "reads": ["Tool names", "Routes"], "note": "Spine-owned MCP infrastructure. A listed name is not an exposed tool."},
+    {"id": "spine-tools", "name": "Spine Tools MCP", "kind": "plugin", "market": "internal", "category": "MCP", "reads": ["Context", "Work", "Knowledge", "Actions"], "note": "Spine-owned MCP server. Publication to a host is not connected."}
+  ]
+}

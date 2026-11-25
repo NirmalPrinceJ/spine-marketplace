@@ -1,0 +1,15 @@
+{
+  "marketplace": "external",
+  "category": "AI host",
+  "published": true,
+  "packages": [
+    {"id": "chatgpt", "name": "ChatGPT", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Host session"], "note": "Host connector. Catalog published. Not submitted to the ChatGPT marketplace."},
+    {"id": "claude", "name": "Claude", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Host session"], "note": "Host connector. Catalog published. Not submitted to the Claude marketplace."},
+    {"id": "gemini", "name": "Gemini", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Host session"], "note": "Host connector. Catalog published. Not submitted to Gemini."},
+    {"id": "cursor", "name": "Cursor", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Editor tools"], "note": "Host connector. Catalog published. Not installed in Cursor."},
+    {"id": "github-copilot", "name": "GitHub Copilot", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Editor session"], "note": "Host connector. Catalog published. No host binding is registered."},
+    {"id": "microsoft-copilot", "name": "Microsoft 365 Copilot", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Host session"], "note": "Host connector. Catalog published. No host binding is registered."},
+    {"id": "windsurf", "name": "Windsurf", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Editor tools"], "note": "Host connector. Catalog published. No host binding is registered."},
+    {"id": "perplexity", "name": "Perplexity", "kind": "plugin", "market": "external", "shelf": "host", "category": "AI host", "reads": ["Host session"], "note": "Host connector. Catalog published. No host binding is registered."}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "marketplace": "internal",
+  "category": "Core services",
+  "published": true,
+  "packages": [
+    {"id": "spine-fabric", "name": "Spine Fabric", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Entities", "Relationships", "Events"], "note": "Spine-owned service. A listing is not a running service."},
+    {"id": "memory-engine", "name": "Memory Engine", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Personal memory", "Organizational memory"], "note": "Spine-owned service. A listing is not stored memory."},
+    {"id": "knowledge-index", "name": "Knowledge Index", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Documents", "Citations"], "note": "Spine-owned service. No retrieval index is deployed from this listing."},
+    {"id": "continuity-bridge", "name": "IW-Continuity-bridge", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Host pair", "Handoff"], "note": "The core communication bridge. It connects two hosts. No bridge session is deployed."}
+  ]
+}

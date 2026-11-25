@@ -1,0 +1,13 @@
+{
+  "marketplace": "internal",
+  "category": "Agents",
+  "published": true,
+  "packages": [
+    {"id": "discovery-agent", "name": "Discovery Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Connectors", "Tools", "Schemas"], "note": "Discovers connectors, tools, schemas, and capabilities. Not deployed."},
+    {"id": "schema-agent", "name": "Schema Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Schemas", "Mappings"], "note": "Analyzes and maps incoming data structures. Not deployed."},
+    {"id": "adaptive-autotuner", "name": "Adaptive Autotuner", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Signals", "Proposals"], "note": "Evaluates and proposes platform improvements. Not deployed."},
+    {"id": "triage-agent", "name": "Triage Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Signals", "Work"], "note": "Classifies incoming signals and prioritizes work. Not deployed."},
+    {"id": "coworker-agent", "name": "Coworker Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Delegated work"], "note": "Performs delegated business tasks under Twin. Not deployed."},
+    {"id": "hermes", "name": "Hermes", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Plans", "Verification"], "note": "Coordinates governed execution and verification. Not deployed."}
+  ]
+}
