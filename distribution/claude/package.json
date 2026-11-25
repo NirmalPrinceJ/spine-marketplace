@@ -1,0 +1,10 @@
+{
+  "name": "spine-network-claude",
+  "version": "0.0.0-unreleased",
+  "private": true,
+  "spine": {
+    "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "published": false,
+    "note": "Claude plugin manifest. Not submitted to the Claude marketplace."
+  }
+}

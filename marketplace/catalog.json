@@ -1,0 +1,9 @@
+{
+  "name": "spineworkspace-marketplace",
+  "published": true,
+  "publishedAt": "2026-11-25",
+  "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
+  "internal": "marketplace/internal/marketplace.json",
+  "external": "marketplace/external/marketplace.json",
+  "note": "The catalog is published. A package listing is not deployed, installed, or connected."
+}

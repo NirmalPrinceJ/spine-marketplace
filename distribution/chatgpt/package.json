@@ -1,0 +1,10 @@
+{
+  "name": "spine-network-chatgpt",
+  "version": "0.0.0-unreleased",
+  "private": true,
+  "spine": {
+    "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "published": false,
+    "note": "ChatGPT app metadata. Not submitted to the ChatGPT marketplace."
+  }
+}

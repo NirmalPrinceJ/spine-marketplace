@@ -1,0 +1,10 @@
+{
+  "name": "spine-network-generic-mcp",
+  "version": "0.0.0-unreleased",
+  "private": true,
+  "spine": {
+    "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "published": false,
+    "note": "Generic MCP client configuration. Not a running server."
+  }
+}

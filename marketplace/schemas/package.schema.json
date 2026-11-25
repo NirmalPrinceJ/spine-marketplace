@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Marketplace package",
+  "type": "object",
+  "required": ["id", "name", "kind", "market", "category", "note"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "kind": {"enum": ["connector", "plugin", "service", "agent", "skill", "capability", "workflow", "package"]},
+    "market": {"enum": ["internal", "external"]},
+    "category": {"type": "string"},
+    "note": {"type": "string"}
+  }
+}

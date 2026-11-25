@@ -1,0 +1,10 @@
+{
+  "name": "spine-network-gemini",
+  "version": "0.0.0-unreleased",
+  "private": true,
+  "spine": {
+    "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "published": false,
+    "note": "Gemini integration configuration. Not submitted."
+  }
+}
