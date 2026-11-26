@@ -1,0 +1,719 @@
+{
+  "appShelves": [
+    {
+      "id": "core",
+      "name": "Core connectors",
+      "file": "core-connectors",
+      "packages": [
+        {
+          "id": "hubspot"
+        },
+        {
+          "id": "salesforce"
+        },
+        {
+          "id": "pipedrive"
+        },
+        {
+          "id": "gmail"
+        },
+        {
+          "id": "outlook"
+        },
+        {
+          "id": "slack"
+        },
+        {
+          "id": "teams",
+          "platformId": "microsoft-teams"
+        },
+        {
+          "id": "whatsapp",
+          "platformId": "whatsapp-business"
+        },
+        {
+          "id": "google-drive"
+        },
+        {
+          "id": "notion"
+        },
+        {
+          "id": "sharepoint"
+        },
+        {
+          "id": "confluence"
+        },
+        {
+          "id": "google-calendar"
+        },
+        {
+          "id": "outlook-calendar"
+        },
+        {
+          "id": "zendesk"
+        },
+        {
+          "id": "stripe"
+        },
+        {
+          "id": "razorpay"
+        },
+        {
+          "id": "tally"
+        },
+        {
+          "id": "jira"
+        },
+        {
+          "id": "github"
+        },
+        {
+          "id": "linear"
+        },
+        {
+          "id": "airtable"
+        },
+        {
+          "id": "postgresql"
+        },
+        {
+          "id": "mysql"
+        }
+      ]
+    },
+    {
+      "id": "composio",
+      "name": "Composio",
+      "file": "composio",
+      "packages": [
+        {
+          "id": "composio",
+          "name": "Composio"
+        },
+        {
+          "id": "asana"
+        },
+        {
+          "id": "intercom"
+        },
+        {
+          "id": "shopify"
+        },
+        {
+          "id": "quickbooks"
+        },
+        {
+          "id": "xero"
+        },
+        {
+          "id": "dropbox"
+        },
+        {
+          "id": "zoom"
+        },
+        {
+          "id": "calendly"
+        },
+        {
+          "id": "mailchimp"
+        },
+        {
+          "id": "discord"
+        },
+        {
+          "id": "figma"
+        },
+        {
+          "id": "monday"
+        },
+        {
+          "id": "clickup"
+        },
+        {
+          "id": "freshdesk"
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "name": "Project infrastructure",
+      "file": "project-infrastructure",
+      "packages": [
+        {
+          "id": "gitlab",
+          "reads": [
+            "Repositories",
+            "Pipelines"
+          ]
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "reads": [
+            "Workflows",
+            "Runs"
+          ]
+        },
+        {
+          "id": "vercel",
+          "name": "Vercel",
+          "reads": [
+            "Projects",
+            "Deployments"
+          ]
+        },
+        {
+          "id": "aws",
+          "name": "AWS",
+          "reads": [
+            "Accounts",
+            "Resources"
+          ]
+        },
+        {
+          "id": "gcp",
+          "name": "Google Cloud",
+          "reads": [
+            "Projects",
+            "Resources"
+          ]
+        },
+        {
+          "id": "azure",
+          "name": "Microsoft Azure",
+          "reads": [
+            "Subscriptions",
+            "Resources"
+          ]
+        },
+        {
+          "id": "docker",
+          "name": "Docker",
+          "reads": [
+            "Images",
+            "Repositories"
+          ]
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "reads": [
+            "Clusters",
+            "Workloads"
+          ]
+        },
+        {
+          "id": "terraform",
+          "name": "Terraform",
+          "reads": [
+            "Workspaces",
+            "Runs"
+          ]
+        },
+        {
+          "id": "datadog",
+          "reads": [
+            "Monitors",
+            "Services"
+          ]
+        },
+        {
+          "id": "pagerduty",
+          "reads": [
+            "Incidents",
+            "Services"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "domain",
+      "name": "Domain connectors",
+      "file": "domain",
+      "packages": [
+        {
+          "id": "gong",
+          "reads": [
+            "Calls",
+            "Deals"
+          ]
+        },
+        {
+          "id": "docusign",
+          "reads": [
+            "Envelopes"
+          ]
+        },
+        {
+          "id": "bamboohr",
+          "reads": [
+            "Employees"
+          ]
+        },
+        {
+          "id": "workday",
+          "reads": [
+            "Workers"
+          ]
+        },
+        {
+          "id": "amplitude",
+          "reads": [
+            "Events"
+          ]
+        }
+      ]
+    }
+  ],
+  "hostAliases": {
+    "microsoft-365-copilot": "microsoft-copilot"
+  },
+  "mcpLegacyIds": {
+    "filesystem-mcp": "mcp-filesystem",
+    "fetch-mcp": "mcp-fetch",
+    "memory-mcp": "mcp-memory",
+    "github-mcp": "mcp-github",
+    "slack-mcp": "mcp-slack",
+    "postgresql-mcp": "mcp-postgresql",
+    "brave-search-mcp": "mcp-brave-search",
+    "sentry-mcp": "mcp-sentry",
+    "notion-mcp": "mcp-notion",
+    "stripe-mcp": "mcp-stripe",
+    "playwright-mcp": "mcp-playwright"
+  },
+  "internalGroups": [
+    {
+      "id": "core",
+      "name": "Core services",
+      "file": "core-services",
+      "packages": [
+        {
+          "id": "spine-fabric",
+          "name": "Spine Fabric",
+          "kind": "service",
+          "reads": [
+            "Entities",
+            "Relationships",
+            "Events"
+          ],
+          "note": "Shared business context for entities, relationships, and events."
+        },
+        {
+          "id": "memory-engine",
+          "name": "Memory Engine",
+          "kind": "service",
+          "reads": [
+            "Personal memory",
+            "Organizational memory"
+          ],
+          "note": "Permission-scoped continuity across people and workspaces."
+        },
+        {
+          "id": "knowledge-index",
+          "name": "Knowledge Index",
+          "kind": "service",
+          "reads": [
+            "Documents",
+            "Citations"
+          ],
+          "note": "Governed retrieval over documents and their citations."
+        },
+        {
+          "id": "iw-continuity-bridge",
+          "name": "Continuity Bridge",
+          "kind": "service",
+          "aliases": [
+            "continuity-bridge"
+          ],
+          "reads": [
+            "Host pair",
+            "Handoff"
+          ],
+          "note": "Carries authorized continuity between supported hosts."
+        }
+      ]
+    },
+    {
+      "id": "mcp",
+      "name": "MCP",
+      "file": "mcp",
+      "packages": [
+        {
+          "id": "tenant-mcp-pool",
+          "name": "Tenant MCP Pool",
+          "kind": "mcp",
+          "reads": [
+            "Tool names",
+            "Routes"
+          ],
+          "note": "Shared Platform infrastructure for tenant-scoped MCP registration and access."
+        },
+        {
+          "id": "spine-tools-mcp",
+          "name": "Spine Tools MCP",
+          "kind": "mcp",
+          "aliases": [
+            "spine-tools"
+          ],
+          "reads": [
+            "Context",
+            "Work",
+            "Knowledge",
+            "Actions"
+          ],
+          "note": "Public semantic tool catalog for the single Spine Network MCP endpoint."
+        }
+      ]
+    },
+    {
+      "id": "intelligence",
+      "name": "Intelligence",
+      "file": "intelligence",
+      "packages": [
+        {
+          "id": "twin",
+          "name": "Twin",
+          "kind": "service",
+          "reads": [
+            "Business context",
+            "Work"
+          ],
+          "note": "The role-aware AI counterpart for authorized context, work preparation, and governed proposals."
+        }
+      ]
+    },
+    {
+      "id": "agent",
+      "name": "Agents",
+      "file": "agents",
+      "packages": [
+        {
+          "id": "agent-discovery",
+          "name": "Discovery Agent",
+          "kind": "agent",
+          "aliases": [
+            "discovery-agent"
+          ],
+          "reads": [
+            "Connectors",
+            "Tools",
+            "Schemas"
+          ],
+          "note": "Discovers connectors, tools, schemas, and capabilities."
+        },
+        {
+          "id": "agent-schema",
+          "name": "Schema Agent",
+          "kind": "agent",
+          "aliases": [
+            "schema-agent"
+          ],
+          "reads": [
+            "Schemas",
+            "Mappings"
+          ],
+          "note": "Analyzes and maps incoming data structures."
+        },
+        {
+          "id": "agent-autotuner",
+          "name": "Adaptive Autotuner",
+          "kind": "agent",
+          "aliases": [
+            "adaptive-autotuner"
+          ],
+          "reads": [
+            "Signals",
+            "Proposals"
+          ],
+          "note": "Evaluates signals and proposes platform improvements."
+        },
+        {
+          "id": "agent-triage",
+          "name": "Triage Agent",
+          "kind": "agent",
+          "aliases": [
+            "triage-agent"
+          ],
+          "reads": [
+            "Signals",
+            "Work"
+          ],
+          "note": "Classifies incoming signals and prioritizes work."
+        },
+        {
+          "id": "agent-coworker",
+          "name": "Coworker Agent",
+          "kind": "agent",
+          "aliases": [
+            "coworker-agent"
+          ],
+          "reads": [
+            "Delegated work"
+          ],
+          "note": "Prepares delegated business work under Twin."
+        },
+        {
+          "id": "agent-hermes",
+          "name": "Hermes",
+          "kind": "agent",
+          "aliases": [
+            "hermes"
+          ],
+          "reads": [
+            "Plans",
+            "Verification"
+          ],
+          "note": "Coordinates governed execution and verifies outcomes."
+        }
+      ]
+    },
+    {
+      "id": "skill",
+      "name": "Skills",
+      "file": "skills",
+      "packages": [
+        {
+          "id": "skill-discovery",
+          "name": "Connector discovery",
+          "kind": "skill",
+          "reads": [
+            "Connectors"
+          ],
+          "note": "Reusable skill name. Not installed."
+        },
+        {
+          "id": "skill-schema-map",
+          "name": "Schema mapping",
+          "kind": "skill",
+          "reads": [
+            "Schemas"
+          ],
+          "note": "Reusable skill name. Not installed."
+        },
+        {
+          "id": "skill-triage",
+          "name": "Signal triage",
+          "kind": "skill",
+          "reads": [
+            "Signals"
+          ],
+          "note": "Reusable skill name. Not installed."
+        },
+        {
+          "id": "skill-governed-execution",
+          "name": "Governed execution",
+          "kind": "skill",
+          "reads": [
+            "Approvals"
+          ],
+          "note": "Reusable skill name. Not installed."
+        }
+      ]
+    },
+    {
+      "id": "workflow",
+      "name": "Workflows",
+      "file": "workflows",
+      "packages": [
+        {
+          "id": "workflow-connection",
+          "name": "Connection lifecycle",
+          "kind": "workflow",
+          "reads": [
+            "Consent",
+            "Bind",
+            "Readiness"
+          ],
+          "note": "Native workflow name. Not an installed orchestration package."
+        },
+        {
+          "id": "workflow-approval",
+          "name": "Approval",
+          "kind": "workflow",
+          "reads": [
+            "Plan",
+            "Decision"
+          ],
+          "note": "Native workflow name. Not an installed orchestration package."
+        },
+        {
+          "id": "workflow-handoff",
+          "name": "Cross-host handoff",
+          "kind": "workflow",
+          "reads": [
+            "Host pair"
+          ],
+          "note": "Native workflow name. IW-Continuity-bridge is not connected."
+        }
+      ]
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge packages",
+      "file": "knowledge",
+      "packages": [
+        {
+          "id": "knowledge-business-context",
+          "name": "Business context",
+          "kind": "package",
+          "reads": [
+            "Entities",
+            "Events"
+          ],
+          "note": "Knowledge package name. Not published as a schema release."
+        },
+        {
+          "id": "knowledge-playbooks",
+          "name": "Playbooks",
+          "kind": "package",
+          "reads": [
+            "Guides"
+          ],
+          "note": "Knowledge package name. Not published."
+        }
+      ]
+    },
+    {
+      "id": "workbench",
+      "name": "Workbench packages",
+      "file": "workbench",
+      "packages": [
+        {
+          "id": "wb-founder",
+          "name": "Executive",
+          "kind": "package",
+          "aliases": [
+            "wb-executive"
+          ],
+          "domainSlug": "founder",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-sales",
+          "name": "Sales",
+          "kind": "package",
+          "domainSlug": "sales",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-revops",
+          "name": "Revenue operations",
+          "kind": "package",
+          "aliases": [
+            "wb-revenue-operations"
+          ],
+          "domainSlug": "revops",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-account-success",
+          "name": "Customer success",
+          "kind": "package",
+          "aliases": [
+            "wb-customer-success"
+          ],
+          "domainSlug": "account-success",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-service",
+          "name": "Customer support",
+          "kind": "package",
+          "aliases": [
+            "wb-customer-support"
+          ],
+          "domainSlug": "service",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-marketing",
+          "name": "Marketing",
+          "kind": "package",
+          "domainSlug": "marketing",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-finance",
+          "name": "Finance",
+          "kind": "package",
+          "domainSlug": "finance",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-operations",
+          "name": "Operations",
+          "kind": "package",
+          "domainSlug": "operations",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-product",
+          "name": "Product",
+          "kind": "package",
+          "domainSlug": "product",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-engineering",
+          "name": "Engineering",
+          "kind": "package",
+          "domainSlug": "engineering",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-humanresources",
+          "name": "People",
+          "kind": "package",
+          "aliases": [
+            "wb-people"
+          ],
+          "domainSlug": "humanresources",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        },
+        {
+          "id": "wb-legal",
+          "name": "Legal",
+          "kind": "package",
+          "domainSlug": "legal",
+          "reads": [
+            "Domain view"
+          ],
+          "note": "Role-aware Workbench template for this domain."
+        }
+      ]
+    }
+  ]
+}

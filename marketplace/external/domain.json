@@ -3,10 +3,149 @@
   "category": "Domain connectors",
   "published": true,
   "packages": [
-    {"id": "gong", "name": "Gong", "kind": "connector", "market": "external", "shelf": "domain", "category": "Sales", "reads": ["Calls", "Deals"], "note": "Sales connector. No Gong adapter is wired."},
-    {"id": "docusign", "name": "DocuSign", "kind": "connector", "market": "external", "shelf": "domain", "category": "Legal", "reads": ["Envelopes"], "note": "Legal connector. No DocuSign adapter is wired."},
-    {"id": "bamboohr", "name": "BambooHR", "kind": "connector", "market": "external", "shelf": "domain", "category": "People", "reads": ["Employees"], "note": "People connector. No BambooHR adapter is wired."},
-    {"id": "workday", "name": "Workday", "kind": "connector", "market": "external", "shelf": "domain", "category": "People", "reads": ["Workers"], "note": "People connector. No Workday adapter is wired."},
-    {"id": "amplitude", "name": "Amplitude", "kind": "connector", "market": "external", "shelf": "domain", "category": "Product", "reads": ["Events"], "note": "Product connector. No Amplitude adapter is wired."}
+    {
+      "source": "platform-gateway",
+      "category": "Conversation intelligence",
+      "id": "gong",
+      "name": "Gong",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "account-success"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "gong",
+      "kind": "connector",
+      "reads": [
+        "Calls",
+        "Deals"
+      ],
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "domain",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Proposals and e-signature",
+      "id": "docusign",
+      "name": "DocuSign",
+      "departments": [
+        "Sales",
+        "Legal"
+      ],
+      "domains": [
+        "sales",
+        "legal-compliance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "docusign",
+      "kind": "connector",
+      "reads": [
+        "Envelopes"
+      ],
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "domain",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "bamboohr",
+      "name": "BambooHR",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "bamboohr",
+      "kind": "connector",
+      "reads": [
+        "Employees"
+      ],
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "domain",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "workday",
+      "name": "Workday",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "workday",
+      "kind": "connector",
+      "reads": [
+        "Workers"
+      ],
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "domain",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "amplitude",
+      "name": "Amplitude",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "amplitude",
+      "kind": "connector",
+      "reads": [
+        "Events"
+      ],
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "domain",
+      "published": true,
+      "connected": false
+    }
   ]
 }

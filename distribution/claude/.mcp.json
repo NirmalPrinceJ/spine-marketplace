@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "spine": {
+      "type": "http",
       "url": "https://mcp.spineworkspace.com/mcp"
     }
   }

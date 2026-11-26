@@ -1,9 +1,30 @@
 {
   "name": "spineworkspace-marketplace",
+  "version": "spine-marketplace-export.v1",
   "published": true,
   "publishedAt": "2026-11-25",
   "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
   "internal": "marketplace/internal/marketplace.json",
   "external": "marketplace/external/marketplace.json",
-  "note": "The catalog is published. A package listing is not deployed, installed, or connected."
+  "distribution": "distribution/index.json",
+  "schema": "marketplace/schemas/package.schema.json",
+  "gateway": {
+    "url": "https://gateway.spineworkspace.com/api/v1/connectors/catalog",
+    "version": "spine-marketplace.v1",
+    "curatedAt": "2026-11-25",
+    "counts": {
+      "apps": 191,
+      "available": 128,
+      "aiHosts": 9,
+      "mcpServers": 15,
+      "accelerators": 5,
+      "mcpTools": 6
+    }
+  },
+  "counts": {
+    "external": 224,
+    "internal": 84,
+    "distribution": 10
+  },
+  "note": "Public discovery and distribution. Installation, connection, and authorization live in Platform."
 }

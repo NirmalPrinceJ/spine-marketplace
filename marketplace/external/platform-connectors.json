@@ -1,0 +1,3702 @@
+{
+  "marketplace": "external",
+  "category": "More Platform connectors",
+  "published": true,
+  "packages": [
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "zoho-crm",
+      "name": "Zoho CRM",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "zoho-crm",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "freshsales",
+      "name": "Freshsales",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "freshsales",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "close",
+      "name": "Close",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "close",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "dynamics-365",
+      "name": "Microsoft Dynamics 365",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "dynamics-365",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "attio",
+      "name": "Attio",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "attio",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "copper",
+      "name": "Copper",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "copper",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "leadsquared",
+      "name": "LeadSquared",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "leadsquared",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "apollo",
+      "name": "Apollo.io",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "apollo",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "outreach",
+      "name": "Outreach",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "outreach",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "salesloft",
+      "name": "Salesloft",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "salesloft",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "zoominfo",
+      "name": "ZoomInfo",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "zoominfo",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "lusha",
+      "name": "Lusha",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "lusha",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "crunchbase",
+      "name": "Crunchbase",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "crunchbase",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "clay",
+      "name": "Clay",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "clay",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "linkedin-sales-navigator",
+      "name": "LinkedIn Sales Navigator",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "linkedin-sales-navigator",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "cognism",
+      "name": "Cognism",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "cognism",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Sales engagement and prospecting",
+      "id": "lemlist",
+      "name": "Lemlist",
+      "departments": [
+        "Sales"
+      ],
+      "domains": [
+        "sales"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "lemlist",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Conversation intelligence",
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "account-success"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "fireflies",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Conversation intelligence",
+      "id": "otter",
+      "name": "Otter.ai",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "otter",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Conversation intelligence",
+      "id": "fathom",
+      "name": "Fathom",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "account-success"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "fathom",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Scheduling",
+      "id": "cal-com",
+      "name": "Cal.com",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "account-success",
+        "founder-business-ops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "cal-com",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Scheduling",
+      "id": "chili-piper",
+      "name": "Chili Piper",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "account-success",
+        "founder-business-ops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "chili-piper",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Proposals and e-signature",
+      "id": "pandadoc",
+      "name": "PandaDoc",
+      "departments": [
+        "Sales",
+        "Legal"
+      ],
+      "domains": [
+        "sales",
+        "legal-compliance"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "pandadoc",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Proposals and e-signature",
+      "id": "dropbox-sign",
+      "name": "Dropbox Sign",
+      "departments": [
+        "Sales",
+        "Legal"
+      ],
+      "domains": [
+        "sales",
+        "legal-compliance"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "dropbox-sign",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Proposals and e-signature",
+      "id": "zoho-sign",
+      "name": "Zoho Sign",
+      "departments": [
+        "Sales",
+        "Legal"
+      ],
+      "domains": [
+        "sales",
+        "legal-compliance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "zoho-sign",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Revenue intelligence",
+      "id": "clari",
+      "name": "Clari",
+      "departments": [
+        "RevOps"
+      ],
+      "domains": [
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "clari",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "hubspot-marketing",
+      "name": "HubSpot Marketing Hub",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "hubspot-marketing",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "marketo",
+      "name": "Adobe Marketo Engage",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "marketo",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "klaviyo",
+      "name": "Klaviyo",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "klaviyo",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "brevo",
+      "name": "Brevo",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "brevo",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "activecampaign",
+      "name": "ActiveCampaign",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "activecampaign",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "customer-io",
+      "name": "Customer.io",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "customer-io",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "braze",
+      "name": "Braze",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "braze",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "sendgrid",
+      "name": "SendGrid",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "sendgrid",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "iterable",
+      "name": "Iterable",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "iterable",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "moengage",
+      "name": "MoEngage",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "moengage",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "webengage",
+      "name": "WebEngage",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "webengage",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Advertising",
+      "id": "google-ads",
+      "name": "Google Ads",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "google-ads",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Advertising",
+      "id": "meta-ads",
+      "name": "Meta Ads",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "meta-ads",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Advertising",
+      "id": "linkedin-ads",
+      "name": "LinkedIn Ads",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "linkedin-ads",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Advertising",
+      "id": "microsoft-ads",
+      "name": "Microsoft Advertising",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "microsoft-ads",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Advertising",
+      "id": "tiktok-ads",
+      "name": "TikTok Ads",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "tiktok-ads",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "SEO and market intelligence",
+      "id": "google-search-console",
+      "name": "Google Search Console",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "google-search-console",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "SEO and market intelligence",
+      "id": "semrush",
+      "name": "Semrush",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "semrush",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "SEO and market intelligence",
+      "id": "ahrefs",
+      "name": "Ahrefs",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "ahrefs",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "SEO and market intelligence",
+      "id": "similarweb",
+      "name": "Similarweb",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "similarweb",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "SEO and market intelligence",
+      "id": "supermetrics",
+      "name": "Supermetrics",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "supermetrics",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Social media",
+      "id": "hootsuite",
+      "name": "Hootsuite",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "hootsuite",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Social media",
+      "id": "buffer",
+      "name": "Buffer",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "buffer",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Social media",
+      "id": "sprout-social",
+      "name": "Sprout Social",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "sprout-social",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Social media",
+      "id": "linkedin-pages",
+      "name": "LinkedIn Pages",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "linkedin-pages",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Social media",
+      "id": "youtube",
+      "name": "YouTube",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "youtube",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Social media",
+      "id": "instagram",
+      "name": "Instagram",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "instagram",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Social media",
+      "id": "x",
+      "name": "X",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "x",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "wordpress",
+      "name": "WordPress",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "wordpress",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "webflow",
+      "name": "Webflow",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "webflow",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "contentful",
+      "name": "Contentful",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "contentful",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "sanity",
+      "name": "Sanity",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "sanity",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "strapi",
+      "name": "Strapi",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "strapi",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "ghost",
+      "name": "Ghost",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "ghost",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "canva",
+      "name": "Canva",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "canva",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Forms and surveys",
+      "id": "typeform",
+      "name": "Typeform",
+      "departments": [
+        "Marketing",
+        "Customer Success"
+      ],
+      "domains": [
+        "marketing",
+        "account-success"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "typeform",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Forms and surveys",
+      "id": "google-forms",
+      "name": "Google Forms",
+      "departments": [
+        "Marketing",
+        "Customer Success"
+      ],
+      "domains": [
+        "marketing",
+        "account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "google-forms",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Forms and surveys",
+      "id": "surveymonkey",
+      "name": "SurveyMonkey",
+      "departments": [
+        "Marketing",
+        "Customer Success"
+      ],
+      "domains": [
+        "marketing",
+        "account-success"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "surveymonkey",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Forms and surveys",
+      "id": "jotform",
+      "name": "Jotform",
+      "departments": [
+        "Marketing",
+        "Customer Success"
+      ],
+      "domains": [
+        "marketing",
+        "account-success"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "jotform",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "google-analytics",
+      "name": "Google Analytics",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "google-analytics",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "mixpanel",
+      "name": "Mixpanel",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "mixpanel",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "heap",
+      "name": "Heap",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "heap",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "posthog",
+      "name": "PostHog",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "posthog",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "pendo",
+      "name": "Pendo",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "pendo",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "hotjar",
+      "name": "Hotjar",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "hotjar",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Web and product analytics",
+      "id": "segment",
+      "name": "Segment",
+      "departments": [
+        "Marketing",
+        "Product"
+      ],
+      "domains": [
+        "marketing",
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "segment",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer success",
+      "id": "gainsight",
+      "name": "Gainsight",
+      "departments": [
+        "Customer Success"
+      ],
+      "domains": [
+        "account-success",
+        "technical-account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "gainsight",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer success",
+      "id": "churnzero",
+      "name": "ChurnZero",
+      "departments": [
+        "Customer Success"
+      ],
+      "domains": [
+        "account-success",
+        "technical-account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "churnzero",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer success",
+      "id": "totango",
+      "name": "Totango",
+      "departments": [
+        "Customer Success"
+      ],
+      "domains": [
+        "account-success",
+        "technical-account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "totango",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer success",
+      "id": "vitally",
+      "name": "Vitally",
+      "departments": [
+        "Customer Success"
+      ],
+      "domains": [
+        "account-success",
+        "technical-account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "vitally",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer success",
+      "id": "planhat",
+      "name": "Planhat",
+      "departments": [
+        "Customer Success"
+      ],
+      "domains": [
+        "account-success",
+        "technical-account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "planhat",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "helpscout",
+      "name": "Help Scout",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "helpscout",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "front",
+      "name": "Front",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "front",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "kustomer",
+      "name": "Kustomer",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "kustomer",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "jira-service-management",
+      "name": "Jira Service Management",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "jira-service-management",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "servicenow",
+      "name": "ServiceNow",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "servicenow",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "gorgias",
+      "name": "Gorgias",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "gorgias",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "microsoft-365",
+      "name": "Microsoft 365",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "microsoft-365",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "google-meet",
+      "name": "Google Meet",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "google-meet",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "twilio",
+      "name": "Twilio",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "twilio",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "google-sheets",
+      "name": "Google Sheets",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "google-sheets",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "google-docs",
+      "name": "Google Docs",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "google-docs",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "onedrive",
+      "name": "OneDrive",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "onedrive",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "box",
+      "name": "Box",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "box",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "egnyte",
+      "name": "Egnyte",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "egnyte",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "coda",
+      "name": "Coda",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "coda",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "guru",
+      "name": "Guru",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "guru",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "smartsheet",
+      "name": "Smartsheet",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "smartsheet",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "trello",
+      "name": "Trello",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "trello",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "wrike",
+      "name": "Wrike",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "wrike",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "basecamp",
+      "name": "Basecamp",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "basecamp",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "harvest",
+      "name": "Harvest",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "harvest",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "toggl",
+      "name": "Toggl Track",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "toggl",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "bitbucket",
+      "name": "Bitbucket",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "bitbucket",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "sentry",
+      "name": "Sentry",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "sentry",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "cashfree",
+      "name": "Cashfree Payments",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "cashfree",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "paypal",
+      "name": "PayPal",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "paypal",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "netsuite",
+      "name": "NetSuite",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "netsuite",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "zoho-books",
+      "name": "Zoho Books",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "zoho-books",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "freshbooks",
+      "name": "FreshBooks",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "freshbooks",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "chargebee",
+      "name": "Chargebee",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "chargebee",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "paddle",
+      "name": "Paddle",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "paddle",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "recurly",
+      "name": "Recurly",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "recurly",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "brex",
+      "name": "Brex",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "brex",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "ramp",
+      "name": "Ramp",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "ramp",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "expensify",
+      "name": "Expensify",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "expensify",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "bill",
+      "name": "BILL",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "bill",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "vyapar",
+      "name": "Vyapar",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "vyapar",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "khatabook",
+      "name": "Khatabook",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "khatabook",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "gusto",
+      "name": "Gusto",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "gusto",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "rippling",
+      "name": "Rippling",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "rippling",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "deel",
+      "name": "Deel",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "deel",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "darwinbox",
+      "name": "Darwinbox",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "darwinbox",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "keka",
+      "name": "Keka",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "keka",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "zoho-people",
+      "name": "Zoho People",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "zoho-people",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "personio",
+      "name": "Personio",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "personio",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "hibob",
+      "name": "HiBob",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "hibob",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "greenhouse",
+      "name": "Greenhouse",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "greenhouse",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "lever",
+      "name": "Lever",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "lever",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "People and recruiting",
+      "id": "ashby",
+      "name": "Ashby",
+      "departments": [
+        "HR"
+      ],
+      "domains": [
+        "human-resources"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "ashby",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Legal and compliance",
+      "id": "ironclad",
+      "name": "Ironclad",
+      "departments": [
+        "Legal"
+      ],
+      "domains": [
+        "legal-compliance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "ironclad",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Legal and compliance",
+      "id": "vanta",
+      "name": "Vanta",
+      "departments": [
+        "Legal"
+      ],
+      "domains": [
+        "legal-compliance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "vanta",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Legal and compliance",
+      "id": "drata",
+      "name": "Drata",
+      "departments": [
+        "Legal"
+      ],
+      "domains": [
+        "legal-compliance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "drata",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Legal and compliance",
+      "id": "onetrust",
+      "name": "OneTrust",
+      "departments": [
+        "Legal"
+      ],
+      "domains": [
+        "legal-compliance"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "onetrust",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "snowflake",
+      "name": "Snowflake",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "snowflake",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "bigquery",
+      "name": "BigQuery",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "bigquery",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "databricks",
+      "name": "Databricks",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "databricks",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "redshift",
+      "name": "Amazon Redshift",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "redshift",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "metabase",
+      "name": "Metabase",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "metabase",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "looker",
+      "name": "Looker",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "looker",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "power-bi",
+      "name": "Power BI",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "power-bi",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "tableau",
+      "name": "Tableau",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "tableau",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "hex",
+      "name": "Hex",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "hex",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "fivetran",
+      "name": "Fivetran",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "fivetran",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "coupler",
+      "name": "Coupler.io",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "coupler",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "cdata",
+      "name": "CData Connect AI",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "cdata",
+      "kind": "connector",
+      "note": "Listed by the Gateway. Connection options are pending.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Commerce and logistics",
+      "id": "woocommerce",
+      "name": "WooCommerce",
+      "departments": [
+        "Supply Chain"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "woocommerce",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Commerce and logistics",
+      "id": "bigcommerce",
+      "name": "BigCommerce",
+      "departments": [
+        "Supply Chain"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "bigcommerce",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Commerce and logistics",
+      "id": "shiprocket",
+      "name": "Shiprocket",
+      "departments": [
+        "Supply Chain"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "shiprocket",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "apps",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

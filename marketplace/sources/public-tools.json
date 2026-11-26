@@ -1,0 +1,39 @@
+{
+  "source": {
+    "revision": "f9cd42b622a6b75c3e6a73a72c94dbff0c18e7ce",
+    "path": "services/mcp-connector/server.json"
+  },
+  "name": "iw-spine-network",
+  "version": "1.0.0",
+  "tools": [
+    "get_my_continuity",
+    "get_active_context",
+    "get_my_focus",
+    "get_context",
+    "get_changes",
+    "get_related",
+    "get_history",
+    "get_commitments",
+    "get_decisions",
+    "get_permitted_memory",
+    "get_relevant_knowledge",
+    "ask_twin",
+    "assign_twin",
+    "get_prepared_work",
+    "get_available_actions",
+    "prepare_action",
+    "get_action_plan",
+    "approve_action",
+    "store_in_spine",
+    "get_goals",
+    "get_kpis",
+    "get_signals",
+    "get_work",
+    "get_evidence",
+    "get_business_context",
+    "get_context_continuity",
+    "get_entity_detail",
+    "get_change_impact",
+    "get_impact_summary"
+  ]
+}

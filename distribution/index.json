@@ -1,0 +1,112 @@
+{
+  "endpoint": "https://mcp.spineworkspace.com/mcp",
+  "transport": "streamable-http",
+  "authorization": "oauth",
+  "packages": [
+    {
+      "id": "spine-network-chatgpt",
+      "name": "Spine Network for ChatGPT",
+      "hostId": "chatgpt",
+      "surface": "ChatGPT",
+      "setup": "manual",
+      "manifest": "distribution/chatgpt/package.json",
+      "artifacts": []
+    },
+    {
+      "id": "spine-network-claude",
+      "name": "Spine Network for Claude Code",
+      "hostId": "claude",
+      "surface": "Claude Code",
+      "setup": "config",
+      "manifest": "distribution/claude/package.json",
+      "artifacts": [
+        "distribution/claude/.claude-plugin/plugin.json",
+        "distribution/claude/.mcp.json"
+      ]
+    },
+    {
+      "id": "spine-network-cursor",
+      "name": "Spine Network for Cursor",
+      "hostId": "cursor",
+      "surface": "Cursor",
+      "setup": "config",
+      "manifest": "distribution/cursor/package.json",
+      "artifacts": [
+        "distribution/cursor/mcp.json"
+      ]
+    },
+    {
+      "id": "spine-network-gemini",
+      "name": "Spine Network for Gemini CLI",
+      "hostId": "gemini",
+      "surface": "Gemini CLI",
+      "setup": "config",
+      "manifest": "distribution/gemini/package.json",
+      "artifacts": [
+        "distribution/gemini/settings.json"
+      ]
+    },
+    {
+      "id": "spine-network-grok",
+      "name": "Spine Network for Grok and Grok Build",
+      "hostId": "grok",
+      "surface": "Grok and Grok Build",
+      "setup": "manual-and-config",
+      "manifest": "distribution/grok/package.json",
+      "artifacts": [
+        "distribution/grok/config.toml"
+      ]
+    },
+    {
+      "id": "spine-network-vscode",
+      "name": "Spine Network for VS Code with GitHub Copilot",
+      "hostId": "github-copilot",
+      "surface": "VS Code with GitHub Copilot",
+      "setup": "config",
+      "manifest": "distribution/vscode/package.json",
+      "artifacts": [
+        "distribution/vscode/mcp.json"
+      ]
+    },
+    {
+      "id": "spine-network-microsoft-365-copilot",
+      "name": "Spine Network for Microsoft 365 Copilot via Copilot Studio",
+      "hostId": "microsoft-365-copilot",
+      "surface": "Microsoft 365 Copilot via Copilot Studio",
+      "setup": "manual",
+      "manifest": "distribution/microsoft-365-copilot/package.json",
+      "artifacts": []
+    },
+    {
+      "id": "spine-network-windsurf",
+      "name": "Spine Network for Windsurf",
+      "hostId": "windsurf",
+      "surface": "Windsurf",
+      "setup": "config",
+      "manifest": "distribution/windsurf/package.json",
+      "artifacts": [
+        "distribution/windsurf/mcp_config.json"
+      ]
+    },
+    {
+      "id": "spine-network-perplexity",
+      "name": "Spine Network for Perplexity",
+      "hostId": "perplexity",
+      "surface": "Perplexity",
+      "setup": "manual",
+      "manifest": "distribution/perplexity/package.json",
+      "artifacts": []
+    },
+    {
+      "id": "spine-network-mcp",
+      "name": "Spine Network MCP",
+      "hostId": null,
+      "surface": "MCP clients and registry",
+      "setup": "reference",
+      "manifest": "distribution/generic-mcp/package.json",
+      "artifacts": [
+        "distribution/generic-mcp/server.json"
+      ]
+    }
+  ]
+}

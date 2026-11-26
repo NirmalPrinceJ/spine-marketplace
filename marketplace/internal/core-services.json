@@ -3,9 +3,69 @@
   "category": "Core services",
   "published": true,
   "packages": [
-    {"id": "spine-fabric", "name": "Spine Fabric", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Entities", "Relationships", "Events"], "note": "Spine-owned service. A listing is not a running service."},
-    {"id": "memory-engine", "name": "Memory Engine", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Personal memory", "Organizational memory"], "note": "Spine-owned service. A listing is not stored memory."},
-    {"id": "knowledge-index", "name": "Knowledge Index", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Documents", "Citations"], "note": "Spine-owned service. No retrieval index is deployed from this listing."},
-    {"id": "continuity-bridge", "name": "IW-Continuity-bridge", "kind": "service", "market": "internal", "category": "Core services", "reads": ["Host pair", "Handoff"], "note": "The core communication bridge. It connects two hosts. No bridge session is deployed."}
+    {
+      "source": "spine-catalog",
+      "category": "Core services",
+      "id": "spine-fabric",
+      "name": "Spine Fabric",
+      "kind": "service",
+      "reads": [
+        "Entities",
+        "Relationships",
+        "Events"
+      ],
+      "note": "Shared business context for entities, relationships, and events.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Core services",
+      "id": "memory-engine",
+      "name": "Memory Engine",
+      "kind": "service",
+      "reads": [
+        "Personal memory",
+        "Organizational memory"
+      ],
+      "note": "Permission-scoped continuity across people and workspaces.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Core services",
+      "id": "knowledge-index",
+      "name": "Knowledge Index",
+      "kind": "service",
+      "reads": [
+        "Documents",
+        "Citations"
+      ],
+      "note": "Governed retrieval over documents and their citations.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Core services",
+      "id": "iw-continuity-bridge",
+      "name": "Continuity Bridge",
+      "kind": "service",
+      "aliases": [
+        "continuity-bridge"
+      ],
+      "reads": [
+        "Host pair",
+        "Handoff"
+      ],
+      "note": "Carries authorized continuity between supported hosts.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
   ]
 }

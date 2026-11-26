@@ -3,72 +3,908 @@
   "published": true,
   "publishedAt": "2026-11-26",
   "connected": false,
-  "note": "Spine-owned packages published for discovery. A listing is not a running service and not an installed connection.",
+  "note": "Spine packages available for discovery. Runtime readiness and access are evaluated by Platform.",
+  "groups": [
+    {
+      "id": "host",
+      "name": "Host packages",
+      "detail": "marketplace/internal/host-packages.json"
+    },
+    {
+      "id": "core",
+      "name": "Core services",
+      "detail": "marketplace/internal/core-services.json"
+    },
+    {
+      "id": "mcp",
+      "name": "MCP",
+      "detail": "marketplace/internal/mcp.json"
+    },
+    {
+      "id": "intelligence",
+      "name": "Intelligence",
+      "detail": "marketplace/internal/intelligence.json"
+    },
+    {
+      "id": "agent",
+      "name": "Agents",
+      "detail": "marketplace/internal/agents.json"
+    },
+    {
+      "id": "skill",
+      "name": "Skills",
+      "detail": "marketplace/internal/skills.json"
+    },
+    {
+      "id": "workflow",
+      "name": "Workflows",
+      "detail": "marketplace/internal/workflows.json"
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge packages",
+      "detail": "marketplace/internal/knowledge.json"
+    },
+    {
+      "id": "capability",
+      "name": "Capabilities",
+      "detail": "marketplace/internal/capabilities.json"
+    },
+    {
+      "id": "workbench",
+      "name": "Workbench packages",
+      "detail": "marketplace/internal/workbench.json"
+    },
+    {
+      "id": "accelerator",
+      "name": "Accelerators",
+      "detail": "marketplace/internal/accelerators.json"
+    },
+    {
+      "id": "mcp-bundle",
+      "name": "MCP bundles",
+      "detail": "marketplace/internal/mcp-bundles.json"
+    }
+  ],
   "packages": [
-    {"id": "spine-network-cursor", "name": "Spine Network for Cursor", "category": "host", "kind": "plugin", "published": true, "connected": false},
-    {"id": "spine-network-grok", "name": "Spine Network for Grok", "category": "host", "kind": "plugin", "published": true, "connected": false},
-    {"id": "spine-fabric", "name": "Spine Fabric", "category": "core", "kind": "service", "published": true, "connected": false},
-    {"id": "memory-engine", "name": "Memory Engine", "category": "core", "kind": "service", "published": true, "connected": false},
-    {"id": "knowledge-index", "name": "Knowledge Index", "category": "core", "kind": "service", "published": true, "connected": false},
-    {"id": "iw-continuity-bridge", "name": "IW-Continuity-bridge", "category": "core", "kind": "service", "published": true, "connected": false},
-    {"id": "tenant-mcp-pool", "name": "Tenant MCP Pool", "category": "mcp", "kind": "mcp", "published": true, "connected": false},
-    {"id": "spine-tools-mcp", "name": "Spine Tools MCP", "category": "mcp", "kind": "mcp", "published": true, "connected": false},
-    {"id": "twin", "name": "Twin", "category": "intelligence", "kind": "service", "published": true, "connected": false},
-    {"id": "agent-discovery", "name": "Discovery", "category": "agent", "kind": "agent", "published": true, "connected": false},
-    {"id": "agent-schema", "name": "Schema", "category": "agent", "kind": "agent", "published": true, "connected": false},
-    {"id": "agent-autotuner", "name": "Adaptive Autotuner", "category": "agent", "kind": "agent", "published": true, "connected": false},
-    {"id": "agent-triage", "name": "Triage", "category": "agent", "kind": "agent", "published": true, "connected": false},
-    {"id": "agent-coworker", "name": "Coworker", "category": "agent", "kind": "agent", "published": true, "connected": false},
-    {"id": "agent-hermes", "name": "Hermes", "category": "agent", "kind": "agent", "published": true, "connected": false},
-    {"id": "skill-discovery", "name": "Connector discovery", "category": "skill", "kind": "skill", "published": true, "connected": false},
-    {"id": "skill-schema-map", "name": "Schema mapping", "category": "skill", "kind": "skill", "published": true, "connected": false},
-    {"id": "skill-triage", "name": "Signal triage", "category": "skill", "kind": "skill", "published": true, "connected": false},
-    {"id": "skill-governed-execution", "name": "Governed execution", "category": "skill", "kind": "skill", "published": true, "connected": false},
-    {"id": "workflow-connection", "name": "Connection lifecycle", "category": "workflow", "kind": "workflow", "published": true, "connected": false},
-    {"id": "workflow-approval", "name": "Approval", "category": "workflow", "kind": "workflow", "published": true, "connected": false},
-    {"id": "workflow-handoff", "name": "Cross-host handoff", "category": "workflow", "kind": "workflow", "published": true, "connected": false},
-    {"id": "knowledge-business-context", "name": "Business context", "category": "knowledge", "kind": "package", "published": true, "connected": false},
-    {"id": "knowledge-playbooks", "name": "Playbooks", "category": "knowledge", "kind": "package", "published": true, "connected": false},
-    {"id": "cap-get_my_continuity", "name": "get_my_continuity", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_active_context", "name": "get_active_context", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_my_focus", "name": "get_my_focus", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_context", "name": "get_context", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_changes", "name": "get_changes", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_related", "name": "get_related", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_history", "name": "get_history", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_business_context", "name": "get_business_context", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_entity_detail", "name": "get_entity_detail", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_context_continuity", "name": "get_context_continuity", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_commitments", "name": "get_commitments", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_decisions", "name": "get_decisions", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_permitted_memory", "name": "get_permitted_memory", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_relevant_knowledge", "name": "get_relevant_knowledge", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-ask_twin", "name": "ask_twin", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-assign_twin", "name": "assign_twin", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_prepared_work", "name": "get_prepared_work", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_work", "name": "get_work", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_available_actions", "name": "get_available_actions", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-prepare_action", "name": "prepare_action", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_action_plan", "name": "get_action_plan", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-approve_action", "name": "approve_action", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-store_in_spine", "name": "store_in_spine", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_goals", "name": "get_goals", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_kpis", "name": "get_kpis", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_signals", "name": "get_signals", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_evidence", "name": "get_evidence", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_change_impact", "name": "get_change_impact", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "cap-get_impact_summary", "name": "get_impact_summary", "category": "capability", "kind": "capability", "published": true, "connected": false},
-    {"id": "wb-executive", "name": "Executive", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-sales", "name": "Sales", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-revenue-operations", "name": "Revenue operations", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-customer-success", "name": "Customer success", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-customer-support", "name": "Customer support", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-marketing", "name": "Marketing", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-finance", "name": "Finance", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-operations", "name": "Operations", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-product", "name": "Product", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-engineering", "name": "Engineering", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-people", "name": "People", "category": "workbench", "kind": "package", "published": true, "connected": false},
-    {"id": "wb-legal", "name": "Legal", "category": "workbench", "kind": "package", "published": true, "connected": false}
+    {
+      "id": "spine-network-chatgpt",
+      "name": "Spine Network for ChatGPT",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/chatgpt/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-claude",
+      "name": "Spine Network for Claude Code",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/claude/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-cursor",
+      "name": "Spine Network for Cursor",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/cursor/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-gemini",
+      "name": "Spine Network for Gemini CLI",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/gemini/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-grok",
+      "name": "Spine Network for Grok and Grok Build",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/grok/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-vscode",
+      "name": "Spine Network for VS Code with GitHub Copilot",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/vscode/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-microsoft-365-copilot",
+      "name": "Spine Network for Microsoft 365 Copilot via Copilot Studio",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/microsoft-365-copilot/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-windsurf",
+      "name": "Spine Network for Windsurf",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/windsurf/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-perplexity",
+      "name": "Spine Network for Perplexity",
+      "kind": "plugin",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/perplexity/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-network-mcp",
+      "name": "Spine Network MCP",
+      "kind": "mcp",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "iw-spine-network",
+      "hostMarketplaceSubmitted": false,
+      "distribution": "distribution/generic-mcp/package.json",
+      "category": "host"
+    },
+    {
+      "id": "spine-fabric",
+      "name": "Spine Fabric",
+      "kind": "service",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "core"
+    },
+    {
+      "id": "memory-engine",
+      "name": "Memory Engine",
+      "kind": "service",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "core"
+    },
+    {
+      "id": "knowledge-index",
+      "name": "Knowledge Index",
+      "kind": "service",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "core"
+    },
+    {
+      "id": "iw-continuity-bridge",
+      "name": "Continuity Bridge",
+      "kind": "service",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "continuity-bridge"
+      ],
+      "category": "core"
+    },
+    {
+      "id": "tenant-mcp-pool",
+      "name": "Tenant MCP Pool",
+      "kind": "mcp",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "mcp"
+    },
+    {
+      "id": "spine-tools-mcp",
+      "name": "Spine Tools MCP",
+      "kind": "mcp",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "spine-tools"
+      ],
+      "category": "mcp"
+    },
+    {
+      "id": "twin",
+      "name": "Twin",
+      "kind": "service",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "intelligence"
+    },
+    {
+      "id": "agent-discovery",
+      "name": "Discovery Agent",
+      "kind": "agent",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "discovery-agent"
+      ],
+      "category": "agent"
+    },
+    {
+      "id": "agent-schema",
+      "name": "Schema Agent",
+      "kind": "agent",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "schema-agent"
+      ],
+      "category": "agent"
+    },
+    {
+      "id": "agent-autotuner",
+      "name": "Adaptive Autotuner",
+      "kind": "agent",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "adaptive-autotuner"
+      ],
+      "category": "agent"
+    },
+    {
+      "id": "agent-triage",
+      "name": "Triage Agent",
+      "kind": "agent",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "triage-agent"
+      ],
+      "category": "agent"
+    },
+    {
+      "id": "agent-coworker",
+      "name": "Coworker Agent",
+      "kind": "agent",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "coworker-agent"
+      ],
+      "category": "agent"
+    },
+    {
+      "id": "agent-hermes",
+      "name": "Hermes",
+      "kind": "agent",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "hermes"
+      ],
+      "category": "agent"
+    },
+    {
+      "id": "skill-discovery",
+      "name": "Connector discovery",
+      "kind": "skill",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "skill"
+    },
+    {
+      "id": "skill-schema-map",
+      "name": "Schema mapping",
+      "kind": "skill",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "skill"
+    },
+    {
+      "id": "skill-triage",
+      "name": "Signal triage",
+      "kind": "skill",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "skill"
+    },
+    {
+      "id": "skill-governed-execution",
+      "name": "Governed execution",
+      "kind": "skill",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "skill"
+    },
+    {
+      "id": "workflow-connection",
+      "name": "Connection lifecycle",
+      "kind": "workflow",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "workflow"
+    },
+    {
+      "id": "workflow-approval",
+      "name": "Approval",
+      "kind": "workflow",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "workflow"
+    },
+    {
+      "id": "workflow-handoff",
+      "name": "Cross-host handoff",
+      "kind": "workflow",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "workflow"
+    },
+    {
+      "id": "knowledge-business-context",
+      "name": "Business context",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "knowledge"
+    },
+    {
+      "id": "knowledge-playbooks",
+      "name": "Playbooks",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "category": "knowledge"
+    },
+    {
+      "id": "cap-get_my_continuity",
+      "name": "get_my_continuity",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_active_context",
+      "name": "get_active_context",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_my_focus",
+      "name": "get_my_focus",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_context",
+      "name": "get_context",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_changes",
+      "name": "get_changes",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_related",
+      "name": "get_related",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_history",
+      "name": "get_history",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_commitments",
+      "name": "get_commitments",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_decisions",
+      "name": "get_decisions",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_permitted_memory",
+      "name": "get_permitted_memory",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_relevant_knowledge",
+      "name": "get_relevant_knowledge",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-ask_twin",
+      "name": "ask_twin",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-assign_twin",
+      "name": "assign_twin",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_prepared_work",
+      "name": "get_prepared_work",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_available_actions",
+      "name": "get_available_actions",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-prepare_action",
+      "name": "prepare_action",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_action_plan",
+      "name": "get_action_plan",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-approve_action",
+      "name": "approve_action",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-store_in_spine",
+      "name": "store_in_spine",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_goals",
+      "name": "get_goals",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_kpis",
+      "name": "get_kpis",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_signals",
+      "name": "get_signals",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_work",
+      "name": "get_work",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_evidence",
+      "name": "get_evidence",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_business_context",
+      "name": "get_business_context",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_context_continuity",
+      "name": "get_context_continuity",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_entity_detail",
+      "name": "get_entity_detail",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_change_impact",
+      "name": "get_change_impact",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "cap-get_impact_summary",
+      "name": "get_impact_summary",
+      "kind": "capability",
+      "published": true,
+      "connected": false,
+      "source": "public-mcp-contract",
+      "category": "capability"
+    },
+    {
+      "id": "wb-founder",
+      "name": "Executive",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "wb-executive"
+      ],
+      "domainSlug": "founder",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-sales",
+      "name": "Sales",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "domainSlug": "sales",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-revops",
+      "name": "Revenue operations",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "wb-revenue-operations"
+      ],
+      "domainSlug": "revops",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-account-success",
+      "name": "Customer success",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "wb-customer-success"
+      ],
+      "domainSlug": "account-success",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-service",
+      "name": "Customer support",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "wb-customer-support"
+      ],
+      "domainSlug": "service",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-marketing",
+      "name": "Marketing",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "domainSlug": "marketing",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-finance",
+      "name": "Finance",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "domainSlug": "finance",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-operations",
+      "name": "Operations",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "domainSlug": "operations",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-product",
+      "name": "Product",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "domainSlug": "product",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-engineering",
+      "name": "Engineering",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "domainSlug": "engineering",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-humanresources",
+      "name": "People",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "aliases": [
+        "wb-people"
+      ],
+      "domainSlug": "humanresources",
+      "category": "workbench"
+    },
+    {
+      "id": "wb-legal",
+      "name": "Legal",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "spine-catalog",
+      "domainSlug": "legal",
+      "category": "workbench"
+    },
+    {
+      "id": "accelerator-subscription-metrics",
+      "name": "Subscription Metrics",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "subscription-metrics",
+      "category": "accelerator"
+    },
+    {
+      "id": "accelerator-finance",
+      "name": "Finance Accelerator",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "finance",
+      "category": "accelerator"
+    },
+    {
+      "id": "accelerator-support-marketing",
+      "name": "Support & Marketing",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "support-marketing",
+      "category": "accelerator"
+    },
+    {
+      "id": "accelerator-engineering",
+      "name": "Engineering Accelerator",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "engineering",
+      "category": "accelerator"
+    },
+    {
+      "id": "accelerator-hr",
+      "name": "HR Accelerator",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "hr",
+      "category": "accelerator"
+    },
+    {
+      "id": "mcp-bundle-stripe",
+      "name": "Stripe",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "stripe",
+      "category": "mcp-bundle"
+    },
+    {
+      "id": "mcp-bundle-hubspot",
+      "name": "HubSpot",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "hubspot",
+      "category": "mcp-bundle"
+    },
+    {
+      "id": "mcp-bundle-slack",
+      "name": "Slack",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "slack",
+      "category": "mcp-bundle"
+    },
+    {
+      "id": "mcp-bundle-discord",
+      "name": "Discord",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "discord",
+      "category": "mcp-bundle"
+    },
+    {
+      "id": "mcp-bundle-notion",
+      "name": "Notion",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "notion",
+      "category": "mcp-bundle"
+    },
+    {
+      "id": "mcp-bundle-github",
+      "name": "GitHub",
+      "kind": "package",
+      "published": true,
+      "connected": false,
+      "source": "platform-gateway",
+      "platformId": "github",
+      "category": "mcp-bundle"
+    }
   ]
 }

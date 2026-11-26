@@ -1,7 +1,7 @@
 {
   "name": "spine-network",
-  "version": "0.0.0-unreleased",
-  "mcp": "https://mcp.spineworkspace.com/mcp",
-  "published": false,
-  "note": "Placeholder manifest. Not submitted to Claude."
+  "version": "0.1.0",
+  "description": "Connect to governed business context and continuity through Spine Network MCP.",
+  "homepage": "https://spineworkspace.com",
+  "repository": "https://github.com/NirmalPrinceJ/spine-marketplace"
 }

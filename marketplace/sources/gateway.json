@@ -1,0 +1,3720 @@
+{
+  "version": "spine-marketplace.v1",
+  "curatedAt": "2026-11-25",
+  "external": {
+    "categories": [
+      "CRM",
+      "Sales engagement and prospecting",
+      "Conversation intelligence",
+      "Scheduling",
+      "Proposals and e-signature",
+      "Revenue intelligence",
+      "Marketing automation and email",
+      "Advertising",
+      "SEO and market intelligence",
+      "Social media",
+      "Content, CMS and design",
+      "Forms and surveys",
+      "Web and product analytics",
+      "Customer success",
+      "Customer support",
+      "Communication",
+      "Files and knowledge",
+      "Calendar",
+      "Work management",
+      "Engineering and delivery",
+      "Finance and billing",
+      "People and recruiting",
+      "Legal and compliance",
+      "Data and BI",
+      "Commerce and logistics"
+    ],
+    "apps": [
+      {
+        "id": "salesforce",
+        "name": "Salesforce",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "hubspot",
+        "name": "HubSpot",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "pipedrive",
+        "name": "Pipedrive",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "zoho-crm",
+        "name": "Zoho CRM",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "freshsales",
+        "name": "Freshsales",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "close",
+        "name": "Close",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "dynamics-365",
+        "name": "Microsoft Dynamics 365",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "attio",
+        "name": "Attio",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "copper",
+        "name": "Copper",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "leadsquared",
+        "name": "LeadSquared",
+        "category": "CRM",
+        "departments": [
+          "Sales",
+          "RevOps",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "revops",
+          "account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "apollo",
+        "name": "Apollo.io",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "outreach",
+        "name": "Outreach",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "salesloft",
+        "name": "Salesloft",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "zoominfo",
+        "name": "ZoomInfo",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "lusha",
+        "name": "Lusha",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "crunchbase",
+        "name": "Crunchbase",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "clay",
+        "name": "Clay",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "linkedin-sales-navigator",
+        "name": "LinkedIn Sales Navigator",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "cognism",
+        "name": "Cognism",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "lemlist",
+        "name": "Lemlist",
+        "category": "Sales engagement and prospecting",
+        "departments": [
+          "Sales"
+        ],
+        "domains": [
+          "sales"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "gong",
+        "name": "Gong",
+        "category": "Conversation intelligence",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "account-success"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "fireflies",
+        "name": "Fireflies.ai",
+        "category": "Conversation intelligence",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "account-success"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "otter",
+        "name": "Otter.ai",
+        "category": "Conversation intelligence",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "fathom",
+        "name": "Fathom",
+        "category": "Conversation intelligence",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "account-success"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "calendly",
+        "name": "Calendly",
+        "category": "Scheduling",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "account-success",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "cal-com",
+        "name": "Cal.com",
+        "category": "Scheduling",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "account-success",
+          "founder-business-ops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "chili-piper",
+        "name": "Chili Piper",
+        "category": "Scheduling",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "sales",
+          "account-success",
+          "founder-business-ops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "docusign",
+        "name": "DocuSign",
+        "category": "Proposals and e-signature",
+        "departments": [
+          "Sales",
+          "Legal"
+        ],
+        "domains": [
+          "sales",
+          "legal-compliance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "pandadoc",
+        "name": "PandaDoc",
+        "category": "Proposals and e-signature",
+        "departments": [
+          "Sales",
+          "Legal"
+        ],
+        "domains": [
+          "sales",
+          "legal-compliance"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "dropbox-sign",
+        "name": "Dropbox Sign",
+        "category": "Proposals and e-signature",
+        "departments": [
+          "Sales",
+          "Legal"
+        ],
+        "domains": [
+          "sales",
+          "legal-compliance"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "zoho-sign",
+        "name": "Zoho Sign",
+        "category": "Proposals and e-signature",
+        "departments": [
+          "Sales",
+          "Legal"
+        ],
+        "domains": [
+          "sales",
+          "legal-compliance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "clari",
+        "name": "Clari",
+        "category": "Revenue intelligence",
+        "departments": [
+          "RevOps"
+        ],
+        "domains": [
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "hubspot-marketing",
+        "name": "HubSpot Marketing Hub",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "marketo",
+        "name": "Adobe Marketo Engage",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "mailchimp",
+        "name": "Mailchimp",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "klaviyo",
+        "name": "Klaviyo",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "brevo",
+        "name": "Brevo",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "activecampaign",
+        "name": "ActiveCampaign",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "customer-io",
+        "name": "Customer.io",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "braze",
+        "name": "Braze",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "sendgrid",
+        "name": "SendGrid",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "iterable",
+        "name": "Iterable",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "moengage",
+        "name": "MoEngage",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "webengage",
+        "name": "WebEngage",
+        "category": "Marketing automation and email",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "google-ads",
+        "name": "Google Ads",
+        "category": "Advertising",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "meta-ads",
+        "name": "Meta Ads",
+        "category": "Advertising",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "linkedin-ads",
+        "name": "LinkedIn Ads",
+        "category": "Advertising",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "microsoft-ads",
+        "name": "Microsoft Advertising",
+        "category": "Advertising",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "tiktok-ads",
+        "name": "TikTok Ads",
+        "category": "Advertising",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "google-search-console",
+        "name": "Google Search Console",
+        "category": "SEO and market intelligence",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "semrush",
+        "name": "Semrush",
+        "category": "SEO and market intelligence",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "ahrefs",
+        "name": "Ahrefs",
+        "category": "SEO and market intelligence",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "similarweb",
+        "name": "Similarweb",
+        "category": "SEO and market intelligence",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "supermetrics",
+        "name": "Supermetrics",
+        "category": "SEO and market intelligence",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "hootsuite",
+        "name": "Hootsuite",
+        "category": "Social media",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "buffer",
+        "name": "Buffer",
+        "category": "Social media",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "sprout-social",
+        "name": "Sprout Social",
+        "category": "Social media",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "linkedin-pages",
+        "name": "LinkedIn Pages",
+        "category": "Social media",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "youtube",
+        "name": "YouTube",
+        "category": "Social media",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "instagram",
+        "name": "Instagram",
+        "category": "Social media",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "x",
+        "name": "X",
+        "category": "Social media",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "marketing",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "wordpress",
+        "name": "WordPress",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "webflow",
+        "name": "Webflow",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "contentful",
+        "name": "Contentful",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "sanity",
+        "name": "Sanity",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "strapi",
+        "name": "Strapi",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "ghost",
+        "name": "Ghost",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "canva",
+        "name": "Canva",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "figma",
+        "name": "Figma",
+        "category": "Content, CMS and design",
+        "departments": [
+          "Marketing"
+        ],
+        "domains": [
+          "content",
+          "marketing"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "typeform",
+        "name": "Typeform",
+        "category": "Forms and surveys",
+        "departments": [
+          "Marketing",
+          "Customer Success"
+        ],
+        "domains": [
+          "marketing",
+          "account-success"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "google-forms",
+        "name": "Google Forms",
+        "category": "Forms and surveys",
+        "departments": [
+          "Marketing",
+          "Customer Success"
+        ],
+        "domains": [
+          "marketing",
+          "account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "surveymonkey",
+        "name": "SurveyMonkey",
+        "category": "Forms and surveys",
+        "departments": [
+          "Marketing",
+          "Customer Success"
+        ],
+        "domains": [
+          "marketing",
+          "account-success"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "jotform",
+        "name": "Jotform",
+        "category": "Forms and surveys",
+        "departments": [
+          "Marketing",
+          "Customer Success"
+        ],
+        "domains": [
+          "marketing",
+          "account-success"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "google-analytics",
+        "name": "Google Analytics",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "amplitude",
+        "name": "Amplitude",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "mixpanel",
+        "name": "Mixpanel",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "heap",
+        "name": "Heap",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "posthog",
+        "name": "PostHog",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "pendo",
+        "name": "Pendo",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "hotjar",
+        "name": "Hotjar",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "segment",
+        "name": "Segment",
+        "category": "Web and product analytics",
+        "departments": [
+          "Marketing",
+          "Product"
+        ],
+        "domains": [
+          "marketing",
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "gainsight",
+        "name": "Gainsight",
+        "category": "Customer success",
+        "departments": [
+          "Customer Success"
+        ],
+        "domains": [
+          "account-success",
+          "technical-account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "churnzero",
+        "name": "ChurnZero",
+        "category": "Customer success",
+        "departments": [
+          "Customer Success"
+        ],
+        "domains": [
+          "account-success",
+          "technical-account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "totango",
+        "name": "Totango",
+        "category": "Customer success",
+        "departments": [
+          "Customer Success"
+        ],
+        "domains": [
+          "account-success",
+          "technical-account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "vitally",
+        "name": "Vitally",
+        "category": "Customer success",
+        "departments": [
+          "Customer Success"
+        ],
+        "domains": [
+          "account-success",
+          "technical-account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "planhat",
+        "name": "Planhat",
+        "category": "Customer success",
+        "departments": [
+          "Customer Success"
+        ],
+        "domains": [
+          "account-success",
+          "technical-account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "zendesk",
+        "name": "Zendesk",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "freshdesk",
+        "name": "Freshdesk",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "intercom",
+        "name": "Intercom",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "helpscout",
+        "name": "Help Scout",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "front",
+        "name": "Front",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "kustomer",
+        "name": "Kustomer",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "jira-service-management",
+        "name": "Jira Service Management",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "servicenow",
+        "name": "ServiceNow",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "gorgias",
+        "name": "Gorgias",
+        "category": "Customer support",
+        "departments": [
+          "Support"
+        ],
+        "domains": [
+          "support",
+          "technical-account-success"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "gmail",
+        "name": "Gmail",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "outlook",
+        "name": "Outlook",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "microsoft-365",
+        "name": "Microsoft 365",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "slack",
+        "name": "Slack",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "microsoft-teams",
+        "name": "Microsoft Teams",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "zoom",
+        "name": "Zoom",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "google-meet",
+        "name": "Google Meet",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "twilio",
+        "name": "Twilio",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "whatsapp-business",
+        "name": "WhatsApp Business",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "discord",
+        "name": "Discord",
+        "category": "Communication",
+        "departments": [
+          "Sales",
+          "Marketing",
+          "Customer Success",
+          "Support"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "google-drive",
+        "name": "Google Drive",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": true,
+        "vetting": "listed"
+      },
+      {
+        "id": "google-sheets",
+        "name": "Google Sheets",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "google-docs",
+        "name": "Google Docs",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "notion",
+        "name": "Notion",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "confluence",
+        "name": "Confluence",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "sharepoint",
+        "name": "SharePoint",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "onedrive",
+        "name": "OneDrive",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "dropbox",
+        "name": "Dropbox",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "box",
+        "name": "Box",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "egnyte",
+        "name": "Egnyte",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "coda",
+        "name": "Coda",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "guru",
+        "name": "Guru",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "airtable",
+        "name": "Airtable",
+        "category": "Files and knowledge",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "content"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "google-calendar",
+        "name": "Google Calendar",
+        "category": "Calendar",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": true,
+        "vetting": "listed"
+      },
+      {
+        "id": "outlook-calendar",
+        "name": "Outlook Calendar",
+        "category": "Calendar",
+        "departments": [
+          "Sales",
+          "Customer Success"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "asana",
+        "name": "Asana",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "monday",
+        "name": "Monday.com",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "clickup",
+        "name": "ClickUp",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "smartsheet",
+        "name": "Smartsheet",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "trello",
+        "name": "Trello",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "wrike",
+        "name": "Wrike",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "basecamp",
+        "name": "Basecamp",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "harvest",
+        "name": "Harvest",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "toggl",
+        "name": "Toggl Track",
+        "category": "Work management",
+        "departments": [
+          "Service Operations",
+          "Product"
+        ],
+        "domains": [
+          "services",
+          "product-engineering",
+          "founder-business-ops"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "jira",
+        "name": "Jira",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "linear",
+        "name": "Linear",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "github",
+        "name": "GitHub",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "gitlab",
+        "name": "GitLab",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "bitbucket",
+        "name": "Bitbucket",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "sentry",
+        "name": "Sentry",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "pagerduty",
+        "name": "PagerDuty",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "datadog",
+        "name": "Datadog",
+        "category": "Engineering and delivery",
+        "departments": [
+          "Engineering",
+          "Product"
+        ],
+        "domains": [
+          "product-engineering"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "stripe",
+        "name": "Stripe",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "razorpay",
+        "name": "Razorpay",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "cashfree",
+        "name": "Cashfree Payments",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "paypal",
+        "name": "PayPal",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "tally",
+        "name": "Tally",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "quickbooks",
+        "name": "QuickBooks",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "xero",
+        "name": "Xero",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "netsuite",
+        "name": "NetSuite",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "zoho-books",
+        "name": "Zoho Books",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "freshbooks",
+        "name": "FreshBooks",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "chargebee",
+        "name": "Chargebee",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "paddle",
+        "name": "Paddle",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "recurly",
+        "name": "Recurly",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "brex",
+        "name": "Brex",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "ramp",
+        "name": "Ramp",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "expensify",
+        "name": "Expensify",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "bill",
+        "name": "BILL",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "vyapar",
+        "name": "Vyapar",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "khatabook",
+        "name": "Khatabook",
+        "category": "Finance and billing",
+        "departments": [
+          "Finance"
+        ],
+        "domains": [
+          "finance"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "bamboohr",
+        "name": "BambooHR",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "workday",
+        "name": "Workday",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "gusto",
+        "name": "Gusto",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "rippling",
+        "name": "Rippling",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "deel",
+        "name": "Deel",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "darwinbox",
+        "name": "Darwinbox",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "keka",
+        "name": "Keka",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "zoho-people",
+        "name": "Zoho People",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "personio",
+        "name": "Personio",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "hibob",
+        "name": "HiBob",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "greenhouse",
+        "name": "Greenhouse",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [
+          "composio-managed"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "lever",
+        "name": "Lever",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "ashby",
+        "name": "Ashby",
+        "category": "People and recruiting",
+        "departments": [
+          "HR"
+        ],
+        "domains": [
+          "human-resources"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "ironclad",
+        "name": "Ironclad",
+        "category": "Legal and compliance",
+        "departments": [
+          "Legal"
+        ],
+        "domains": [
+          "legal-compliance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "vanta",
+        "name": "Vanta",
+        "category": "Legal and compliance",
+        "departments": [
+          "Legal"
+        ],
+        "domains": [
+          "legal-compliance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "drata",
+        "name": "Drata",
+        "category": "Legal and compliance",
+        "departments": [
+          "Legal"
+        ],
+        "domains": [
+          "legal-compliance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "onetrust",
+        "name": "OneTrust",
+        "category": "Legal and compliance",
+        "departments": [
+          "Legal"
+        ],
+        "domains": [
+          "legal-compliance"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "postgresql",
+        "name": "PostgreSQL",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "mysql",
+        "name": "MySQL",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "snowflake",
+        "name": "Snowflake",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "bigquery",
+        "name": "BigQuery",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "databricks",
+        "name": "Databricks",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "redshift",
+        "name": "Amazon Redshift",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "metabase",
+        "name": "Metabase",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "looker",
+        "name": "Looker",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "power-bi",
+        "name": "Power BI",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "tableau",
+        "name": "Tableau",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [
+          "spine-connector",
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "hex",
+        "name": "Hex",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [
+          "composio-user-key"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "fivetran",
+        "name": "Fivetran",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "coupler",
+        "name": "Coupler.io",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "cdata",
+        "name": "CData Connect AI",
+        "category": "Data and BI",
+        "departments": [
+          "RevOps",
+          "Finance",
+          "Product"
+        ],
+        "domains": [
+          "founder-business-ops",
+          "revops"
+        ],
+        "routes": [],
+        "availability": "not_available_yet",
+        "liveRead": false,
+        "vetting": "to-review"
+      },
+      {
+        "id": "shopify",
+        "name": "Shopify",
+        "category": "Commerce and logistics",
+        "departments": [
+          "Supply Chain"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "woocommerce",
+        "name": "WooCommerce",
+        "category": "Commerce and logistics",
+        "departments": [
+          "Supply Chain"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "bigcommerce",
+        "name": "BigCommerce",
+        "category": "Commerce and logistics",
+        "departments": [
+          "Supply Chain"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      },
+      {
+        "id": "shiprocket",
+        "name": "Shiprocket",
+        "category": "Commerce and logistics",
+        "departments": [
+          "Supply Chain"
+        ],
+        "domains": [
+          "founder-business-ops"
+        ],
+        "routes": [
+          "spine-connector"
+        ],
+        "availability": "available",
+        "liveRead": false,
+        "vetting": "listed"
+      }
+    ],
+    "aiHosts": [
+      {
+        "id": "chatgpt",
+        "name": "ChatGPT",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "claude",
+        "name": "Claude",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "gemini",
+        "name": "Gemini",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "cursor",
+        "name": "Cursor",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "github-copilot",
+        "name": "GitHub Copilot",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "microsoft-365-copilot",
+        "name": "Microsoft 365 Copilot",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "windsurf",
+        "name": "Windsurf",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "perplexity",
+        "name": "Perplexity",
+        "connectsThrough": "spine-network-mcp"
+      },
+      {
+        "id": "grok",
+        "name": "Grok",
+        "connectsThrough": "spine-network-mcp"
+      }
+    ],
+    "mcpServers": [
+      {
+        "id": "filesystem-mcp",
+        "name": "Filesystem",
+        "linkedConnector": null,
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "fetch-mcp",
+        "name": "Fetch",
+        "linkedConnector": null,
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "memory-mcp",
+        "name": "Memory",
+        "linkedConnector": null,
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "github-mcp",
+        "name": "GitHub",
+        "linkedConnector": "github",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "slack-mcp",
+        "name": "Slack",
+        "linkedConnector": "slack",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "postgresql-mcp",
+        "name": "PostgreSQL",
+        "linkedConnector": "postgresql",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "brave-search-mcp",
+        "name": "Brave Search",
+        "linkedConnector": null,
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "sentry-mcp",
+        "name": "Sentry",
+        "linkedConnector": "sentry",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "notion-mcp",
+        "name": "Notion",
+        "linkedConnector": "notion",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "stripe-mcp",
+        "name": "Stripe",
+        "linkedConnector": "stripe",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "playwright-mcp",
+        "name": "Playwright",
+        "linkedConnector": null,
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "hex-mcp",
+        "name": "Hex",
+        "linkedConnector": "hex",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "bigquery-mcp",
+        "name": "BigQuery",
+        "linkedConnector": "bigquery",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "coupler-mcp",
+        "name": "Coupler.io",
+        "linkedConnector": "coupler",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      },
+      {
+        "id": "cdata-mcp",
+        "name": "CData Connect AI",
+        "linkedConnector": "cdata",
+        "vetting": "to-review",
+        "registration": "not_registered"
+      }
+    ]
+  },
+  "internal": {
+    "spineNetwork": {
+      "id": "iw-spine-network",
+      "name": "Spine Network MCP",
+      "endpoint": "https://mcp.spineworkspace.com/mcp",
+      "authorization": "oauth"
+    },
+    "accelerators": [
+      {
+        "id": "subscription-metrics",
+        "name": "Subscription Metrics",
+        "requiredConnectorIds": [
+          "stripe"
+        ]
+      },
+      {
+        "id": "finance",
+        "name": "Finance Accelerator",
+        "requiredConnectorIds": [
+          "quickbooks",
+          "stripe"
+        ]
+      },
+      {
+        "id": "support-marketing",
+        "name": "Support & Marketing",
+        "requiredConnectorIds": [
+          "zendesk",
+          "mailchimp"
+        ]
+      },
+      {
+        "id": "engineering",
+        "name": "Engineering Accelerator",
+        "requiredConnectorIds": [
+          "github",
+          "jira"
+        ]
+      },
+      {
+        "id": "hr",
+        "name": "HR Accelerator",
+        "requiredConnectorIds": []
+      }
+    ],
+    "mcpTools": [
+      {
+        "id": "stripe",
+        "name": "Stripe",
+        "description": "Payment and subscription webhooks",
+        "requiredConnectorIds": [
+          "stripe"
+        ]
+      },
+      {
+        "id": "hubspot",
+        "name": "HubSpot",
+        "description": "CRM webhooks",
+        "requiredConnectorIds": [
+          "hubspot"
+        ]
+      },
+      {
+        "id": "slack",
+        "name": "Slack",
+        "description": "Slack workspace events",
+        "requiredConnectorIds": [
+          "slack"
+        ]
+      },
+      {
+        "id": "discord",
+        "name": "Discord",
+        "description": "Discord bot interactions",
+        "requiredConnectorIds": [
+          "discord"
+        ]
+      },
+      {
+        "id": "notion",
+        "name": "Notion",
+        "description": "Notion workspace webhooks",
+        "requiredConnectorIds": [
+          "notion"
+        ]
+      },
+      {
+        "id": "github",
+        "name": "GitHub",
+        "description": "",
+        "requiredConnectorIds": [
+          "github"
+        ]
+      }
+    ]
+  },
+  "counts": {
+    "apps": 191,
+    "available": 128,
+    "aiHosts": 9,
+    "mcpServers": 15,
+    "accelerators": 5,
+    "mcpTools": 6
+  }
+}

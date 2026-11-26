@@ -3,117 +3,2984 @@
   "published": true,
   "publishedAt": "2026-11-26",
   "connected": false,
-  "note": "These packages are published in the Spine catalog. A listing is not installed, not connected, and not submitted to a host marketplace.",
+  "note": "Discovery catalog. One Auth and the Platform connection registry manage account state.",
   "shelves": [
     {
       "id": "host",
       "name": "Host connectors",
+      "detail": "marketplace/external/ai-host.json",
       "packages": [
-        {"id": "cursor", "name": "Cursor", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "grok", "name": "Grok", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "chatgpt", "name": "ChatGPT", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "claude", "name": "Claude", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "gemini", "name": "Gemini", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "github-copilot", "name": "GitHub Copilot", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "microsoft-copilot", "name": "Microsoft 365 Copilot", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "windsurf", "name": "Windsurf", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
-        {"id": "perplexity", "name": "Perplexity", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false}
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "chatgpt",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/chatgpt/package.json"
+        },
+        {
+          "id": "claude",
+          "name": "Claude",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "claude",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/claude/package.json"
+        },
+        {
+          "id": "gemini",
+          "name": "Gemini",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "gemini",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/gemini/package.json"
+        },
+        {
+          "id": "cursor",
+          "name": "Cursor",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "cursor",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/cursor/package.json"
+        },
+        {
+          "id": "github-copilot",
+          "name": "GitHub Copilot",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "github-copilot",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/vscode/package.json"
+        },
+        {
+          "id": "microsoft-copilot",
+          "name": "Microsoft 365 Copilot",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "microsoft-365-copilot",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/microsoft-365-copilot/package.json"
+        },
+        {
+          "id": "windsurf",
+          "name": "Windsurf",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "windsurf",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/windsurf/package.json"
+        },
+        {
+          "id": "perplexity",
+          "name": "Perplexity",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "perplexity",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/perplexity/package.json"
+        },
+        {
+          "id": "grok",
+          "name": "Grok",
+          "kind": "plugin",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "grok",
+          "hostMarketplaceSubmitted": false,
+          "distribution": "distribution/grok/package.json"
+        }
       ]
     },
     {
       "id": "core",
       "name": "Core connectors",
+      "detail": "marketplace/external/core-connectors.json",
       "packages": [
-        {"id": "hubspot", "name": "HubSpot", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "salesforce", "name": "Salesforce", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "pipedrive", "name": "Pipedrive", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "gmail", "name": "Gmail", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "outlook", "name": "Outlook", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "slack", "name": "Slack", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "teams", "name": "Teams", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "whatsapp", "name": "WhatsApp", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "google-drive", "name": "Google Drive", "kind": "connector", "published": true, "connected": false, "liveRead": true},
-        {"id": "notion", "name": "Notion", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "sharepoint", "name": "SharePoint", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "confluence", "name": "Confluence", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "google-calendar", "name": "Google Calendar", "kind": "connector", "published": true, "connected": false, "liveRead": true},
-        {"id": "outlook-calendar", "name": "Outlook Calendar", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "zendesk", "name": "Zendesk", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "stripe", "name": "Stripe", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "razorpay", "name": "Razorpay", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "tally", "name": "Tally", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "jira", "name": "Jira", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "github", "name": "GitHub", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "linear", "name": "Linear", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "airtable", "name": "Airtable", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "postgresql", "name": "PostgreSQL", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "mysql", "name": "MySQL", "kind": "connector", "published": true, "connected": false, "liveRead": false}
+        {
+          "id": "hubspot",
+          "name": "HubSpot",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "hubspot",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "salesforce",
+          "name": "Salesforce",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "salesforce",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "pipedrive",
+          "name": "Pipedrive",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "pipedrive",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "gmail",
+          "name": "Gmail",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "gmail",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "outlook",
+          "name": "Outlook",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "outlook",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "slack",
+          "name": "Slack",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "slack",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "teams",
+          "name": "Microsoft Teams",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "microsoft-teams",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "whatsapp",
+          "name": "WhatsApp Business",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "whatsapp-business",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "google-drive",
+          "name": "Google Drive",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-drive",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": true
+        },
+        {
+          "id": "notion",
+          "name": "Notion",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "notion",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "sharepoint",
+          "name": "SharePoint",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "sharepoint",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "confluence",
+          "name": "Confluence",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "confluence",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "google-calendar",
+          "name": "Google Calendar",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-calendar",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": true
+        },
+        {
+          "id": "outlook-calendar",
+          "name": "Outlook Calendar",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "outlook-calendar",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "zendesk",
+          "name": "Zendesk",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "zendesk",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "stripe",
+          "name": "Stripe",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "stripe",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "razorpay",
+          "name": "Razorpay",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "razorpay",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "tally",
+          "name": "Tally",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "tally",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "jira",
+          "name": "Jira",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "jira",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "github",
+          "name": "GitHub",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "github",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "linear",
+          "name": "Linear",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "linear",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "airtable",
+          "name": "Airtable",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "airtable",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "postgresql",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "mysql",
+          "name": "MySQL",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "mysql",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        }
       ]
     },
     {
       "id": "composio",
       "name": "Composio",
+      "detail": "marketplace/external/composio.json",
       "packages": [
-        {"id": "composio", "name": "Composio", "kind": "connector", "published": true, "connected": false},
-        {"id": "asana", "name": "Asana", "kind": "connector", "published": true, "connected": false},
-        {"id": "intercom", "name": "Intercom", "kind": "connector", "published": true, "connected": false},
-        {"id": "shopify", "name": "Shopify", "kind": "connector", "published": true, "connected": false},
-        {"id": "quickbooks", "name": "QuickBooks", "kind": "connector", "published": true, "connected": false},
-        {"id": "xero", "name": "Xero", "kind": "connector", "published": true, "connected": false},
-        {"id": "dropbox", "name": "Dropbox", "kind": "connector", "published": true, "connected": false},
-        {"id": "zoom", "name": "Zoom", "kind": "connector", "published": true, "connected": false},
-        {"id": "calendly", "name": "Calendly", "kind": "connector", "published": true, "connected": false},
-        {"id": "mailchimp", "name": "Mailchimp", "kind": "connector", "published": true, "connected": false},
-        {"id": "discord", "name": "Discord", "kind": "connector", "published": true, "connected": false},
-        {"id": "figma", "name": "Figma", "kind": "connector", "published": true, "connected": false},
-        {"id": "monday", "name": "Monday.com", "kind": "connector", "published": true, "connected": false},
-        {"id": "clickup", "name": "ClickUp", "kind": "connector", "published": true, "connected": false},
-        {"id": "freshdesk", "name": "Freshdesk", "kind": "connector", "published": true, "connected": false}
+        {
+          "id": "composio",
+          "name": "Composio",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "asana",
+          "name": "Asana",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "asana",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "intercom",
+          "name": "Intercom",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "intercom",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "shopify",
+          "name": "Shopify",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "shopify",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "quickbooks",
+          "name": "QuickBooks",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "quickbooks",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "xero",
+          "name": "Xero",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "xero",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "dropbox",
+          "name": "Dropbox",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "dropbox",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "zoom",
+          "name": "Zoom",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "zoom",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "calendly",
+          "name": "Calendly",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "calendly",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "mailchimp",
+          "name": "Mailchimp",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "mailchimp",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "discord",
+          "name": "Discord",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "discord",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "figma",
+          "name": "Figma",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "figma",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "monday",
+          "name": "Monday.com",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "monday",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "clickup",
+          "name": "ClickUp",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "clickup",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "freshdesk",
+          "name": "Freshdesk",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "freshdesk",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        }
       ]
     },
     {
       "id": "mcp",
       "name": "MCP registry",
+      "detail": "marketplace/external/mcp-registry.json",
       "packages": [
-        {"id": "mcp-filesystem", "name": "Filesystem", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-fetch", "name": "Fetch", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-memory", "name": "Memory", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-github", "name": "GitHub", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-slack", "name": "Slack", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-postgresql", "name": "PostgreSQL", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-brave-search", "name": "Brave Search", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-sentry", "name": "Sentry", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-notion", "name": "Notion", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-stripe", "name": "Stripe", "kind": "mcp", "published": true, "connected": false},
-        {"id": "mcp-playwright", "name": "Playwright", "kind": "mcp", "published": true, "connected": false}
+        {
+          "id": "mcp-filesystem",
+          "name": "Filesystem",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "filesystem-mcp"
+        },
+        {
+          "id": "mcp-fetch",
+          "name": "Fetch",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "fetch-mcp"
+        },
+        {
+          "id": "mcp-memory",
+          "name": "Memory",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "memory-mcp"
+        },
+        {
+          "id": "mcp-github",
+          "name": "GitHub",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "github-mcp"
+        },
+        {
+          "id": "mcp-slack",
+          "name": "Slack",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "slack-mcp"
+        },
+        {
+          "id": "mcp-postgresql",
+          "name": "PostgreSQL",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "postgresql-mcp"
+        },
+        {
+          "id": "mcp-brave-search",
+          "name": "Brave Search",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "brave-search-mcp"
+        },
+        {
+          "id": "mcp-sentry",
+          "name": "Sentry",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "sentry-mcp"
+        },
+        {
+          "id": "mcp-notion",
+          "name": "Notion",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "notion-mcp"
+        },
+        {
+          "id": "mcp-stripe",
+          "name": "Stripe",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "stripe-mcp"
+        },
+        {
+          "id": "mcp-playwright",
+          "name": "Playwright",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "playwright-mcp"
+        },
+        {
+          "id": "hex-mcp",
+          "name": "Hex",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "hex-mcp"
+        },
+        {
+          "id": "bigquery-mcp",
+          "name": "BigQuery",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "bigquery-mcp"
+        },
+        {
+          "id": "coupler-mcp",
+          "name": "Coupler.io",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "coupler-mcp"
+        },
+        {
+          "id": "cdata-mcp",
+          "name": "CData Connect AI",
+          "kind": "mcp",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "cdata-mcp"
+        }
       ]
     },
     {
       "id": "project",
       "name": "Project infrastructure",
+      "detail": "marketplace/external/project-infrastructure.json",
       "packages": [
-        {"id": "gitlab", "name": "GitLab", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "github-actions", "name": "GitHub Actions", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "vercel", "name": "Vercel", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "aws", "name": "AWS", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "gcp", "name": "Google Cloud", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "azure", "name": "Microsoft Azure", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "docker", "name": "Docker", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "kubernetes", "name": "Kubernetes", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "terraform", "name": "Terraform", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "datadog", "name": "Datadog", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "pagerduty", "name": "PagerDuty", "kind": "connector", "published": true, "connected": false, "liveRead": false}
+        {
+          "id": "gitlab",
+          "name": "GitLab",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "gitlab",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "github-actions",
+          "name": "GitHub Actions",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "vercel",
+          "name": "Vercel",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "aws",
+          "name": "AWS",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "gcp",
+          "name": "Google Cloud",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "azure",
+          "name": "Microsoft Azure",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "docker",
+          "name": "Docker",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "terraform",
+          "name": "Terraform",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "spine-catalog",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "datadog",
+          "name": "Datadog",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "datadog",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "pagerduty",
+          "name": "PagerDuty",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "pagerduty",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        }
       ]
     },
     {
       "id": "domain",
       "name": "Domain connectors",
+      "detail": "marketplace/external/domain.json",
       "packages": [
-        {"id": "gong", "name": "Gong", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "docusign", "name": "DocuSign", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "bamboohr", "name": "BambooHR", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "workday", "name": "Workday", "kind": "connector", "published": true, "connected": false, "liveRead": false},
-        {"id": "amplitude", "name": "Amplitude", "kind": "connector", "published": true, "connected": false, "liveRead": false}
+        {
+          "id": "gong",
+          "name": "Gong",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "gong",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "docusign",
+          "name": "DocuSign",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "docusign",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "bamboohr",
+          "name": "BambooHR",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "bamboohr",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "workday",
+          "name": "Workday",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "workday",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "amplitude",
+          "name": "Amplitude",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "amplitude",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        }
+      ]
+    },
+    {
+      "id": "apps",
+      "name": "More Platform connectors",
+      "detail": "marketplace/external/platform-connectors.json",
+      "packages": [
+        {
+          "id": "zoho-crm",
+          "name": "Zoho CRM",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "zoho-crm",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "freshsales",
+          "name": "Freshsales",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "freshsales",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "close",
+          "name": "Close",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "close",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "dynamics-365",
+          "name": "Microsoft Dynamics 365",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "dynamics-365",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "attio",
+          "name": "Attio",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "attio",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "copper",
+          "name": "Copper",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "copper",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "leadsquared",
+          "name": "LeadSquared",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "leadsquared",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "apollo",
+          "name": "Apollo.io",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "apollo",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "outreach",
+          "name": "Outreach",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "outreach",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "salesloft",
+          "name": "Salesloft",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "salesloft",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "zoominfo",
+          "name": "ZoomInfo",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "zoominfo",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "lusha",
+          "name": "Lusha",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "lusha",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "crunchbase",
+          "name": "Crunchbase",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "crunchbase",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "clay",
+          "name": "Clay",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "clay",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "linkedin-sales-navigator",
+          "name": "LinkedIn Sales Navigator",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "linkedin-sales-navigator",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "cognism",
+          "name": "Cognism",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "cognism",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "lemlist",
+          "name": "Lemlist",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "lemlist",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "fireflies",
+          "name": "Fireflies.ai",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "fireflies",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "otter",
+          "name": "Otter.ai",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "otter",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "fathom",
+          "name": "Fathom",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "fathom",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "cal-com",
+          "name": "Cal.com",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "cal-com",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "chili-piper",
+          "name": "Chili Piper",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "chili-piper",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "pandadoc",
+          "name": "PandaDoc",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "pandadoc",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "dropbox-sign",
+          "name": "Dropbox Sign",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "dropbox-sign",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "zoho-sign",
+          "name": "Zoho Sign",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "zoho-sign",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "clari",
+          "name": "Clari",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "clari",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "hubspot-marketing",
+          "name": "HubSpot Marketing Hub",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "hubspot-marketing",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "marketo",
+          "name": "Adobe Marketo Engage",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "marketo",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "klaviyo",
+          "name": "Klaviyo",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "klaviyo",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "brevo",
+          "name": "Brevo",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "brevo",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "activecampaign",
+          "name": "ActiveCampaign",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "activecampaign",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "customer-io",
+          "name": "Customer.io",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "customer-io",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "braze",
+          "name": "Braze",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "braze",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "sendgrid",
+          "name": "SendGrid",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "sendgrid",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "iterable",
+          "name": "Iterable",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "iterable",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "moengage",
+          "name": "MoEngage",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "moengage",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "webengage",
+          "name": "WebEngage",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "webengage",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "google-ads",
+          "name": "Google Ads",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-ads",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "meta-ads",
+          "name": "Meta Ads",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "meta-ads",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "linkedin-ads",
+          "name": "LinkedIn Ads",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "linkedin-ads",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "microsoft-ads",
+          "name": "Microsoft Advertising",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "microsoft-ads",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "tiktok-ads",
+          "name": "TikTok Ads",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "tiktok-ads",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "google-search-console",
+          "name": "Google Search Console",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-search-console",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "semrush",
+          "name": "Semrush",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "semrush",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "ahrefs",
+          "name": "Ahrefs",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "ahrefs",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "similarweb",
+          "name": "Similarweb",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "similarweb",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "supermetrics",
+          "name": "Supermetrics",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "supermetrics",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "hootsuite",
+          "name": "Hootsuite",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "hootsuite",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "buffer",
+          "name": "Buffer",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "buffer",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "sprout-social",
+          "name": "Sprout Social",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "sprout-social",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "linkedin-pages",
+          "name": "LinkedIn Pages",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "linkedin-pages",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "youtube",
+          "name": "YouTube",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "youtube",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "instagram",
+          "name": "Instagram",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "instagram",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "x",
+          "name": "X",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "x",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "wordpress",
+          "name": "WordPress",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "wordpress",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "webflow",
+          "name": "Webflow",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "webflow",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "contentful",
+          "name": "Contentful",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "contentful",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "sanity",
+          "name": "Sanity",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "sanity",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "strapi",
+          "name": "Strapi",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "strapi",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "ghost",
+          "name": "Ghost",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "ghost",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "canva",
+          "name": "Canva",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "canva",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "typeform",
+          "name": "Typeform",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "typeform",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "google-forms",
+          "name": "Google Forms",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-forms",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "surveymonkey",
+          "name": "SurveyMonkey",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "surveymonkey",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "jotform",
+          "name": "Jotform",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "jotform",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "google-analytics",
+          "name": "Google Analytics",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-analytics",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "mixpanel",
+          "name": "Mixpanel",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "mixpanel",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "heap",
+          "name": "Heap",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "heap",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "posthog",
+          "name": "PostHog",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "posthog",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "pendo",
+          "name": "Pendo",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "pendo",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "hotjar",
+          "name": "Hotjar",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "hotjar",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "segment",
+          "name": "Segment",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "segment",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "gainsight",
+          "name": "Gainsight",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "gainsight",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "churnzero",
+          "name": "ChurnZero",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "churnzero",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "totango",
+          "name": "Totango",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "totango",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "vitally",
+          "name": "Vitally",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "vitally",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "planhat",
+          "name": "Planhat",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "planhat",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "helpscout",
+          "name": "Help Scout",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "helpscout",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "front",
+          "name": "Front",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "front",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "kustomer",
+          "name": "Kustomer",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "kustomer",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "jira-service-management",
+          "name": "Jira Service Management",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "jira-service-management",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "servicenow",
+          "name": "ServiceNow",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "servicenow",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "gorgias",
+          "name": "Gorgias",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "gorgias",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "microsoft-365",
+          "name": "Microsoft 365",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "microsoft-365",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "google-meet",
+          "name": "Google Meet",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-meet",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "twilio",
+          "name": "Twilio",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "twilio",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "google-sheets",
+          "name": "Google Sheets",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-sheets",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "google-docs",
+          "name": "Google Docs",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "google-docs",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "onedrive",
+          "name": "OneDrive",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "onedrive",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "box",
+          "name": "Box",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "box",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "egnyte",
+          "name": "Egnyte",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "egnyte",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "coda",
+          "name": "Coda",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "coda",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "guru",
+          "name": "Guru",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "guru",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "smartsheet",
+          "name": "Smartsheet",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "smartsheet",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "trello",
+          "name": "Trello",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "trello",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "wrike",
+          "name": "Wrike",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "wrike",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "basecamp",
+          "name": "Basecamp",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "basecamp",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "harvest",
+          "name": "Harvest",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "harvest",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "toggl",
+          "name": "Toggl Track",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "toggl",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "bitbucket",
+          "name": "Bitbucket",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "bitbucket",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "sentry",
+          "name": "Sentry",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "sentry",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "cashfree",
+          "name": "Cashfree Payments",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "cashfree",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "paypal",
+          "name": "PayPal",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "paypal",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "netsuite",
+          "name": "NetSuite",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "netsuite",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "zoho-books",
+          "name": "Zoho Books",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "zoho-books",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "freshbooks",
+          "name": "FreshBooks",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "freshbooks",
+          "routes": [
+            "spine-connector",
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "chargebee",
+          "name": "Chargebee",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "chargebee",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "paddle",
+          "name": "Paddle",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "paddle",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "recurly",
+          "name": "Recurly",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "recurly",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "brex",
+          "name": "Brex",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "brex",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "ramp",
+          "name": "Ramp",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "ramp",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "expensify",
+          "name": "Expensify",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "expensify",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "bill",
+          "name": "BILL",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "bill",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "vyapar",
+          "name": "Vyapar",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "vyapar",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "khatabook",
+          "name": "Khatabook",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "khatabook",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "gusto",
+          "name": "Gusto",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "gusto",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "rippling",
+          "name": "Rippling",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "rippling",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "deel",
+          "name": "Deel",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "deel",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "darwinbox",
+          "name": "Darwinbox",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "darwinbox",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "keka",
+          "name": "Keka",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "keka",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "zoho-people",
+          "name": "Zoho People",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "zoho-people",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "personio",
+          "name": "Personio",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "personio",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "hibob",
+          "name": "HiBob",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "hibob",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "greenhouse",
+          "name": "Greenhouse",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "greenhouse",
+          "routes": [
+            "composio-managed"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "lever",
+          "name": "Lever",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "lever",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "ashby",
+          "name": "Ashby",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "ashby",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "ironclad",
+          "name": "Ironclad",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "ironclad",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "vanta",
+          "name": "Vanta",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "vanta",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "drata",
+          "name": "Drata",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "drata",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "onetrust",
+          "name": "OneTrust",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "onetrust",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "snowflake",
+          "name": "Snowflake",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "snowflake",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "bigquery",
+          "name": "BigQuery",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "bigquery",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "databricks",
+          "name": "Databricks",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "databricks",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "redshift",
+          "name": "Amazon Redshift",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "redshift",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "metabase",
+          "name": "Metabase",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "metabase",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "looker",
+          "name": "Looker",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "looker",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "power-bi",
+          "name": "Power BI",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "power-bi",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "tableau",
+          "name": "Tableau",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "tableau",
+          "routes": [
+            "spine-connector",
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "hex",
+          "name": "Hex",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "hex",
+          "routes": [
+            "composio-user-key"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "fivetran",
+          "name": "Fivetran",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "fivetran",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "coupler",
+          "name": "Coupler.io",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "coupler",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "cdata",
+          "name": "CData Connect AI",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "cdata",
+          "routes": [],
+          "availability": "not_available_yet",
+          "liveRead": false
+        },
+        {
+          "id": "woocommerce",
+          "name": "WooCommerce",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "woocommerce",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "bigcommerce",
+          "name": "BigCommerce",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "bigcommerce",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        },
+        {
+          "id": "shiprocket",
+          "name": "Shiprocket",
+          "kind": "connector",
+          "published": true,
+          "connected": false,
+          "source": "platform-gateway",
+          "platformId": "shiprocket",
+          "routes": [
+            "spine-connector"
+          ],
+          "availability": "available",
+          "liveRead": false
+        }
       ]
     }
   ]
