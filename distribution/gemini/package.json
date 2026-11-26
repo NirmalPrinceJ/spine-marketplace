@@ -1,10 +1,13 @@
 {
   "name": "spine-network-gemini",
-  "version": "0.0.0-unreleased",
+  "version": "0.1.0",
   "private": true,
   "spine": {
     "endpoint": "https://mcp.spineworkspace.com/mcp",
-    "published": false,
-    "note": "Gemini integration configuration. Not submitted."
+    "published": true,
+    "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
+    "hostMarketplaceSubmitted": false,
+    "connected": false,
+    "note": "Published in the Spine catalog. Not submitted to the Gemini marketplace. Not installed."
   }
 }
