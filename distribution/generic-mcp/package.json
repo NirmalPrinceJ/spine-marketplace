@@ -1,10 +1,13 @@
 {
-  "name": "spine-network-generic-mcp",
-  "version": "0.0.0-unreleased",
+  "name": "spine-network-mcp",
+  "version": "0.1.0",
   "private": true,
   "spine": {
     "endpoint": "https://mcp.spineworkspace.com/mcp",
-    "published": false,
-    "note": "Generic MCP client configuration. Not a running server."
+    "published": true,
+    "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
+    "hostMarketplaceSubmitted": false,
+    "connected": false,
+    "note": "Published in the Spine catalog. A generic MCP client config. Not connected."
   }
 }
