@@ -1,0 +1,13 @@
+{
+  "name": "spine-network-grok",
+  "version": "0.1.0",
+  "private": true,
+  "spine": {
+    "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "published": true,
+    "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
+    "hostMarketplaceSubmitted": false,
+    "connected": false,
+    "note": "Published in the Spine catalog. Not submitted to a Grok marketplace. Not authorized."
+  }
+}
