@@ -1,0 +1,689 @@
+{
+  "source": {
+    "revision": "f9cd42b622a6b75c3e6a73a72c94dbff0c18e7ce",
+    "path": "packages/workbench-config/src/domain-apps.ts"
+  },
+  "domains": [
+    {
+      "id": "executive",
+      "name": "Executive & Strategy",
+      "workbenchId": "wb-founder",
+      "projectionSlugs": ["founderops", "founder"],
+      "skills": [
+        {
+          "id": "objective-evidence", "name": "Review objective evidence",
+          "reads": ["Adopted objectives", "KPI history", "Source evidence"],
+          "tools": ["get_goals", "get_kpis", "get_evidence"],
+          "output": "Objective scorecard with source references and evidence gaps",
+          "note": "Trace progress against adopted objectives and flag gaps that require an owner."
+        },
+        {
+          "id": "decision-brief", "name": "Prepare a decision brief",
+          "reads": ["Open decisions", "Prior commitments", "Dependencies"],
+          "tools": ["get_decisions", "get_commitments", "get_related"],
+          "output": "Decision brief with options, dependencies and proposed owners",
+          "note": "Connect a pending leadership decision to the commitments it changes."
+        },
+        {
+          "id": "portfolio-impact", "name": "Summarize portfolio impact",
+          "reads": ["Portfolio Work", "Changes", "Impact evidence"],
+          "tools": ["get_work", "get_impact_summary"],
+          "output": "Portfolio impact brief ordered by affected objectives and Work",
+          "note": "Group changes by business impact and identify the Work that requires leadership attention."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "operating-review", "name": "Executive operating review",
+          "trigger": "The executive team opens its scheduled operating review.",
+          "skills": ["objective-evidence", "portfolio-impact"],
+          "approval": {"reviewer": "Executive sponsor", "requiredFor": "Publishing changes to objectives, owners or executive commitments"},
+          "output": "Operating review brief and owned follow-up Work",
+          "verification": "Match scorecard figures to their source versions and confirm accepted follow-ups have owners and dates.",
+          "note": "Move from current KPI evidence to an owned leadership review."
+        },
+        {
+          "id": "decision-follow-through", "name": "Leadership decision follow-through",
+          "trigger": "A strategic decision is requested or an adopted commitment changes.",
+          "skills": ["portfolio-impact", "decision-brief"],
+          "approval": {"reviewer": "Authorized decision owner", "requiredFor": "Adopting a decision and committing teams to its consequences"},
+          "output": "Versioned decision and linked commitments",
+          "verification": "Read back the decision version and confirm affected Work links and owner acknowledgments.",
+          "note": "Carry leadership decisions into the Work they affect."
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "name": "Sales & Pipeline",
+      "workbenchId": "wb-sales",
+      "projectionSlugs": ["sales"],
+      "skills": [
+        {
+          "id": "deal-qualification", "name": "Qualify deal evidence",
+          "reads": ["Account ID", "Opportunity records", "Stakeholders", "Next steps"],
+          "tools": ["get_entity_detail", "get_related", "get_evidence"],
+          "output": "Opportunity brief with verified signals and missing qualification evidence",
+          "note": "Check stage evidence and buyer commitments against the authorized account context."
+        },
+        {
+          "id": "forecast-review", "name": "Review forecast assumptions",
+          "reads": ["Pipeline snapshot", "Forecast changes", "Commitments"],
+          "tools": ["get_kpis", "get_changes", "get_commitments"],
+          "output": "Forecast variance brief with traceable deals and assumptions",
+          "note": "Explain movements in the forecast and call out assumptions that need seller confirmation."
+        },
+        {
+          "id": "customer-handoff", "name": "Prepare a closed-won handoff",
+          "reads": ["Account ID", "Closed opportunity", "Commercial commitments"],
+          "tools": ["get_context", "get_commitments", "get_work"],
+          "output": "Account Success handoff brief linked to the originating Work",
+          "note": "Carry customer objectives, stakeholders and commitments into post-sale ownership."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "pipeline-forecast", "name": "Pipeline and forecast review",
+          "trigger": "A pipeline review starts or forecast assumptions materially change.",
+          "skills": ["deal-qualification", "forecast-review"],
+          "approval": {"reviewer": "Authorized sales manager", "requiredFor": "Publishing forecast revisions or changing opportunity commitments"},
+          "output": "Approved forecast snapshot and deal follow-ups",
+          "verification": "Compare adopted totals to the CRM snapshot and read back approved deal updates.",
+          "note": "Review the deals behind forecast changes before committing a revised number."
+        },
+        {
+          "id": "closed-won-transition", "name": "Closed-won transition to Account Success",
+          "trigger": "The source opportunity records a closed-won transition.",
+          "skills": ["deal-qualification", "customer-handoff"],
+          "approval": {"reviewer": "Sales owner and receiving Account Success owner", "requiredFor": "Confirming the handoff scope and acceptance of transferred commitments"},
+          "output": "Accepted handoff with an accountable next owner",
+          "verification": "Verify Account ID, originating Work ID and the receiving owner's acknowledgment.",
+          "note": "Keep the customer commitments traceable when responsibility passes from Sales to Account Success."
+        }
+      ]
+    },
+    {
+      "id": "revenue-operations",
+      "name": "Revenue Operations",
+      "workbenchId": "wb-revops",
+      "projectionSlugs": ["revops"],
+      "skills": [
+        {
+          "id": "pipeline-reconciliation", "name": "Reconcile pipeline records",
+          "reads": ["Source CRM records", "Pipeline snapshots", "Entity relationships"],
+          "tools": ["get_changes", "get_related", "get_evidence"],
+          "output": "Discrepancy register with source versions and affected records",
+          "note": "Identify duplicate, stale and conflicting CRM records that distort reporting."
+        },
+        {
+          "id": "funnel-diagnostics", "name": "Diagnose funnel changes",
+          "reads": ["Stage transitions", "Conversion KPIs", "Attribution evidence"],
+          "tools": ["get_kpis", "get_history", "get_signals"],
+          "output": "Funnel variance brief with impacted stages and evidence gaps",
+          "note": "Compare conversion and aging against the authorized funnel definitions."
+        },
+        {
+          "id": "routing-impact", "name": "Assess routing change impact",
+          "reads": ["Routing rules", "Ownership assignments", "Affected Work"],
+          "tools": ["get_context", "get_change_impact", "get_available_actions"],
+          "output": "Proposed routing change with affected owners and verification conditions",
+          "note": "Prepare the impact case for an ownership, territory or routing change."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "revenue-data-quality", "name": "Revenue data quality review",
+          "trigger": "A reporting close, drift signal or data quality review identifies discrepancies.",
+          "skills": ["pipeline-reconciliation", "funnel-diagnostics"],
+          "approval": {"reviewer": "Revenue Operations data owner", "requiredFor": "Applying source record corrections or changes to reporting definitions"},
+          "output": "Reviewed discrepancy queue and reconciliation evidence",
+          "verification": "Recalculate reconciled totals from the authoritative source and confirm receipts for approved corrections.",
+          "note": "Trace revenue reporting problems to source record and definition changes."
+        },
+        {
+          "id": "routing-change", "name": "Routing and ownership change",
+          "trigger": "A territory, routing or data ownership change is proposed.",
+          "skills": ["pipeline-reconciliation", "routing-impact"],
+          "approval": {"reviewer": "Authorized Revenue Operations owner", "requiredFor": "Activating the exact revised rule and its ownership impact"},
+          "output": "Versioned routing proposal and verification plan",
+          "verification": "Read back the activated rule version and compare approved sample assignments to expected ownership.",
+          "note": "Review how a rule change will affect current accounts and opportunities."
+        }
+      ]
+    },
+    {
+      "id": "customer-success",
+      "name": "Customer Success",
+      "workbenchId": "wb-account-success",
+      "projectionSlugs": ["account-success", "cs", "technical-account-success"],
+      "skills": [
+        {
+          "id": "account-health", "name": "Explain account health",
+          "reads": ["Account ID", "Health signals", "Source evidence"],
+          "tools": ["get_context", "get_signals", "get_evidence"],
+          "output": "Account health brief with cited drivers and confidence gaps",
+          "note": "Explain changes in account health using evidence linked to the authorized Account ID."
+        },
+        {
+          "id": "renewal-readiness", "name": "Assess renewal readiness",
+          "reads": ["Account ID", "Renewal dates", "Adoption KPIs", "Commitments"],
+          "tools": ["get_kpis", "get_commitments", "get_history"],
+          "output": "Renewal brief with value evidence, owners and decision dates",
+          "note": "Identify open obligations and evidence needed before a renewal decision."
+        },
+        {
+          "id": "success-plan", "name": "Prepare a success plan",
+          "reads": ["Account ID", "Customer objectives", "Open risks", "Active Work"],
+          "tools": ["get_goals", "get_signals", "get_work"],
+          "output": "Draft success plan with milestones, dependencies and proposed owners",
+          "note": "Align proposed actions to the customer's recorded objectives and known risks."
+        },
+        {
+          "id": "integration-diagnostics", "name": "Investigate integration health",
+          "surfaceSlug": "technical-account-success",
+          "reads": ["Account ID", "Integration health", "Technical incidents", "Change events"],
+          "tools": ["get_signals", "get_changes", "get_evidence"],
+          "output": "Technical health brief with confirmed signals and investigation priorities",
+          "note": "Correlate recent integration changes with observed customer impact."
+        },
+        {
+          "id": "technical-escalation", "name": "Prepare a technical escalation",
+          "surfaceSlug": "technical-account-success",
+          "reads": ["Account ID", "Incident evidence", "Technical ownership", "Reproduction evidence"],
+          "tools": ["get_context", "get_related", "get_work"],
+          "output": "Engineering handoff with severity, impact, Work ID and evidence",
+          "note": "Package the authorized evidence an engineering owner needs to act on a customer blocker."
+        },
+        {
+          "id": "implementation-readiness", "name": "Review implementation readiness",
+          "surfaceSlug": "technical-account-success",
+          "reads": ["Account ID", "Implementation milestones", "Acceptance criteria", "Integration test evidence"],
+          "tools": ["get_work", "get_commitments", "get_evidence"],
+          "output": "Readiness brief with customer acceptance, open risks and validation evidence",
+          "note": "Check implementation gates against agreed criteria and identify unresolved blockers."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "at-risk-intervention", "name": "At-risk account intervention",
+          "trigger": "An account health change or an open customer commitment crosses a review threshold.",
+          "skills": ["account-health", "success-plan"],
+          "approval": {"reviewer": "Authorized Account Success owner", "requiredFor": "Changing the recovery plan or sending a customer commitment"},
+          "output": "Risk response plan with owner, next action and review date",
+          "verification": "Confirm the risk and approved actions on the same Account ID and read back the updated plan.",
+          "note": "Trace an account risk from evidence through the approved response."
+        },
+        {
+          "id": "renewal-review", "name": "Renewal and value review",
+          "trigger": "An account enters its renewal review period.",
+          "skills": ["account-health", "renewal-readiness"],
+          "approval": {"reviewer": "Account Success and authorized commercial owner", "requiredFor": "Sharing a renewal proposal or commercial commitment"},
+          "output": "Renewal readiness and value brief",
+          "verification": "Confirm dates, renewal terms and accepted next steps against the authorized account sources.",
+          "note": "Review customer value and open commitments before the renewal decision."
+        },
+        {
+          "id": "technical-escalation", "name": "Technical account escalation",
+          "surfaceSlug": "technical-account-success",
+          "trigger": "A technical blocker or integration incident affects an authorized customer account.",
+          "skills": ["integration-diagnostics", "technical-escalation"],
+          "approval": {"reviewer": "Technical account owner and authorized incident lead", "requiredFor": "Escalating customer data or sending a technical commitment outside the team"},
+          "output": "Escalated Work with evidence, owner and customer-impact checkpoint",
+          "verification": "Match the engineering receipt, Account ID and Work ID. Confirm the impact and any recovery claim against current telemetry.",
+          "note": "Hand off customer technical evidence while preserving account scope and the same Work record."
+        },
+        {
+          "id": "implementation-gate", "name": "Technical implementation readiness review",
+          "surfaceSlug": "technical-account-success",
+          "trigger": "A customer implementation reaches a technical acceptance milestone.",
+          "skills": ["integration-diagnostics", "implementation-readiness"],
+          "approval": {"reviewer": "Authorized technical lead and customer acceptance owner", "requiredFor": "Recording production readiness or accepting a milestone exception"},
+          "output": "Reviewed technical milestone with acceptance and validation evidence",
+          "verification": "Confirm test results, approved exceptions and customer acceptance against the exact milestone version.",
+          "note": "Carry implementation readiness decisions into continued Account Success Work."
+        }
+      ]
+    },
+    {
+      "id": "customer-support",
+      "name": "Customer Support",
+      "workbenchId": "wb-service",
+      "projectionSlugs": ["support", "service"],
+      "skills": [
+        {
+          "id": "case-triage", "name": "Triage case evidence",
+          "reads": ["Support case", "Service targets", "Customer context"],
+          "tools": ["get_context", "get_signals", "get_related"],
+          "output": "Case triage brief with urgency, owner and escalation criteria",
+          "note": "Identify operational impact and tie the case to its authorized customer and related incidents."
+        },
+        {
+          "id": "response-draft", "name": "Draft an evidence-based response",
+          "reads": ["Case history", "Approved knowledge", "Prior customer commitments"],
+          "tools": ["get_history", "get_relevant_knowledge", "get_commitments"],
+          "output": "Reviewed-source response draft with evidence references",
+          "note": "Prepare a response using permitted case evidence and verified knowledge."
+        },
+        {
+          "id": "resolution-review", "name": "Verify resolution evidence",
+          "reads": ["Case lifecycle", "Resolution evidence", "Related incidents"],
+          "tools": ["get_work", "get_evidence", "get_related"],
+          "output": "Resolution brief with remaining follow-up and customer verification",
+          "note": "Establish whether the observed customer issue is resolved before recommending closure."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "case-escalation", "name": "Case triage and escalation",
+          "trigger": "A new priority case arrives or a service target is at risk.",
+          "skills": ["case-triage", "response-draft"],
+          "approval": {"reviewer": "Authorized support lead", "requiredFor": "External escalation or commitments beyond the current support authority"},
+          "output": "Case escalation with acknowledged ownership and response draft",
+          "verification": "Confirm the case receipt, queue assignment, active clock and accepted next action.",
+          "note": "Move a case to the right owner with enough evidence for immediate follow-up."
+        },
+        {
+          "id": "case-closeout", "name": "Case closeout and customer follow-up",
+          "trigger": "The assigned team records a possible resolution.",
+          "skills": ["resolution-review", "response-draft"],
+          "approval": {"reviewer": "Authorized case owner", "requiredFor": "Sending a customer follow-up or closing a case under review"},
+          "output": "Verified case outcome and approved customer follow-up",
+          "verification": "Read back the source case status and verify the resolution evidence and any communication receipt.",
+          "note": "Close support Work after verifying the observed result and next customer commitment."
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing & Demand",
+      "workbenchId": "wb-marketing",
+      "projectionSlugs": ["marketing", "content", "campaigns"],
+      "skills": [
+        {
+          "id": "campaign-brief", "name": "Prepare a campaign brief",
+          "reads": ["Campaign objectives", "Approved messaging", "Channel plan"],
+          "tools": ["get_goals", "get_context", "get_relevant_knowledge"],
+          "output": "Campaign brief with audience, messaging, owner and success measures",
+          "note": "Align campaign planning to adopted objectives and approved source material."
+        },
+        {
+          "id": "audience-review", "name": "Review audience readiness",
+          "reads": ["Audience definitions", "Approved targeting rules", "Campaign dependencies"],
+          "tools": ["get_entity_detail", "get_related", "get_evidence"],
+          "output": "Audience readiness brief with evidence and unresolved approval checks",
+          "note": "Surface missing audience approvals and confirm launch dependencies."
+        },
+        {
+          "id": "performance-attribution", "name": "Explain campaign performance",
+          "reads": ["Campaign metrics", "Attribution basis", "Channel changes"],
+          "tools": ["get_kpis", "get_changes", "get_evidence"],
+          "output": "Performance brief with contributing channels and attribution limits",
+          "note": "Compare outcomes to agreed campaign measures and explain supported changes."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "campaign-launch", "name": "Campaign launch readiness",
+          "trigger": "A campaign enters launch review.",
+          "skills": ["campaign-brief", "audience-review"],
+          "approval": {"reviewer": "Authorized campaign owner and responsible reviewer", "requiredFor": "Publishing the approved assets, audience and launch plan"},
+          "output": "Reviewed campaign launch plan with asset and audience versions",
+          "verification": "Match the provider's observed campaign, audience and published asset versions to the approved plan.",
+          "note": "Carry the campaign brief and audience evidence through the final launch decision."
+        },
+        {
+          "id": "campaign-performance", "name": "Campaign performance review",
+          "trigger": "A campaign reaches a reporting checkpoint or performance materially changes.",
+          "skills": ["performance-attribution", "campaign-brief"],
+          "approval": {"reviewer": "Authorized campaign owner", "requiredFor": "Changing campaign spend, targeting or public assets"},
+          "output": "Performance review with proposed experiments and evidence",
+          "verification": "Compare reported metrics to the approved attribution window and record any adopted change and its owner.",
+          "note": "Translate performance evidence into reviewable campaign adjustments."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Billing",
+      "workbenchId": "wb-finance",
+      "projectionSlugs": ["finance"],
+      "skills": [
+        {
+          "id": "invoice-reconciliation", "name": "Reconcile invoice evidence",
+          "reads": ["Invoice records", "Payment receipts", "Ledger references"],
+          "tools": ["get_entity_detail", "get_related", "get_evidence"],
+          "output": "Invoice reconciliation list with matched receipts and unresolved differences",
+          "note": "Match amounts, currencies and record versions across permitted billing and payment evidence."
+        },
+        {
+          "id": "variance-review", "name": "Explain financial variance",
+          "reads": ["Approved financial baseline", "Actuals", "Period-end evidence"],
+          "tools": ["get_kpis", "get_changes", "get_evidence"],
+          "output": "Source-backed variance brief with timing and data gaps",
+          "note": "Explain observed variances against the approved baseline and surface unresolved items for Finance."
+        },
+        {
+          "id": "billing-exception", "name": "Prepare a billing exception",
+          "reads": ["Account and invoice references", "Billing terms", "Prior approvals"],
+          "tools": ["get_context", "get_history", "get_available_actions"],
+          "output": "Billing exception brief with proposed resolution and expected readback",
+          "note": "Gather the relevant invoice and contract evidence before preparing an exception for review."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "period-close", "name": "Period close evidence review",
+          "trigger": "Finance opens a reporting period close.",
+          "skills": ["invoice-reconciliation", "variance-review"],
+          "approval": {"reviewer": "Authorized finance controller", "requiredFor": "Posting adjustments or accepting unresolved close exceptions"},
+          "output": "Reconciled close review with exceptions, owners and supporting evidence",
+          "verification": "Compare approved figures to source balances and confirm receipts for any posted adjustments.",
+          "note": "Review close evidence and disputed balances before recording period outcomes."
+        },
+        {
+          "id": "billing-exception-resolution", "name": "Billing exception resolution",
+          "trigger": "A disputed charge or reconciliation difference is raised.",
+          "skills": ["invoice-reconciliation", "billing-exception"],
+          "approval": {"reviewer": "Authorized billing owner", "requiredFor": "Applying a credit, adjustment or other source-system billing change"},
+          "output": "Documented billing decision and independent readback",
+          "verification": "Verify the expected amount, currency and invoice status against the billing provider receipt and readback.",
+          "note": "Resolve billing exceptions with approval and source evidence."
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Operations & Process",
+      "workbenchId": "wb-operations",
+      "projectionSlugs": ["operations", "ops", "businessops"],
+      "skills": [
+        {
+          "id": "handoff-mapping", "name": "Trace process handoffs",
+          "reads": ["Process stages", "Work owners", "Dependencies"],
+          "tools": ["get_work", "get_related", "get_commitments"],
+          "output": "Process map with pending handoffs, owners and blocking commitments",
+          "note": "Identify where ownership changes and what evidence a receiving team needs."
+        },
+        {
+          "id": "cycle-time-analysis", "name": "Analyze process cycle time",
+          "reads": ["Work timestamps", "Process targets", "Exception history"],
+          "tools": ["get_kpis", "get_history", "get_signals"],
+          "output": "Bottleneck brief with elapsed-time breakdown and source context",
+          "note": "Compare observed cycle time against operating targets and identify recurring delays."
+        },
+        {
+          "id": "runbook-readiness", "name": "Review runbook readiness",
+          "reads": ["Runbook versions", "Process dependencies", "Control evidence"],
+          "tools": ["get_relevant_knowledge", "get_related", "get_evidence"],
+          "output": "Runbook revision brief with control checks and validation criteria",
+          "note": "Compare the proposed runbook to current practice and identify missing controls or owners."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "process-exception", "name": "Process exception response",
+          "trigger": "Work stalls at a handoff or misses an operating target.",
+          "skills": ["cycle-time-analysis", "handoff-mapping"],
+          "approval": {"reviewer": "Relevant process owner", "requiredFor": "Changing ownership, deadlines or exception treatment"},
+          "output": "Owned exception response with a restart or escalation decision",
+          "verification": "Confirm the receiving owner, updated deadline and next checkpoint on the same Work ID.",
+          "note": "Route an operating exception through the owner who can resolve the blockage."
+        },
+        {
+          "id": "runbook-change", "name": "Governed runbook change",
+          "trigger": "A recurring exception or process change warrants a runbook revision.",
+          "skills": ["handoff-mapping", "runbook-readiness"],
+          "approval": {"reviewer": "Authorized process and control owner", "requiredFor": "Publishing the new runbook version"},
+          "output": "Approved runbook revision and validation record",
+          "verification": "Read back the published version and check a representative case against the approved handoff and controls.",
+          "note": "Turn recurring process evidence into a reviewable runbook improvement."
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product & Adoption",
+      "workbenchId": "wb-product",
+      "projectionSlugs": ["product"],
+      "skills": [
+        {
+          "id": "feedback-synthesis", "name": "Synthesize product feedback",
+          "reads": ["Customer feedback", "Related requests", "Adoption context"],
+          "tools": ["get_context", "get_related", "get_evidence"],
+          "output": "Evidence-linked feedback themes with affected customers and gaps",
+          "note": "Group related requests and connect them to account context where authorized."
+        },
+        {
+          "id": "adoption-review", "name": "Assess feature adoption",
+          "reads": ["Adoption KPIs", "Feature changes", "Support signals"],
+          "tools": ["get_kpis", "get_changes", "get_signals"],
+          "output": "Adoption brief with measured usage and unresolved friction",
+          "note": "Compare usage against adopted success criteria and identify follow-up needs."
+        },
+        {
+          "id": "priority-brief", "name": "Prepare a roadmap priority brief",
+          "reads": ["Product objectives", "Affected Work", "Evidence of impact"],
+          "tools": ["get_goals", "get_work", "get_impact_summary"],
+          "output": "Roadmap options with evidence, trade-offs and known dependencies",
+          "note": "Compare candidate Work against customer needs, objectives and delivery dependencies."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "discovery-prioritization", "name": "Discovery and roadmap prioritization",
+          "trigger": "A discovery review considers new product opportunities.",
+          "skills": ["feedback-synthesis", "priority-brief"],
+          "approval": {"reviewer": "Authorized product owner", "requiredFor": "Changing adopted roadmap priorities or communicating commitments"},
+          "output": "Versioned priority decision with evidence and next discovery actions",
+          "verification": "Confirm the roadmap decision version, affected Work IDs and any communicated commitments.",
+          "note": "Carry product discovery evidence into an owned prioritization decision."
+        },
+        {
+          "id": "release-adoption", "name": "Feature release adoption review",
+          "trigger": "A released feature reaches an adoption checkpoint.",
+          "skills": ["adoption-review", "feedback-synthesis"],
+          "approval": {"reviewer": "Authorized product owner", "requiredFor": "Recording a release outcome or committing corrective work"},
+          "output": "Release adoption review with agreed success measures and follow-up",
+          "verification": "Compare reported adoption to the approved measurement window and confirm owned follow-up Work.",
+          "note": "Review observed usage and customer friction after a release."
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering & Delivery",
+      "workbenchId": "wb-engineering",
+      "projectionSlugs": ["productengineering", "engineering"],
+      "skills": [
+        {
+          "id": "incident-evidence", "name": "Assemble incident evidence",
+          "reads": ["Service signals", "Change timeline", "Verification evidence"],
+          "tools": ["get_signals", "get_changes", "get_evidence"],
+          "output": "Incident timeline with affected services and verified observations",
+          "note": "Match operational symptoms to deployments and dependencies using the permitted evidence."
+        },
+        {
+          "id": "release-readiness", "name": "Assess release readiness",
+          "reads": ["Release scope", "Acceptance tests", "Change and rollback plans"],
+          "tools": ["get_work", "get_evidence", "get_change_impact"],
+          "output": "Readiness brief with test coverage, change risk and rollback checks",
+          "note": "Identify missing validation and confirm the expected outcome for the release candidate."
+        },
+        {
+          "id": "delivery-risk", "name": "Assess delivery risk",
+          "reads": ["Milestones", "Blocking Work", "Commitments"],
+          "tools": ["get_work", "get_related", "get_commitments"],
+          "output": "Delivery risk brief with dependencies, owners and checkpoints",
+          "note": "Trace dependencies and commitments that could affect the delivery plan."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "incident-recovery", "name": "Incident coordination and recovery verification",
+          "trigger": "On-call confirms an incident affecting a supported service.",
+          "skills": ["incident-evidence", "delivery-risk"],
+          "approval": {"reviewer": "Authorized incident commander or change owner", "requiredFor": "Applying a production mitigation or publishing an external status update"},
+          "output": "Incident record with verified recovery evidence and follow-up Work",
+          "verification": "Match mitigation receipts to the incident and confirm sustained recovery from observed service telemetry.",
+          "note": "Keep incident impact, mitigation and recovery traceable in one Work record."
+        },
+        {
+          "id": "release-gate", "name": "Release readiness and verification",
+          "trigger": "A release candidate is submitted for go-live review.",
+          "skills": ["delivery-risk", "release-readiness"],
+          "approval": {"reviewer": "Authorized release owner", "requiredFor": "Deploying the exact reviewed release candidate"},
+          "output": "Release decision with acceptance evidence and observed rollout status",
+          "verification": "Confirm deployed version, health indicators and acceptance results against the approved release plan.",
+          "note": "Connect release approval to independent evidence of the actual rollout."
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "name": "People & Talent",
+      "workbenchId": "wb-humanresources",
+      "projectionSlugs": ["humanresources"],
+      "skills": [
+        {
+          "id": "hiring-coordination", "name": "Prepare hiring process coordination",
+          "reads": ["Authorized requisition", "Interview milestones", "Pending process tasks"],
+          "tools": ["get_work", "get_context", "get_commitments"],
+          "output": "Process brief with interview schedules, owners and outstanding steps",
+          "note": "Track authorized recruiting process tasks and route human hiring decisions to their owners."
+        },
+        {
+          "id": "onboarding-readiness", "name": "Review employee onboarding readiness",
+          "reads": ["Authorized onboarding tasks", "Joiner milestones", "Equipment and access status"],
+          "tools": ["get_work", "get_related", "get_evidence"],
+          "output": "Onboarding readiness brief with restricted references and responsible owners",
+          "note": "Identify outstanding onboarding work from access-controlled People context."
+        },
+        {
+          "id": "policy-guidance", "name": "Find approved People policy",
+          "reads": ["Published People policy", "Effective dates", "Role-specific guidance"],
+          "tools": ["get_relevant_knowledge", "get_history", "get_evidence"],
+          "output": "Policy references and questions for the authorized People owner",
+          "note": "Retrieve policy versions applicable to the requested process and surface items for human review."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "hiring-process-review", "name": "Hiring process coordination review",
+          "trigger": "An approved requisition reaches a scheduling or process checkpoint.",
+          "skills": ["hiring-coordination", "policy-guidance"],
+          "approval": {"reviewer": "Authorized recruiting owner", "requiredFor": "External candidate communication or an approved process exception"},
+          "output": "Recruiting process checklist with owners and outstanding actions",
+          "verification": "Confirm the approved schedule and recruiting system receipts using permitted references.",
+          "note": "Keep recruiting logistics and policy evidence available to authorized human decision owners."
+        },
+        {
+          "id": "joiner-onboarding", "name": "Employee onboarding readiness review",
+          "trigger": "An authorized new-joiner case reaches its pre-start checkpoint.",
+          "skills": ["onboarding-readiness", "policy-guidance"],
+          "approval": {"reviewer": "Authorized People owner and access approver", "requiredFor": "Granting access or approving an onboarding exception"},
+          "output": "Onboarding checklist with verified readiness and outstanding tasks",
+          "verification": "Read back approved access and task statuses from the responsible source systems.",
+          "note": "Coordinate new-joiner tasks while preserving employee record permissions."
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal & Compliance",
+      "workbenchId": "wb-legal",
+      "projectionSlugs": ["legal"],
+      "skills": [
+        {
+          "id": "contract-review-prep", "name": "Prepare a contract review packet",
+          "reads": ["Authorized drafts", "Version history", "Approved playbook references"],
+          "tools": ["get_history", "get_relevant_knowledge", "get_evidence"],
+          "output": "Versioned review packet with sourced differences and questions for counsel",
+          "note": "Collect changed clauses and policy references for the authorized legal reviewer."
+        },
+        {
+          "id": "obligation-index", "name": "Index approved obligations",
+          "reads": ["Executed agreement", "Confirmed obligations", "Owners and dates"],
+          "tools": ["get_context", "get_commitments", "get_related"],
+          "output": "Obligation review list with source references, dates and owners",
+          "note": "Trace approved obligations to agreement evidence and identify follow-ups for counsel."
+        },
+        {
+          "id": "control-evidence", "name": "Assemble compliance control evidence",
+          "reads": ["Applicable controls", "Source evidence", "Open findings"],
+          "tools": ["get_evidence", "get_signals", "get_work"],
+          "output": "Control evidence packet with scope, dates and evidence gaps",
+          "note": "Link control evidence to the applicable Work and record gaps requiring a human decision."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "contract-review", "name": "Contract review and approval",
+          "trigger": "An authorized contract draft enters review.",
+          "skills": ["contract-review-prep", "obligation-index"],
+          "approval": {"reviewer": "Authorized legal reviewer and signatory", "requiredFor": "Approving final terms or releasing a document for signature"},
+          "output": "Reviewed contract version and linked obligations for follow-up",
+          "verification": "Compare the approved and signed document versions and confirm the accepted obligations.",
+          "note": "Give human reviewers the version and clause evidence needed to approve the exact agreement."
+        },
+        {
+          "id": "compliance-evidence-review", "name": "Compliance evidence and obligations review",
+          "trigger": "A compliance control or confirmed obligation reaches a review checkpoint.",
+          "skills": ["obligation-index", "control-evidence"],
+          "approval": {"reviewer": "Authorized compliance or legal owner", "requiredFor": "Attesting control completion or signing off on a finding"},
+          "output": "Scoped evidence packet and reviewed remediation Work",
+          "verification": "Confirm evidence freshness and match the reviewed decision to the correct obligation or control version.",
+          "note": "Keep compliance findings connected to the evidence reviewed and the responsible owner."
+        }
+      ]
+    },
+    {
+      "id": "platform-administration",
+      "name": "Platform & Administration Workbench",
+      "workbenchId": null,
+      "projectionSlugs": [],
+      "skills": [
+        {
+          "id": "connector-readiness", "name": "Review connector activation readiness",
+          "reads": ["Connector listing", "Tenant-scoped binding evidence", "Connection readiness results"],
+          "tools": ["get_context", "get_evidence", "get_work"],
+          "output": "Connector activation brief with allowed scope and missing readiness evidence",
+          "note": "Compare the selected catalog route with the tenant's observed activation and verification evidence."
+        },
+        {
+          "id": "mcp-access-review", "name": "Review Spine Network MCP access",
+          "reads": ["Authorized workspace policy", "Available capabilities", "Access evidence"],
+          "tools": ["get_active_context", "get_available_actions", "get_evidence"],
+          "output": "Access review with effective capability scope and policy dependencies",
+          "note": "Confirm the capability scope the signed-in actor can use through Spine Network MCP."
+        },
+        {
+          "id": "continuity-validation", "name": "Verify an IW-Continuity handoff",
+          "reads": ["Work ID", "Permitted continuity references", "Pending commitments", "Handoff evidence"],
+          "tools": ["get_my_continuity", "get_context_continuity", "get_work"],
+          "output": "Continuity verification brief with matched Work, decisions and outstanding steps",
+          "note": "Compare authorized source and destination context for the same shared Work."
+        }
+      ],
+      "workflows": [
+        {
+          "id": "connector-activation-verification", "name": "Connector activation verification",
+          "trigger": "A tenant administrator requests activation of an approved Marketplace connector.",
+          "skills": ["connector-readiness", "mcp-access-review"],
+          "approval": {"reviewer": "Authorized tenant administrator and account owner", "requiredFor": "Binding the exact provider account and granting capability access"},
+          "output": "Tenant-scoped activation evidence with permitted capabilities and a readback result",
+          "verification": "Confirm the signed-in binding, granted scope and authorized readback for the selected account.",
+          "note": "Verify the Marketplace-to-Platform activation path through identity, consent, binding and readback."
+        },
+        {
+          "id": "cross-host-resume", "name": "Verify cross-host Work resume",
+          "trigger": "An authorized user requests to resume Work from another approved host.",
+          "skills": ["mcp-access-review", "continuity-validation"],
+          "approval": {"reviewer": "Authorized Work owner or delegate", "requiredFor": "Confirming the recipient and permitted handoff context"},
+          "output": "Resume checkpoint with verified Work ID, decisions and next action",
+          "verification": "Read back the same Work on the destination through Spine Network MCP and compare the scoped IW-Continuity references with Platform.",
+          "note": "Verify cross-host continuity while retaining the effective workspace and actor grants."
+        }
+      ]
+    }
+  ]
+}

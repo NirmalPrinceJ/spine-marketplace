@@ -129,7 +129,7 @@
       "platformId": "iw-spine-network",
       "distribution": "distribution/generic-mcp/package.json",
       "hostMarketplaceSubmitted": false,
-      "note": "Distribution metadata for the shared Spine Network MCP endpoint.",
+      "note": "Shared MCP entry for permitted business context, Work, continuity and governed capabilities.",
       "market": "internal",
       "published": true,
       "connected": false

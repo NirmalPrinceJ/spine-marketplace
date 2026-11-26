@@ -40,10 +40,720 @@
       "id": "workflow-handoff",
       "name": "Cross-host handoff",
       "kind": "workflow",
+      "delivery": "catalog-template",
       "reads": [
-        "Host pair"
+        "Work ID",
+        "Approved destination host",
+        "Scoped handoff context"
       ],
-      "note": "Native workflow name. IW-Continuity-bridge is not connected.",
+      "trigger": "The Work owner requests a handoff to an authorized host or participant.",
+      "skillIds": [
+        "skill-spine-network-discovery",
+        "skill-continuity-handoff"
+      ],
+      "approval": {
+        "reviewer": "Authorized Work owner or delegate",
+        "requiredFor": "Confirming the recipient and the exact context allowed to travel"
+      },
+      "output": "Scoped handoff and a resume checkpoint for the same Work ID",
+      "verification": "Open the Work on the destination through Spine Network MCP after sign-in. Confirm the Work ID, current decisions, pending commitments and effective access against Platform.",
+      "note": "Use IW-Continuity Bridge to resume shared Work with the authorized context and the latest verified outcomes.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-spine-network-context",
+      "name": "Open governed Work in Spine Network MCP",
+      "kind": "workflow",
+      "delivery": "catalog-template",
+      "trigger": "A signed-in user opens or resumes permitted Work from a supported host.",
+      "skillIds": [
+        "skill-spine-network-discovery"
+      ],
+      "approval": {
+        "reviewer": "Authorized workspace approver",
+        "requiredFor": "Any consequential action proposed from the context review"
+      },
+      "output": "Work context brief with evidence, available capabilities and a next action",
+      "verification": "Confirm the returned Work ID and evidence references against the authorized workspace view.",
+      "note": "Resolve permitted context through the shared Spine Network MCP entry.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-executive-operating-review",
+      "kind": "workflow",
+      "name": "Executive operating review",
+      "domainId": "executive",
+      "delivery": "catalog-template",
+      "note": "Move from current KPI evidence to an owned leadership review.",
+      "trigger": "The executive team opens its scheduled operating review.",
+      "skillIds": [
+        "skill-executive-objective-evidence",
+        "skill-executive-portfolio-impact"
+      ],
+      "approval": {
+        "reviewer": "Executive sponsor",
+        "requiredFor": "Publishing changes to objectives, owners or executive commitments"
+      },
+      "output": "Operating review brief and owned follow-up Work",
+      "verification": "Match scorecard figures to their source versions and confirm accepted follow-ups have owners and dates.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-executive-decision-follow-through",
+      "kind": "workflow",
+      "name": "Leadership decision follow-through",
+      "domainId": "executive",
+      "delivery": "catalog-template",
+      "note": "Carry leadership decisions into the Work they affect.",
+      "trigger": "A strategic decision is requested or an adopted commitment changes.",
+      "skillIds": [
+        "skill-executive-portfolio-impact",
+        "skill-executive-decision-brief"
+      ],
+      "approval": {
+        "reviewer": "Authorized decision owner",
+        "requiredFor": "Adopting a decision and committing teams to its consequences"
+      },
+      "output": "Versioned decision and linked commitments",
+      "verification": "Read back the decision version and confirm affected Work links and owner acknowledgments.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-sales-pipeline-forecast",
+      "kind": "workflow",
+      "name": "Pipeline and forecast review",
+      "domainId": "sales",
+      "delivery": "catalog-template",
+      "note": "Review the deals behind forecast changes before committing a revised number.",
+      "trigger": "A pipeline review starts or forecast assumptions materially change.",
+      "skillIds": [
+        "skill-sales-deal-qualification",
+        "skill-sales-forecast-review"
+      ],
+      "approval": {
+        "reviewer": "Authorized sales manager",
+        "requiredFor": "Publishing forecast revisions or changing opportunity commitments"
+      },
+      "output": "Approved forecast snapshot and deal follow-ups",
+      "verification": "Compare adopted totals to the CRM snapshot and read back approved deal updates.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-sales-closed-won-transition",
+      "kind": "workflow",
+      "name": "Closed-won transition to Account Success",
+      "domainId": "sales",
+      "delivery": "catalog-template",
+      "note": "Keep the customer commitments traceable when responsibility passes from Sales to Account Success.",
+      "trigger": "The source opportunity records a closed-won transition.",
+      "skillIds": [
+        "skill-sales-deal-qualification",
+        "skill-sales-customer-handoff"
+      ],
+      "approval": {
+        "reviewer": "Sales owner and receiving Account Success owner",
+        "requiredFor": "Confirming the handoff scope and acceptance of transferred commitments"
+      },
+      "output": "Accepted handoff with an accountable next owner",
+      "verification": "Verify Account ID, originating Work ID and the receiving owner's acknowledgment.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-revenue-operations-revenue-data-quality",
+      "kind": "workflow",
+      "name": "Revenue data quality review",
+      "domainId": "revenue-operations",
+      "delivery": "catalog-template",
+      "note": "Trace revenue reporting problems to source record and definition changes.",
+      "trigger": "A reporting close, drift signal or data quality review identifies discrepancies.",
+      "skillIds": [
+        "skill-revenue-operations-pipeline-reconciliation",
+        "skill-revenue-operations-funnel-diagnostics"
+      ],
+      "approval": {
+        "reviewer": "Revenue Operations data owner",
+        "requiredFor": "Applying source record corrections or changes to reporting definitions"
+      },
+      "output": "Reviewed discrepancy queue and reconciliation evidence",
+      "verification": "Recalculate reconciled totals from the authoritative source and confirm receipts for approved corrections.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-revenue-operations-routing-change",
+      "kind": "workflow",
+      "name": "Routing and ownership change",
+      "domainId": "revenue-operations",
+      "delivery": "catalog-template",
+      "note": "Review how a rule change will affect current accounts and opportunities.",
+      "trigger": "A territory, routing or data ownership change is proposed.",
+      "skillIds": [
+        "skill-revenue-operations-pipeline-reconciliation",
+        "skill-revenue-operations-routing-impact"
+      ],
+      "approval": {
+        "reviewer": "Authorized Revenue Operations owner",
+        "requiredFor": "Activating the exact revised rule and its ownership impact"
+      },
+      "output": "Versioned routing proposal and verification plan",
+      "verification": "Read back the activated rule version and compare approved sample assignments to expected ownership.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-customer-success-at-risk-intervention",
+      "kind": "workflow",
+      "name": "At-risk account intervention",
+      "domainId": "customer-success",
+      "delivery": "catalog-template",
+      "note": "Trace an account risk from evidence through the approved response.",
+      "trigger": "An account health change or an open customer commitment crosses a review threshold.",
+      "skillIds": [
+        "skill-customer-success-account-health",
+        "skill-customer-success-success-plan"
+      ],
+      "approval": {
+        "reviewer": "Authorized Account Success owner",
+        "requiredFor": "Changing the recovery plan or sending a customer commitment"
+      },
+      "output": "Risk response plan with owner, next action and review date",
+      "verification": "Confirm the risk and approved actions on the same Account ID and read back the updated plan.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-customer-success-renewal-review",
+      "kind": "workflow",
+      "name": "Renewal and value review",
+      "domainId": "customer-success",
+      "delivery": "catalog-template",
+      "note": "Review customer value and open commitments before the renewal decision.",
+      "trigger": "An account enters its renewal review period.",
+      "skillIds": [
+        "skill-customer-success-account-health",
+        "skill-customer-success-renewal-readiness"
+      ],
+      "approval": {
+        "reviewer": "Account Success and authorized commercial owner",
+        "requiredFor": "Sharing a renewal proposal or commercial commitment"
+      },
+      "output": "Renewal readiness and value brief",
+      "verification": "Confirm dates, renewal terms and accepted next steps against the authorized account sources.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-customer-success-technical-escalation",
+      "kind": "workflow",
+      "name": "Technical account escalation",
+      "domainId": "customer-success",
+      "surfaceSlug": "technical-account-success",
+      "delivery": "catalog-template",
+      "note": "Hand off customer technical evidence while preserving account scope and the same Work record.",
+      "trigger": "A technical blocker or integration incident affects an authorized customer account.",
+      "skillIds": [
+        "skill-customer-success-integration-diagnostics",
+        "skill-customer-success-technical-escalation"
+      ],
+      "approval": {
+        "reviewer": "Technical account owner and authorized incident lead",
+        "requiredFor": "Escalating customer data or sending a technical commitment outside the team"
+      },
+      "output": "Escalated Work with evidence, owner and customer-impact checkpoint",
+      "verification": "Match the engineering receipt, Account ID and Work ID. Confirm the impact and any recovery claim against current telemetry.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-customer-success-implementation-gate",
+      "kind": "workflow",
+      "name": "Technical implementation readiness review",
+      "domainId": "customer-success",
+      "surfaceSlug": "technical-account-success",
+      "delivery": "catalog-template",
+      "note": "Carry implementation readiness decisions into continued Account Success Work.",
+      "trigger": "A customer implementation reaches a technical acceptance milestone.",
+      "skillIds": [
+        "skill-customer-success-integration-diagnostics",
+        "skill-customer-success-implementation-readiness"
+      ],
+      "approval": {
+        "reviewer": "Authorized technical lead and customer acceptance owner",
+        "requiredFor": "Recording production readiness or accepting a milestone exception"
+      },
+      "output": "Reviewed technical milestone with acceptance and validation evidence",
+      "verification": "Confirm test results, approved exceptions and customer acceptance against the exact milestone version.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-customer-support-case-escalation",
+      "kind": "workflow",
+      "name": "Case triage and escalation",
+      "domainId": "customer-support",
+      "delivery": "catalog-template",
+      "note": "Move a case to the right owner with enough evidence for immediate follow-up.",
+      "trigger": "A new priority case arrives or a service target is at risk.",
+      "skillIds": [
+        "skill-customer-support-case-triage",
+        "skill-customer-support-response-draft"
+      ],
+      "approval": {
+        "reviewer": "Authorized support lead",
+        "requiredFor": "External escalation or commitments beyond the current support authority"
+      },
+      "output": "Case escalation with acknowledged ownership and response draft",
+      "verification": "Confirm the case receipt, queue assignment, active clock and accepted next action.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-customer-support-case-closeout",
+      "kind": "workflow",
+      "name": "Case closeout and customer follow-up",
+      "domainId": "customer-support",
+      "delivery": "catalog-template",
+      "note": "Close support Work after verifying the observed result and next customer commitment.",
+      "trigger": "The assigned team records a possible resolution.",
+      "skillIds": [
+        "skill-customer-support-resolution-review",
+        "skill-customer-support-response-draft"
+      ],
+      "approval": {
+        "reviewer": "Authorized case owner",
+        "requiredFor": "Sending a customer follow-up or closing a case under review"
+      },
+      "output": "Verified case outcome and approved customer follow-up",
+      "verification": "Read back the source case status and verify the resolution evidence and any communication receipt.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-marketing-campaign-launch",
+      "kind": "workflow",
+      "name": "Campaign launch readiness",
+      "domainId": "marketing",
+      "delivery": "catalog-template",
+      "note": "Carry the campaign brief and audience evidence through the final launch decision.",
+      "trigger": "A campaign enters launch review.",
+      "skillIds": [
+        "skill-marketing-campaign-brief",
+        "skill-marketing-audience-review"
+      ],
+      "approval": {
+        "reviewer": "Authorized campaign owner and responsible reviewer",
+        "requiredFor": "Publishing the approved assets, audience and launch plan"
+      },
+      "output": "Reviewed campaign launch plan with asset and audience versions",
+      "verification": "Match the provider's observed campaign, audience and published asset versions to the approved plan.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-marketing-campaign-performance",
+      "kind": "workflow",
+      "name": "Campaign performance review",
+      "domainId": "marketing",
+      "delivery": "catalog-template",
+      "note": "Translate performance evidence into reviewable campaign adjustments.",
+      "trigger": "A campaign reaches a reporting checkpoint or performance materially changes.",
+      "skillIds": [
+        "skill-marketing-performance-attribution",
+        "skill-marketing-campaign-brief"
+      ],
+      "approval": {
+        "reviewer": "Authorized campaign owner",
+        "requiredFor": "Changing campaign spend, targeting or public assets"
+      },
+      "output": "Performance review with proposed experiments and evidence",
+      "verification": "Compare reported metrics to the approved attribution window and record any adopted change and its owner.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-finance-period-close",
+      "kind": "workflow",
+      "name": "Period close evidence review",
+      "domainId": "finance",
+      "delivery": "catalog-template",
+      "note": "Review close evidence and disputed balances before recording period outcomes.",
+      "trigger": "Finance opens a reporting period close.",
+      "skillIds": [
+        "skill-finance-invoice-reconciliation",
+        "skill-finance-variance-review"
+      ],
+      "approval": {
+        "reviewer": "Authorized finance controller",
+        "requiredFor": "Posting adjustments or accepting unresolved close exceptions"
+      },
+      "output": "Reconciled close review with exceptions, owners and supporting evidence",
+      "verification": "Compare approved figures to source balances and confirm receipts for any posted adjustments.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-finance-billing-exception-resolution",
+      "kind": "workflow",
+      "name": "Billing exception resolution",
+      "domainId": "finance",
+      "delivery": "catalog-template",
+      "note": "Resolve billing exceptions with approval and source evidence.",
+      "trigger": "A disputed charge or reconciliation difference is raised.",
+      "skillIds": [
+        "skill-finance-invoice-reconciliation",
+        "skill-finance-billing-exception"
+      ],
+      "approval": {
+        "reviewer": "Authorized billing owner",
+        "requiredFor": "Applying a credit, adjustment or other source-system billing change"
+      },
+      "output": "Documented billing decision and independent readback",
+      "verification": "Verify the expected amount, currency and invoice status against the billing provider receipt and readback.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-operations-process-exception",
+      "kind": "workflow",
+      "name": "Process exception response",
+      "domainId": "operations",
+      "delivery": "catalog-template",
+      "note": "Route an operating exception through the owner who can resolve the blockage.",
+      "trigger": "Work stalls at a handoff or misses an operating target.",
+      "skillIds": [
+        "skill-operations-cycle-time-analysis",
+        "skill-operations-handoff-mapping"
+      ],
+      "approval": {
+        "reviewer": "Relevant process owner",
+        "requiredFor": "Changing ownership, deadlines or exception treatment"
+      },
+      "output": "Owned exception response with a restart or escalation decision",
+      "verification": "Confirm the receiving owner, updated deadline and next checkpoint on the same Work ID.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-operations-runbook-change",
+      "kind": "workflow",
+      "name": "Governed runbook change",
+      "domainId": "operations",
+      "delivery": "catalog-template",
+      "note": "Turn recurring process evidence into a reviewable runbook improvement.",
+      "trigger": "A recurring exception or process change warrants a runbook revision.",
+      "skillIds": [
+        "skill-operations-handoff-mapping",
+        "skill-operations-runbook-readiness"
+      ],
+      "approval": {
+        "reviewer": "Authorized process and control owner",
+        "requiredFor": "Publishing the new runbook version"
+      },
+      "output": "Approved runbook revision and validation record",
+      "verification": "Read back the published version and check a representative case against the approved handoff and controls.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-product-discovery-prioritization",
+      "kind": "workflow",
+      "name": "Discovery and roadmap prioritization",
+      "domainId": "product",
+      "delivery": "catalog-template",
+      "note": "Carry product discovery evidence into an owned prioritization decision.",
+      "trigger": "A discovery review considers new product opportunities.",
+      "skillIds": [
+        "skill-product-feedback-synthesis",
+        "skill-product-priority-brief"
+      ],
+      "approval": {
+        "reviewer": "Authorized product owner",
+        "requiredFor": "Changing adopted roadmap priorities or communicating commitments"
+      },
+      "output": "Versioned priority decision with evidence and next discovery actions",
+      "verification": "Confirm the roadmap decision version, affected Work IDs and any communicated commitments.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-product-release-adoption",
+      "kind": "workflow",
+      "name": "Feature release adoption review",
+      "domainId": "product",
+      "delivery": "catalog-template",
+      "note": "Review observed usage and customer friction after a release.",
+      "trigger": "A released feature reaches an adoption checkpoint.",
+      "skillIds": [
+        "skill-product-adoption-review",
+        "skill-product-feedback-synthesis"
+      ],
+      "approval": {
+        "reviewer": "Authorized product owner",
+        "requiredFor": "Recording a release outcome or committing corrective work"
+      },
+      "output": "Release adoption review with agreed success measures and follow-up",
+      "verification": "Compare reported adoption to the approved measurement window and confirm owned follow-up Work.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-engineering-incident-recovery",
+      "kind": "workflow",
+      "name": "Incident coordination and recovery verification",
+      "domainId": "engineering",
+      "delivery": "catalog-template",
+      "note": "Keep incident impact, mitigation and recovery traceable in one Work record.",
+      "trigger": "On-call confirms an incident affecting a supported service.",
+      "skillIds": [
+        "skill-engineering-incident-evidence",
+        "skill-engineering-delivery-risk"
+      ],
+      "approval": {
+        "reviewer": "Authorized incident commander or change owner",
+        "requiredFor": "Applying a production mitigation or publishing an external status update"
+      },
+      "output": "Incident record with verified recovery evidence and follow-up Work",
+      "verification": "Match mitigation receipts to the incident and confirm sustained recovery from observed service telemetry.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-engineering-release-gate",
+      "kind": "workflow",
+      "name": "Release readiness and verification",
+      "domainId": "engineering",
+      "delivery": "catalog-template",
+      "note": "Connect release approval to independent evidence of the actual rollout.",
+      "trigger": "A release candidate is submitted for go-live review.",
+      "skillIds": [
+        "skill-engineering-delivery-risk",
+        "skill-engineering-release-readiness"
+      ],
+      "approval": {
+        "reviewer": "Authorized release owner",
+        "requiredFor": "Deploying the exact reviewed release candidate"
+      },
+      "output": "Release decision with acceptance evidence and observed rollout status",
+      "verification": "Confirm deployed version, health indicators and acceptance results against the approved release plan.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-people-hiring-process-review",
+      "kind": "workflow",
+      "name": "Hiring process coordination review",
+      "domainId": "people",
+      "delivery": "catalog-template",
+      "note": "Keep recruiting logistics and policy evidence available to authorized human decision owners.",
+      "trigger": "An approved requisition reaches a scheduling or process checkpoint.",
+      "skillIds": [
+        "skill-people-hiring-coordination",
+        "skill-people-policy-guidance"
+      ],
+      "approval": {
+        "reviewer": "Authorized recruiting owner",
+        "requiredFor": "External candidate communication or an approved process exception"
+      },
+      "output": "Recruiting process checklist with owners and outstanding actions",
+      "verification": "Confirm the approved schedule and recruiting system receipts using permitted references.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-people-joiner-onboarding",
+      "kind": "workflow",
+      "name": "Employee onboarding readiness review",
+      "domainId": "people",
+      "delivery": "catalog-template",
+      "note": "Coordinate new-joiner tasks while preserving employee record permissions.",
+      "trigger": "An authorized new-joiner case reaches its pre-start checkpoint.",
+      "skillIds": [
+        "skill-people-onboarding-readiness",
+        "skill-people-policy-guidance"
+      ],
+      "approval": {
+        "reviewer": "Authorized People owner and access approver",
+        "requiredFor": "Granting access or approving an onboarding exception"
+      },
+      "output": "Onboarding checklist with verified readiness and outstanding tasks",
+      "verification": "Read back approved access and task statuses from the responsible source systems.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-legal-contract-review",
+      "kind": "workflow",
+      "name": "Contract review and approval",
+      "domainId": "legal",
+      "delivery": "catalog-template",
+      "note": "Give human reviewers the version and clause evidence needed to approve the exact agreement.",
+      "trigger": "An authorized contract draft enters review.",
+      "skillIds": [
+        "skill-legal-contract-review-prep",
+        "skill-legal-obligation-index"
+      ],
+      "approval": {
+        "reviewer": "Authorized legal reviewer and signatory",
+        "requiredFor": "Approving final terms or releasing a document for signature"
+      },
+      "output": "Reviewed contract version and linked obligations for follow-up",
+      "verification": "Compare the approved and signed document versions and confirm the accepted obligations.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-legal-compliance-evidence-review",
+      "kind": "workflow",
+      "name": "Compliance evidence and obligations review",
+      "domainId": "legal",
+      "delivery": "catalog-template",
+      "note": "Keep compliance findings connected to the evidence reviewed and the responsible owner.",
+      "trigger": "A compliance control or confirmed obligation reaches a review checkpoint.",
+      "skillIds": [
+        "skill-legal-obligation-index",
+        "skill-legal-control-evidence"
+      ],
+      "approval": {
+        "reviewer": "Authorized compliance or legal owner",
+        "requiredFor": "Attesting control completion or signing off on a finding"
+      },
+      "output": "Scoped evidence packet and reviewed remediation Work",
+      "verification": "Confirm evidence freshness and match the reviewed decision to the correct obligation or control version.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-platform-administration-connector-activation-verification",
+      "kind": "workflow",
+      "name": "Connector activation verification",
+      "domainId": "platform-administration",
+      "delivery": "catalog-template",
+      "note": "Verify the Marketplace-to-Platform activation path through identity, consent, binding and readback.",
+      "trigger": "A tenant administrator requests activation of an approved Marketplace connector.",
+      "skillIds": [
+        "skill-platform-administration-connector-readiness",
+        "skill-platform-administration-mcp-access-review"
+      ],
+      "approval": {
+        "reviewer": "Authorized tenant administrator and account owner",
+        "requiredFor": "Binding the exact provider account and granting capability access"
+      },
+      "output": "Tenant-scoped activation evidence with permitted capabilities and a readback result",
+      "verification": "Confirm the signed-in binding, granted scope and authorized readback for the selected account.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-platform-administration-cross-host-resume",
+      "kind": "workflow",
+      "name": "Verify cross-host Work resume",
+      "domainId": "platform-administration",
+      "delivery": "catalog-template",
+      "note": "Verify cross-host continuity while retaining the effective workspace and actor grants.",
+      "trigger": "An authorized user requests to resume Work from another approved host.",
+      "skillIds": [
+        "skill-platform-administration-mcp-access-review",
+        "skill-platform-administration-continuity-validation"
+      ],
+      "approval": {
+        "reviewer": "Authorized Work owner or delegate",
+        "requiredFor": "Confirming the recipient and permitted handoff context"
+      },
+      "output": "Resume checkpoint with verified Work ID, decisions and next action",
+      "verification": "Read back the same Work on the destination through Spine Network MCP and compare the scoped IW-Continuity references with Platform.",
       "market": "internal",
       "published": true,
       "connected": false

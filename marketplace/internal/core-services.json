@@ -53,16 +53,18 @@
       "source": "spine-catalog",
       "category": "Core services",
       "id": "iw-continuity-bridge",
-      "name": "Continuity Bridge",
+      "name": "IW-Continuity Bridge",
       "kind": "service",
       "aliases": [
-        "continuity-bridge"
+        "continuity-bridge",
+        "iw-continuity"
       ],
       "reads": [
-        "Host pair",
-        "Handoff"
+        "Authorized Work context",
+        "Handoff history",
+        "Verified outcomes"
       ],
-      "note": "Carries authorized continuity between supported hosts.",
+      "note": "Relays permitted Work context, decisions and commitments between authorized hosts through Spine Network MCP.",
       "market": "internal",
       "published": true,
       "connected": false

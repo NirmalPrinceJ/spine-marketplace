@@ -18,6 +18,18 @@ The Platform Gateway supplies the public app, AI host, third-party MCP, accelera
 - `hostMarketplaceSubmitted: false` and `hostVerification: "unverified"` describe the distribution records in this repository. Host approval, installation, and OAuth consent have separate lifecycles.
 - Capability listings mirror public MCP tool names. Effective tool access depends on the signed-in user, workspace, and Platform policy.
 
+## Domain skills and workflows
+
+The domain packs cover the 13 Platform domain apps. The Customer Success pack has dedicated Technical Account Success entries alongside Account Success. Filter the catalog by `domainId` and, for a scoped entry, `surfaceSlug`. [Domain packs](marketplace/internal/domain-packs.json)
+
+- Skills declare required context, public MCP capability references, and the artifact they prepare. [Skills](marketplace/internal/skills.json)
+- Workflows declare an ordered list of skills, a trigger, the authorized human approval point, an output, and the evidence needed to verify the result. [Workflows](marketplace/internal/workflows.json)
+- Spine Network MCP opens permitted Work and capabilities on supported hosts. IW-Continuity Bridge carries scoped context and commitments so an authorized participant can resume the same Work ID. Both have reusable skills and workflows in the domain pack index.
+
+These are catalog templates. The Platform owns activation, permissions, approvals and outcome verification.
+
+Edit domain definitions in [the domain pack source](marketplace/sources/domain-packs.json). The domain list follows the [Platform domain app registry](https://github.com/SpineInnovTech/spineworkspace-live/blob/f9cd42b622a6b75c3e6a73a72c94dbff0c18e7ce/packages/workbench-config/src/domain-apps.ts).
+
 ## Set up Spine Network MCP
 
 Use `https://mcp.spineworkspace.com/mcp` with Streamable HTTP and OAuth. Add the server using your host's setup below and sign in through One Auth when prompted. Merge configuration examples into the existing file for the selected host.
@@ -50,4 +62,4 @@ npm test
 - `sync:gateway` reads the signed-out public Gateway response and keeps the discovery fields in [the Gateway snapshot](marketplace/sources/gateway.json). Run `npm run sync:gateway -- --check` to compare the live response with the committed snapshot. Use `--from <gateway-response.json>` to refresh from a captured response.
 - `sync:mcp` reads tool names from `services/mcp-connector/server.json` at a specified Platform commit and records the revision in [the tool snapshot](marketplace/sources/public-tools.json).
 - Edit the public descriptions, shelf assignments, and Workbench mappings in [the editorial source](marketplace/sources/editorial.json). Workbench route IDs follow [the Platform domain catalog](https://github.com/SpineInnovTech/spineworkspace-live/blob/f9cd42b622a6b75c3e6a73a72c94dbff0c18e7ce/packages/workbench-config/src/domain-catalog.ts).
-- `npm test` verifies the source projections, IDs and aliases, routing references, host artifacts, and generated files offline. Package details use [the JSON Schema](marketplace/schemas/package.schema.json).
+- `npm test` verifies the source projections, domain coverage, skill and workflow references, routing, host artifacts, and generated files offline. Package details use [the JSON Schema](marketplace/schemas/package.schema.json).

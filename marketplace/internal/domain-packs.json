@@ -1,0 +1,256 @@
+{
+  "marketplace": "internal",
+  "published": true,
+  "delivery": "catalog-template",
+  "source": {
+    "revision": "f9cd42b622a6b75c3e6a73a72c94dbff0c18e7ce",
+    "path": "packages/workbench-config/src/domain-apps.ts"
+  },
+  "shared": {
+    "network": {
+      "packageId": "spine-network-mcp",
+      "skillId": "skill-spine-network-discovery",
+      "workflowId": "workflow-spine-network-context"
+    },
+    "continuity": {
+      "packageId": "iw-continuity-bridge",
+      "skillId": "skill-continuity-handoff",
+      "workflowId": "workflow-handoff"
+    }
+  },
+  "packs": [
+    {
+      "id": "executive",
+      "name": "Executive & Strategy",
+      "workbenchId": "wb-founder",
+      "projectionSlugs": [
+        "founderops",
+        "founder"
+      ],
+      "skillIds": [
+        "skill-executive-objective-evidence",
+        "skill-executive-decision-brief",
+        "skill-executive-portfolio-impact"
+      ],
+      "workflowIds": [
+        "workflow-executive-operating-review",
+        "workflow-executive-decision-follow-through"
+      ]
+    },
+    {
+      "id": "sales",
+      "name": "Sales & Pipeline",
+      "workbenchId": "wb-sales",
+      "projectionSlugs": [
+        "sales"
+      ],
+      "skillIds": [
+        "skill-sales-deal-qualification",
+        "skill-sales-forecast-review",
+        "skill-sales-customer-handoff"
+      ],
+      "workflowIds": [
+        "workflow-sales-pipeline-forecast",
+        "workflow-sales-closed-won-transition"
+      ]
+    },
+    {
+      "id": "revenue-operations",
+      "name": "Revenue Operations",
+      "workbenchId": "wb-revops",
+      "projectionSlugs": [
+        "revops"
+      ],
+      "skillIds": [
+        "skill-revenue-operations-pipeline-reconciliation",
+        "skill-revenue-operations-funnel-diagnostics",
+        "skill-revenue-operations-routing-impact"
+      ],
+      "workflowIds": [
+        "workflow-revenue-operations-revenue-data-quality",
+        "workflow-revenue-operations-routing-change"
+      ]
+    },
+    {
+      "id": "customer-success",
+      "name": "Customer Success",
+      "workbenchId": "wb-account-success",
+      "projectionSlugs": [
+        "account-success",
+        "cs",
+        "technical-account-success"
+      ],
+      "skillIds": [
+        "skill-customer-success-account-health",
+        "skill-customer-success-renewal-readiness",
+        "skill-customer-success-success-plan",
+        "skill-customer-success-integration-diagnostics",
+        "skill-customer-success-technical-escalation",
+        "skill-customer-success-implementation-readiness"
+      ],
+      "workflowIds": [
+        "workflow-customer-success-at-risk-intervention",
+        "workflow-customer-success-renewal-review",
+        "workflow-customer-success-technical-escalation",
+        "workflow-customer-success-implementation-gate"
+      ]
+    },
+    {
+      "id": "customer-support",
+      "name": "Customer Support",
+      "workbenchId": "wb-service",
+      "projectionSlugs": [
+        "support",
+        "service"
+      ],
+      "skillIds": [
+        "skill-customer-support-case-triage",
+        "skill-customer-support-response-draft",
+        "skill-customer-support-resolution-review"
+      ],
+      "workflowIds": [
+        "workflow-customer-support-case-escalation",
+        "workflow-customer-support-case-closeout"
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing & Demand",
+      "workbenchId": "wb-marketing",
+      "projectionSlugs": [
+        "marketing",
+        "content",
+        "campaigns"
+      ],
+      "skillIds": [
+        "skill-marketing-campaign-brief",
+        "skill-marketing-audience-review",
+        "skill-marketing-performance-attribution"
+      ],
+      "workflowIds": [
+        "workflow-marketing-campaign-launch",
+        "workflow-marketing-campaign-performance"
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Billing",
+      "workbenchId": "wb-finance",
+      "projectionSlugs": [
+        "finance"
+      ],
+      "skillIds": [
+        "skill-finance-invoice-reconciliation",
+        "skill-finance-variance-review",
+        "skill-finance-billing-exception"
+      ],
+      "workflowIds": [
+        "workflow-finance-period-close",
+        "workflow-finance-billing-exception-resolution"
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Operations & Process",
+      "workbenchId": "wb-operations",
+      "projectionSlugs": [
+        "operations",
+        "ops",
+        "businessops"
+      ],
+      "skillIds": [
+        "skill-operations-handoff-mapping",
+        "skill-operations-cycle-time-analysis",
+        "skill-operations-runbook-readiness"
+      ],
+      "workflowIds": [
+        "workflow-operations-process-exception",
+        "workflow-operations-runbook-change"
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Product & Adoption",
+      "workbenchId": "wb-product",
+      "projectionSlugs": [
+        "product"
+      ],
+      "skillIds": [
+        "skill-product-feedback-synthesis",
+        "skill-product-adoption-review",
+        "skill-product-priority-brief"
+      ],
+      "workflowIds": [
+        "workflow-product-discovery-prioritization",
+        "workflow-product-release-adoption"
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering & Delivery",
+      "workbenchId": "wb-engineering",
+      "projectionSlugs": [
+        "productengineering",
+        "engineering"
+      ],
+      "skillIds": [
+        "skill-engineering-incident-evidence",
+        "skill-engineering-release-readiness",
+        "skill-engineering-delivery-risk"
+      ],
+      "workflowIds": [
+        "workflow-engineering-incident-recovery",
+        "workflow-engineering-release-gate"
+      ]
+    },
+    {
+      "id": "people",
+      "name": "People & Talent",
+      "workbenchId": "wb-humanresources",
+      "projectionSlugs": [
+        "humanresources"
+      ],
+      "skillIds": [
+        "skill-people-hiring-coordination",
+        "skill-people-onboarding-readiness",
+        "skill-people-policy-guidance"
+      ],
+      "workflowIds": [
+        "workflow-people-hiring-process-review",
+        "workflow-people-joiner-onboarding"
+      ]
+    },
+    {
+      "id": "legal",
+      "name": "Legal & Compliance",
+      "workbenchId": "wb-legal",
+      "projectionSlugs": [
+        "legal"
+      ],
+      "skillIds": [
+        "skill-legal-contract-review-prep",
+        "skill-legal-obligation-index",
+        "skill-legal-control-evidence"
+      ],
+      "workflowIds": [
+        "workflow-legal-contract-review",
+        "workflow-legal-compliance-evidence-review"
+      ]
+    },
+    {
+      "id": "platform-administration",
+      "name": "Platform & Administration Workbench",
+      "workbenchId": null,
+      "projectionSlugs": [],
+      "skillIds": [
+        "skill-platform-administration-connector-readiness",
+        "skill-platform-administration-mcp-access-review",
+        "skill-platform-administration-continuity-validation"
+      ],
+      "workflowIds": [
+        "workflow-platform-administration-connector-activation-verification",
+        "workflow-platform-administration-cross-host-resume"
+      ]
+    }
+  ]
+}

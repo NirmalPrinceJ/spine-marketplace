@@ -320,16 +320,18 @@
         },
         {
           "id": "iw-continuity-bridge",
-          "name": "Continuity Bridge",
+          "name": "IW-Continuity Bridge",
           "kind": "service",
           "aliases": [
-            "continuity-bridge"
+            "continuity-bridge",
+            "iw-continuity"
           ],
           "reads": [
-            "Host pair",
-            "Handoff"
+            "Authorized Work context",
+            "Handoff history",
+            "Verified outcomes"
           ],
-          "note": "Carries authorized continuity between supported hosts."
+          "note": "Relays permitted Work context, decisions and commitments between authorized hosts through Spine Network MCP."
         }
       ]
     },
@@ -507,6 +509,26 @@
             "Approvals"
           ],
           "note": "Reusable skill name. Not installed."
+        },
+        {
+          "id": "skill-spine-network-discovery",
+          "name": "Discover permitted Spine Network capabilities",
+          "kind": "skill",
+          "delivery": "catalog-template",
+          "reads": ["Active Work context", "Available actions"],
+          "capabilityIds": ["cap-get_active_context", "cap-get_available_actions"],
+          "output": "Evidence brief listing the context and actions available to the signed-in actor",
+          "note": "Inspect the context and capabilities the Platform actually grants for the selected Work."
+        },
+        {
+          "id": "skill-continuity-handoff",
+          "name": "Prepare an IW-Continuity handoff",
+          "kind": "skill",
+          "delivery": "catalog-template",
+          "reads": ["Work ID", "Permitted continuity", "Prepared Work"],
+          "capabilityIds": ["cap-get_my_continuity", "cap-get_work", "cap-get_prepared_work"],
+          "output": "Scoped handoff brief with Work ID, decisions, pending commitments and next action",
+          "note": "Use permitted context and evidence references to prepare a handoff for an authorized participant."
         }
       ]
     },
@@ -540,10 +562,32 @@
           "id": "workflow-handoff",
           "name": "Cross-host handoff",
           "kind": "workflow",
-          "reads": [
-            "Host pair"
-          ],
-          "note": "Native workflow name. IW-Continuity-bridge is not connected."
+          "delivery": "catalog-template",
+          "reads": ["Work ID", "Approved destination host", "Scoped handoff context"],
+          "trigger": "The Work owner requests a handoff to an authorized host or participant.",
+          "skillIds": ["skill-spine-network-discovery", "skill-continuity-handoff"],
+          "approval": {
+            "reviewer": "Authorized Work owner or delegate",
+            "requiredFor": "Confirming the recipient and the exact context allowed to travel"
+          },
+          "output": "Scoped handoff and a resume checkpoint for the same Work ID",
+          "verification": "Open the Work on the destination through Spine Network MCP after sign-in. Confirm the Work ID, current decisions, pending commitments and effective access against Platform.",
+          "note": "Use IW-Continuity Bridge to resume shared Work with the authorized context and the latest verified outcomes."
+        },
+        {
+          "id": "workflow-spine-network-context",
+          "name": "Open governed Work in Spine Network MCP",
+          "kind": "workflow",
+          "delivery": "catalog-template",
+          "trigger": "A signed-in user opens or resumes permitted Work from a supported host.",
+          "skillIds": ["skill-spine-network-discovery"],
+          "approval": {
+            "reviewer": "Authorized workspace approver",
+            "requiredFor": "Any consequential action proposed from the context review"
+          },
+          "output": "Work context brief with evidence, available capabilities and a next action",
+          "verification": "Confirm the returned Work ID and evidence references against the authorized workspace view.",
+          "note": "Resolve permitted context through the shared Spine Network MCP entry."
         }
       ]
     },
