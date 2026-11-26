@@ -1,0 +1,103 @@
+{
+  "marketplace": "internal",
+  "category": "MCP bundles",
+  "published": true,
+  "packages": [
+    {
+      "source": "platform-gateway",
+      "category": "MCP bundles",
+      "id": "mcp-bundle-stripe",
+      "name": "Stripe",
+      "description": "Payment and subscription webhooks",
+      "requiredConnectorIds": [
+        "stripe"
+      ],
+      "platformId": "stripe",
+      "kind": "package",
+      "note": "Gateway MCP bundle for connector-backed events.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "MCP bundles",
+      "id": "mcp-bundle-hubspot",
+      "name": "HubSpot",
+      "description": "CRM webhooks",
+      "requiredConnectorIds": [
+        "hubspot"
+      ],
+      "platformId": "hubspot",
+      "kind": "package",
+      "note": "Gateway MCP bundle for connector-backed events.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "MCP bundles",
+      "id": "mcp-bundle-slack",
+      "name": "Slack",
+      "description": "Slack workspace events",
+      "requiredConnectorIds": [
+        "slack"
+      ],
+      "platformId": "slack",
+      "kind": "package",
+      "note": "Gateway MCP bundle for connector-backed events.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "MCP bundles",
+      "id": "mcp-bundle-discord",
+      "name": "Discord",
+      "description": "Discord bot interactions",
+      "requiredConnectorIds": [
+        "discord"
+      ],
+      "platformId": "discord",
+      "kind": "package",
+      "note": "Gateway MCP bundle for connector-backed events.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "MCP bundles",
+      "id": "mcp-bundle-notion",
+      "name": "Notion",
+      "description": "Notion workspace webhooks",
+      "requiredConnectorIds": [
+        "notion"
+      ],
+      "platformId": "notion",
+      "kind": "package",
+      "note": "Gateway MCP bundle for connector-backed events.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "MCP bundles",
+      "id": "mcp-bundle-github",
+      "name": "GitHub",
+      "description": "",
+      "requiredConnectorIds": [
+        "github"
+      ],
+      "platformId": "github",
+      "kind": "package",
+      "note": "Gateway MCP bundle for connector-backed events.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

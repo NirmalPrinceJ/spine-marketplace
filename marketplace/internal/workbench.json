@@ -1,0 +1,202 @@
+{
+  "marketplace": "internal",
+  "category": "Workbench packages",
+  "published": true,
+  "packages": [
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-founder",
+      "name": "Executive",
+      "kind": "package",
+      "aliases": [
+        "wb-executive"
+      ],
+      "domainSlug": "founder",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-sales",
+      "name": "Sales",
+      "kind": "package",
+      "domainSlug": "sales",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-revops",
+      "name": "Revenue operations",
+      "kind": "package",
+      "aliases": [
+        "wb-revenue-operations"
+      ],
+      "domainSlug": "revops",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-account-success",
+      "name": "Customer success",
+      "kind": "package",
+      "aliases": [
+        "wb-customer-success"
+      ],
+      "domainSlug": "account-success",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-service",
+      "name": "Customer support",
+      "kind": "package",
+      "aliases": [
+        "wb-customer-support"
+      ],
+      "domainSlug": "service",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-marketing",
+      "name": "Marketing",
+      "kind": "package",
+      "domainSlug": "marketing",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-finance",
+      "name": "Finance",
+      "kind": "package",
+      "domainSlug": "finance",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-operations",
+      "name": "Operations",
+      "kind": "package",
+      "domainSlug": "operations",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-product",
+      "name": "Product",
+      "kind": "package",
+      "domainSlug": "product",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-engineering",
+      "name": "Engineering",
+      "kind": "package",
+      "domainSlug": "engineering",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-humanresources",
+      "name": "People",
+      "kind": "package",
+      "aliases": [
+        "wb-people"
+      ],
+      "domainSlug": "humanresources",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workbench packages",
+      "id": "wb-legal",
+      "name": "Legal",
+      "kind": "package",
+      "domainSlug": "legal",
+      "reads": [
+        "Domain view"
+      ],
+      "note": "Role-aware Workbench template for this domain.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

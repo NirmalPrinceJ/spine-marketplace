@@ -3,7 +3,40 @@
   "category": "MCP",
   "published": true,
   "packages": [
-    {"id": "tenant-mcp-pool", "name": "Tenant MCP Pool", "kind": "service", "market": "internal", "category": "MCP", "reads": ["Tool names", "Routes"], "note": "Spine-owned MCP infrastructure. A listed name is not an exposed tool."},
-    {"id": "spine-tools", "name": "Spine Tools MCP", "kind": "plugin", "market": "internal", "category": "MCP", "reads": ["Context", "Work", "Knowledge", "Actions"], "note": "Spine-owned MCP server. Publication to a host is not connected."}
+    {
+      "source": "spine-catalog",
+      "category": "MCP",
+      "id": "tenant-mcp-pool",
+      "name": "Tenant MCP Pool",
+      "kind": "mcp",
+      "reads": [
+        "Tool names",
+        "Routes"
+      ],
+      "note": "Shared Platform infrastructure for tenant-scoped MCP registration and access.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "MCP",
+      "id": "spine-tools-mcp",
+      "name": "Spine Tools MCP",
+      "kind": "mcp",
+      "aliases": [
+        "spine-tools"
+      ],
+      "reads": [
+        "Context",
+        "Work",
+        "Knowledge",
+        "Actions"
+      ],
+      "note": "Public semantic tool catalog for the single Spine Network MCP endpoint.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "marketplace": "internal",
+  "category": "Intelligence",
+  "published": true,
+  "packages": [
+    {
+      "source": "spine-catalog",
+      "category": "Intelligence",
+      "id": "twin",
+      "name": "Twin",
+      "kind": "service",
+      "reads": [
+        "Business context",
+        "Work"
+      ],
+      "note": "The role-aware AI counterpart for authorized context, work preparation, and governed proposals.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

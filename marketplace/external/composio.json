@@ -1,0 +1,407 @@
+{
+  "marketplace": "external",
+  "category": "Composio",
+  "published": true,
+  "packages": [
+    {
+      "source": "spine-catalog",
+      "category": "Composio",
+      "id": "composio",
+      "name": "Composio",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "asana",
+      "name": "Asana",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "asana",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "intercom",
+      "name": "Intercom",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "intercom",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Commerce and logistics",
+      "id": "shopify",
+      "name": "Shopify",
+      "departments": [
+        "Supply Chain"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "shopify",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "quickbooks",
+      "name": "QuickBooks",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "quickbooks",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "xero",
+      "name": "Xero",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "xero",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "dropbox",
+      "name": "Dropbox",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "dropbox",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "zoom",
+      "name": "Zoom",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "zoom",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Scheduling",
+      "id": "calendly",
+      "name": "Calendly",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "account-success",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "calendly",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Marketing automation and email",
+      "id": "mailchimp",
+      "name": "Mailchimp",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "marketing"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "mailchimp",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "discord",
+      "name": "Discord",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "discord",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Content, CMS and design",
+      "id": "figma",
+      "name": "Figma",
+      "departments": [
+        "Marketing"
+      ],
+      "domains": [
+        "content",
+        "marketing"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "figma",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "monday",
+      "name": "Monday.com",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "monday",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Work management",
+      "id": "clickup",
+      "name": "ClickUp",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "services",
+        "product-engineering",
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "clickup",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "freshdesk",
+      "name": "Freshdesk",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "freshdesk",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "composio",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "spine-network-perplexity",
+  "version": "0.1.0",
+  "private": true,
+  "spine": {
+    "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "transport": "streamable-http",
+    "authorization": "oauth",
+    "published": true,
+    "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
+    "hostMarketplaceSubmitted": false,
+    "connected": false,
+    "hostVerification": "unverified",
+    "surface": "Perplexity",
+    "setup": "manual"
+  }
+}

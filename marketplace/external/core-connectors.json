@@ -1,0 +1,675 @@
+{
+  "marketplace": "external",
+  "category": "Core connectors",
+  "published": true,
+  "packages": [
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "hubspot",
+      "name": "HubSpot",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "hubspot",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "salesforce",
+      "name": "Salesforce",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "salesforce",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "CRM",
+      "id": "pipedrive",
+      "name": "Pipedrive",
+      "departments": [
+        "Sales",
+        "RevOps",
+        "Customer Success"
+      ],
+      "domains": [
+        "sales",
+        "revops",
+        "account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "pipedrive",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "gmail",
+      "name": "Gmail",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "gmail",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "outlook",
+      "name": "Outlook",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "outlook",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "slack",
+      "name": "Slack",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "slack",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "teams",
+      "name": "Microsoft Teams",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "microsoft-teams",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Communication",
+      "id": "whatsapp",
+      "name": "WhatsApp Business",
+      "departments": [
+        "Sales",
+        "Marketing",
+        "Customer Success",
+        "Support"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "whatsapp-business",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "google-drive",
+      "name": "Google Drive",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": true,
+      "vetting": "listed",
+      "platformId": "google-drive",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "notion",
+      "name": "Notion",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "notion",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "sharepoint",
+      "name": "SharePoint",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "sharepoint",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "confluence",
+      "name": "Confluence",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "confluence",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Calendar",
+      "id": "google-calendar",
+      "name": "Google Calendar",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": true,
+      "vetting": "listed",
+      "platformId": "google-calendar",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Calendar",
+      "id": "outlook-calendar",
+      "name": "Outlook Calendar",
+      "departments": [
+        "Sales",
+        "Customer Success"
+      ],
+      "domains": [
+        "founder-business-ops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "outlook-calendar",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Customer support",
+      "id": "zendesk",
+      "name": "Zendesk",
+      "departments": [
+        "Support"
+      ],
+      "domains": [
+        "support",
+        "technical-account-success"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "zendesk",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "stripe",
+      "name": "Stripe",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "stripe",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "razorpay",
+      "name": "Razorpay",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "razorpay",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Finance and billing",
+      "id": "tally",
+      "name": "Tally",
+      "departments": [
+        "Finance"
+      ],
+      "domains": [
+        "finance"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "tally",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "jira",
+      "name": "Jira",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "jira",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "github",
+      "name": "GitHub",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "github",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "linear",
+      "name": "Linear",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "linear",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Files and knowledge",
+      "id": "airtable",
+      "name": "Airtable",
+      "departments": [
+        "Service Operations",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "content"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "airtable",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "postgresql",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Data and BI",
+      "id": "mysql",
+      "name": "MySQL",
+      "departments": [
+        "RevOps",
+        "Finance",
+        "Product"
+      ],
+      "domains": [
+        "founder-business-ops",
+        "revops"
+      ],
+      "routes": [
+        "spine-connector"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "mysql",
+      "kind": "connector",
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "core",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

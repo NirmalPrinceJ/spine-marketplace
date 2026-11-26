@@ -1,14 +1,44 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Marketplace package",
+  "title": "Marketplace package detail",
   "type": "object",
-  "required": ["id", "name", "kind", "market", "category", "note"],
+  "additionalProperties": false,
+  "required": ["id", "name", "kind", "market", "category", "note", "published", "connected", "source"],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$"},
+    "strings": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}}
+  },
   "properties": {
-    "id": {"type": "string"},
-    "name": {"type": "string"},
-    "kind": {"enum": ["connector", "plugin", "service", "agent", "skill", "capability", "workflow", "package"]},
+    "id": {"$ref": "#/$defs/id"},
+    "name": {"type": "string", "minLength": 1},
+    "kind": {"enum": ["connector", "plugin", "service", "agent", "skill", "capability", "workflow", "package", "mcp"]},
     "market": {"enum": ["internal", "external"]},
-    "category": {"type": "string"},
-    "note": {"type": "string"}
+    "category": {"type": "string", "minLength": 1},
+    "shelf": {"$ref": "#/$defs/id"},
+    "note": {"type": "string", "minLength": 1},
+    "source": {"enum": ["platform-gateway", "spine-catalog", "public-mcp-contract"]},
+    "published": {"const": true},
+    "connected": {"const": false},
+    "liveRead": {"type": "boolean"},
+    "hostMarketplaceSubmitted": {"const": false},
+    "platformId": {"$ref": "#/$defs/id"},
+    "domainSlug": {"$ref": "#/$defs/id"},
+    "aliases": {"$ref": "#/$defs/ids"},
+    "reads": {"$ref": "#/$defs/strings"},
+    "departments": {"$ref": "#/$defs/strings"},
+    "domains": {"$ref": "#/$defs/strings"},
+    "requiredConnectorIds": {"$ref": "#/$defs/ids"},
+    "description": {"type": "string"},
+    "routes": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"enum": ["spine-connector", "composio-managed", "composio-user-key"]}
+    },
+    "availability": {"enum": ["available", "not_available_yet"]},
+    "vetting": {"type": "string", "minLength": 1},
+    "registration": {"const": "not_registered"},
+    "linkedConnector": {"anyOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]},
+    "distribution": {"type": "string", "pattern": "^distribution/[a-z0-9-]+/package\\.json$"}
   }
 }

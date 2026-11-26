@@ -1,0 +1,63 @@
+{
+  "marketplace": "internal",
+  "category": "Skills",
+  "published": true,
+  "packages": [
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-discovery",
+      "name": "Connector discovery",
+      "kind": "skill",
+      "reads": [
+        "Connectors"
+      ],
+      "note": "Reusable skill name. Not installed.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-schema-map",
+      "name": "Schema mapping",
+      "kind": "skill",
+      "reads": [
+        "Schemas"
+      ],
+      "note": "Reusable skill name. Not installed.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-triage",
+      "name": "Signal triage",
+      "kind": "skill",
+      "reads": [
+        "Signals"
+      ],
+      "note": "Reusable skill name. Not installed.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-governed-execution",
+      "name": "Governed execution",
+      "kind": "skill",
+      "reads": [
+        "Approvals"
+      ],
+      "note": "Reusable skill name. Not installed.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "marketplace": "internal",
+  "category": "Accelerators",
+  "published": true,
+  "packages": [
+    {
+      "source": "platform-gateway",
+      "category": "Accelerators",
+      "id": "accelerator-subscription-metrics",
+      "name": "Subscription Metrics",
+      "requiredConnectorIds": [
+        "stripe"
+      ],
+      "platformId": "subscription-metrics",
+      "kind": "package",
+      "note": "Platform accelerator listing. Readiness follows its connector requirements.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Accelerators",
+      "id": "accelerator-finance",
+      "name": "Finance Accelerator",
+      "requiredConnectorIds": [
+        "quickbooks",
+        "stripe"
+      ],
+      "platformId": "finance",
+      "kind": "package",
+      "note": "Platform accelerator listing. Readiness follows its connector requirements.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Accelerators",
+      "id": "accelerator-support-marketing",
+      "name": "Support & Marketing",
+      "requiredConnectorIds": [
+        "zendesk",
+        "mailchimp"
+      ],
+      "platformId": "support-marketing",
+      "kind": "package",
+      "note": "Platform accelerator listing. Readiness follows its connector requirements.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Accelerators",
+      "id": "accelerator-engineering",
+      "name": "Engineering Accelerator",
+      "requiredConnectorIds": [
+        "github",
+        "jira"
+      ],
+      "platformId": "engineering",
+      "kind": "package",
+      "note": "Platform accelerator listing. Readiness follows its connector requirements.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Accelerators",
+      "id": "accelerator-hr",
+      "name": "HR Accelerator",
+      "requiredConnectorIds": [],
+      "platformId": "hr",
+      "kind": "package",
+      "note": "Platform accelerator listing. Readiness follows its connector requirements.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

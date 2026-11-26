@@ -3,11 +3,113 @@
   "category": "Agents",
   "published": true,
   "packages": [
-    {"id": "discovery-agent", "name": "Discovery Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Connectors", "Tools", "Schemas"], "note": "Discovers connectors, tools, schemas, and capabilities. Not deployed."},
-    {"id": "schema-agent", "name": "Schema Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Schemas", "Mappings"], "note": "Analyzes and maps incoming data structures. Not deployed."},
-    {"id": "adaptive-autotuner", "name": "Adaptive Autotuner", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Signals", "Proposals"], "note": "Evaluates and proposes platform improvements. Not deployed."},
-    {"id": "triage-agent", "name": "Triage Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Signals", "Work"], "note": "Classifies incoming signals and prioritizes work. Not deployed."},
-    {"id": "coworker-agent", "name": "Coworker Agent", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Delegated work"], "note": "Performs delegated business tasks under Twin. Not deployed."},
-    {"id": "hermes", "name": "Hermes", "kind": "agent", "market": "internal", "category": "Agents", "reads": ["Plans", "Verification"], "note": "Coordinates governed execution and verification. Not deployed."}
+    {
+      "source": "spine-catalog",
+      "category": "Agents",
+      "id": "agent-discovery",
+      "name": "Discovery Agent",
+      "kind": "agent",
+      "aliases": [
+        "discovery-agent"
+      ],
+      "reads": [
+        "Connectors",
+        "Tools",
+        "Schemas"
+      ],
+      "note": "Discovers connectors, tools, schemas, and capabilities.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Agents",
+      "id": "agent-schema",
+      "name": "Schema Agent",
+      "kind": "agent",
+      "aliases": [
+        "schema-agent"
+      ],
+      "reads": [
+        "Schemas",
+        "Mappings"
+      ],
+      "note": "Analyzes and maps incoming data structures.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Agents",
+      "id": "agent-autotuner",
+      "name": "Adaptive Autotuner",
+      "kind": "agent",
+      "aliases": [
+        "adaptive-autotuner"
+      ],
+      "reads": [
+        "Signals",
+        "Proposals"
+      ],
+      "note": "Evaluates signals and proposes platform improvements.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Agents",
+      "id": "agent-triage",
+      "name": "Triage Agent",
+      "kind": "agent",
+      "aliases": [
+        "triage-agent"
+      ],
+      "reads": [
+        "Signals",
+        "Work"
+      ],
+      "note": "Classifies incoming signals and prioritizes work.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Agents",
+      "id": "agent-coworker",
+      "name": "Coworker Agent",
+      "kind": "agent",
+      "aliases": [
+        "coworker-agent"
+      ],
+      "reads": [
+        "Delegated work"
+      ],
+      "note": "Prepares delegated business work under Twin.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Agents",
+      "id": "agent-hermes",
+      "name": "Hermes",
+      "kind": "agent",
+      "aliases": [
+        "hermes"
+      ],
+      "reads": [
+        "Plans",
+        "Verification"
+      ],
+      "note": "Coordinates governed execution and verifies outcomes.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
   ]
 }

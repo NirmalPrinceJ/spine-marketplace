@@ -1,0 +1,36 @@
+{
+  "marketplace": "internal",
+  "category": "Knowledge packages",
+  "published": true,
+  "packages": [
+    {
+      "source": "spine-catalog",
+      "category": "Knowledge packages",
+      "id": "knowledge-business-context",
+      "name": "Business context",
+      "kind": "package",
+      "reads": [
+        "Entities",
+        "Events"
+      ],
+      "note": "Knowledge package name. Not published as a schema release.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Knowledge packages",
+      "id": "knowledge-playbooks",
+      "name": "Playbooks",
+      "kind": "package",
+      "reads": [
+        "Guides"
+      ],
+      "note": "Knowledge package name. Not published.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

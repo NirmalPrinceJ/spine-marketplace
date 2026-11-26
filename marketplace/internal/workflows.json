@@ -1,0 +1,52 @@
+{
+  "marketplace": "internal",
+  "category": "Workflows",
+  "published": true,
+  "packages": [
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-connection",
+      "name": "Connection lifecycle",
+      "kind": "workflow",
+      "reads": [
+        "Consent",
+        "Bind",
+        "Readiness"
+      ],
+      "note": "Native workflow name. Not an installed orchestration package.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-approval",
+      "name": "Approval",
+      "kind": "workflow",
+      "reads": [
+        "Plan",
+        "Decision"
+      ],
+      "note": "Native workflow name. Not an installed orchestration package.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Workflows",
+      "id": "workflow-handoff",
+      "name": "Cross-host handoff",
+      "kind": "workflow",
+      "reads": [
+        "Host pair"
+      ],
+      "note": "Native workflow name. IW-Continuity-bridge is not connected.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

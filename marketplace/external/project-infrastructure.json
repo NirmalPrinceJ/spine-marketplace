@@ -1,0 +1,250 @@
+{
+  "marketplace": "external",
+  "category": "Project infrastructure",
+  "published": true,
+  "packages": [
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "gitlab",
+      "name": "GitLab",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "spine-connector",
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "listed",
+      "platformId": "gitlab",
+      "kind": "connector",
+      "reads": [
+        "Repositories",
+        "Pipelines"
+      ],
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Workflows",
+        "Runs"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "vercel",
+      "name": "Vercel",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Projects",
+        "Deployments"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "aws",
+      "name": "AWS",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Accounts",
+        "Resources"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "gcp",
+      "name": "Google Cloud",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Projects",
+        "Resources"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Subscriptions",
+        "Resources"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "docker",
+      "name": "Docker",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Images",
+        "Repositories"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Clusters",
+        "Workloads"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Project infrastructure",
+      "id": "terraform",
+      "name": "Terraform",
+      "kind": "connector",
+      "routes": [],
+      "availability": "not_available_yet",
+      "liveRead": false,
+      "reads": [
+        "Workspaces",
+        "Runs"
+      ],
+      "note": "Discovery listing awaiting a Platform connection route.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "datadog",
+      "name": "Datadog",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "composio-user-key"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "datadog",
+      "kind": "connector",
+      "reads": [
+        "Monitors",
+        "Services"
+      ],
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "platform-gateway",
+      "category": "Engineering and delivery",
+      "id": "pagerduty",
+      "name": "PagerDuty",
+      "departments": [
+        "Engineering",
+        "Product"
+      ],
+      "domains": [
+        "product-engineering"
+      ],
+      "routes": [
+        "composio-managed"
+      ],
+      "availability": "available",
+      "liveRead": false,
+      "vetting": "to-review",
+      "platformId": "pagerduty",
+      "kind": "connector",
+      "reads": [
+        "Incidents",
+        "Services"
+      ],
+      "note": "Connection options are listed by the Gateway. Account access follows Platform authorization.",
+      "market": "external",
+      "shelf": "project",
+      "published": true,
+      "connected": false
+    }
+  ]
+}

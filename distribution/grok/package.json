@@ -4,10 +4,14 @@
   "private": true,
   "spine": {
     "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "transport": "streamable-http",
+    "authorization": "oauth",
     "published": true,
     "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
     "hostMarketplaceSubmitted": false,
     "connected": false,
-    "note": "Published in the Spine catalog. Not submitted to a Grok marketplace. Not authorized."
+    "hostVerification": "unverified",
+    "surface": "Grok and Grok Build",
+    "setup": "manual-and-config"
   }
 }

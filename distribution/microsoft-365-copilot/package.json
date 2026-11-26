@@ -1,0 +1,17 @@
+{
+  "name": "spine-network-microsoft-365-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "spine": {
+    "endpoint": "https://mcp.spineworkspace.com/mcp",
+    "transport": "streamable-http",
+    "authorization": "oauth",
+    "published": true,
+    "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
+    "hostMarketplaceSubmitted": false,
+    "connected": false,
+    "hostVerification": "unverified",
+    "surface": "Microsoft 365 Copilot via Copilot Studio",
+    "setup": "manual"
+  }
+}

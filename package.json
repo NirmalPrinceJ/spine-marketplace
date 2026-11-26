@@ -1,0 +1,17 @@
+{
+  "name": "spineworkspace-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "generate": "node scripts/catalog.mjs",
+    "check": "node scripts/catalog.mjs --check",
+    "test": "node --test && npm run check",
+    "sync:gateway": "node scripts/sync-gateway.mjs",
+    "sync:mcp": "node scripts/sync-mcp.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0"
+  }
+}
