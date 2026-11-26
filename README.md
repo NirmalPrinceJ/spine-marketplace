@@ -2,14 +2,14 @@
 
 Published catalog for the SpineWorkspace platform.
 
-A listing in this repository is discoverable. It is not an installed connection, a running service, or a published host-marketplace package.
+A listing in this repository is published for discovery. It is not an installed connection, a running service, or a package submitted to a host marketplace.
 
-| Catalog | Path | Meaning |
-|---|---|---|
-| Internal | `marketplace/internal/marketplace.json` | Spine-owned services, agents, skills, and packages |
-| External | `marketplace/external/marketplace.json` | Host connectors, business connectors, MCP servers, and plugins |
-| Schema | `marketplace/schemas/package.schema.json` | Package shape |
+| Catalog | Path | Published | Connected |
+|---|---|---|---|
+| External | `marketplace/external/marketplace.json` | Yes. Hosts, core connectors, Composio, MCP registry. | No |
+| Internal | `marketplace/internal/marketplace.json` | Yes. Spine services, MCP, Twin, agents. | No |
+| Schema | `marketplace/schemas/package.schema.json` | Package shape | — |
 
-Host distribution files under `distribution/` point at `https://mcp.spineworkspace.com/mcp`. They are catalog files. They have not been submitted to ChatGPT, Claude, Cursor, or Gemini marketplaces.
+Host files under `distribution/` are published in this catalog and point at `https://mcp.spineworkspace.com/mcp`. `hostMarketplaceSubmitted` is false. They have not been submitted to ChatGPT, Claude, Cursor, Gemini, or Grok stores.
 
-Source of truth for the running app remains the platform repository. This repository is the published catalog.
+Google Drive and Google Calendar are the only core connectors marked `liveRead`. That is a read path, not a connection.
