@@ -1,0 +1,24 @@
+{
+  "marketplace": "internal",
+  "published": true,
+  "publishedAt": "2026-11-26",
+  "connected": false,
+  "note": "Spine-owned packages published for discovery. A listing is not a running service and not an installed connection.",
+  "packages": [
+    {"id": "spine-network-cursor", "name": "Spine Network for Cursor", "category": "host", "kind": "plugin", "published": true, "connected": false},
+    {"id": "spine-network-grok", "name": "Spine Network for Grok", "category": "host", "kind": "plugin", "published": true, "connected": false},
+    {"id": "spine-fabric", "name": "Spine Fabric", "category": "core", "kind": "service", "published": true, "connected": false},
+    {"id": "memory-engine", "name": "Memory Engine", "category": "core", "kind": "service", "published": true, "connected": false},
+    {"id": "knowledge-index", "name": "Knowledge Index", "category": "core", "kind": "service", "published": true, "connected": false},
+    {"id": "iw-continuity-bridge", "name": "IW-Continuity-bridge", "category": "core", "kind": "service", "published": true, "connected": false},
+    {"id": "tenant-mcp-pool", "name": "Tenant MCP Pool", "category": "mcp", "kind": "mcp", "published": true, "connected": false},
+    {"id": "spine-tools-mcp", "name": "Spine Tools MCP", "category": "mcp", "kind": "mcp", "published": true, "connected": false},
+    {"id": "twin", "name": "Twin", "category": "intelligence", "kind": "service", "published": true, "connected": false},
+    {"id": "agent-discovery", "name": "Discovery", "category": "agent", "kind": "agent", "published": true, "connected": false},
+    {"id": "agent-schema", "name": "Schema", "category": "agent", "kind": "agent", "published": true, "connected": false},
+    {"id": "agent-autotuner", "name": "Adaptive Autotuner", "category": "agent", "kind": "agent", "published": true, "connected": false},
+    {"id": "agent-triage", "name": "Triage", "category": "agent", "kind": "agent", "published": true, "connected": false},
+    {"id": "agent-coworker", "name": "Coworker", "category": "agent", "kind": "agent", "published": true, "connected": false},
+    {"id": "agent-hermes", "name": "Hermes", "category": "agent", "kind": "agent", "published": true, "connected": false}
+  ]
+}
