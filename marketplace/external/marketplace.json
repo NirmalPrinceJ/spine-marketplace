@@ -1,0 +1,92 @@
+{
+  "marketplace": "external",
+  "published": true,
+  "publishedAt": "2026-11-26",
+  "connected": false,
+  "note": "These packages are published in the Spine catalog. A listing is not installed, not connected, and not submitted to a host marketplace.",
+  "shelves": [
+    {
+      "id": "host",
+      "name": "Host connectors",
+      "packages": [
+        {"id": "cursor", "name": "Cursor", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "grok", "name": "Grok", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "chatgpt", "name": "ChatGPT", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "claude", "name": "Claude", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "gemini", "name": "Gemini", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "github-copilot", "name": "GitHub Copilot", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "microsoft-copilot", "name": "Microsoft 365 Copilot", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "windsurf", "name": "Windsurf", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false},
+        {"id": "perplexity", "name": "Perplexity", "kind": "plugin", "published": true, "connected": false, "hostMarketplaceSubmitted": false}
+      ]
+    },
+    {
+      "id": "core",
+      "name": "Core connectors",
+      "packages": [
+        {"id": "hubspot", "name": "HubSpot", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "salesforce", "name": "Salesforce", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "pipedrive", "name": "Pipedrive", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "gmail", "name": "Gmail", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "outlook", "name": "Outlook", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "slack", "name": "Slack", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "teams", "name": "Teams", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "whatsapp", "name": "WhatsApp", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "google-drive", "name": "Google Drive", "kind": "connector", "published": true, "connected": false, "liveRead": true},
+        {"id": "notion", "name": "Notion", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "sharepoint", "name": "SharePoint", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "confluence", "name": "Confluence", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "google-calendar", "name": "Google Calendar", "kind": "connector", "published": true, "connected": false, "liveRead": true},
+        {"id": "outlook-calendar", "name": "Outlook Calendar", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "zendesk", "name": "Zendesk", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "stripe", "name": "Stripe", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "razorpay", "name": "Razorpay", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "tally", "name": "Tally", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "jira", "name": "Jira", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "github", "name": "GitHub", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "linear", "name": "Linear", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "airtable", "name": "Airtable", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "postgresql", "name": "PostgreSQL", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "mysql", "name": "MySQL", "kind": "connector", "published": true, "connected": false, "liveRead": false}
+      ]
+    },
+    {
+      "id": "composio",
+      "name": "Composio",
+      "packages": [
+        {"id": "composio", "name": "Composio", "kind": "connector", "published": true, "connected": false},
+        {"id": "asana", "name": "Asana", "kind": "connector", "published": true, "connected": false},
+        {"id": "intercom", "name": "Intercom", "kind": "connector", "published": true, "connected": false},
+        {"id": "shopify", "name": "Shopify", "kind": "connector", "published": true, "connected": false},
+        {"id": "quickbooks", "name": "QuickBooks", "kind": "connector", "published": true, "connected": false},
+        {"id": "xero", "name": "Xero", "kind": "connector", "published": true, "connected": false},
+        {"id": "dropbox", "name": "Dropbox", "kind": "connector", "published": true, "connected": false},
+        {"id": "zoom", "name": "Zoom", "kind": "connector", "published": true, "connected": false},
+        {"id": "calendly", "name": "Calendly", "kind": "connector", "published": true, "connected": false},
+        {"id": "mailchimp", "name": "Mailchimp", "kind": "connector", "published": true, "connected": false},
+        {"id": "discord", "name": "Discord", "kind": "connector", "published": true, "connected": false},
+        {"id": "figma", "name": "Figma", "kind": "connector", "published": true, "connected": false},
+        {"id": "monday", "name": "Monday.com", "kind": "connector", "published": true, "connected": false},
+        {"id": "clickup", "name": "ClickUp", "kind": "connector", "published": true, "connected": false},
+        {"id": "freshdesk", "name": "Freshdesk", "kind": "connector", "published": true, "connected": false}
+      ]
+    },
+    {
+      "id": "mcp",
+      "name": "MCP registry",
+      "packages": [
+        {"id": "mcp-filesystem", "name": "Filesystem", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-fetch", "name": "Fetch", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-memory", "name": "Memory", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-github", "name": "GitHub", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-slack", "name": "Slack", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-postgresql", "name": "PostgreSQL", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-brave-search", "name": "Brave Search", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-sentry", "name": "Sentry", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-notion", "name": "Notion", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-stripe", "name": "Stripe", "kind": "mcp", "published": true, "connected": false},
+        {"id": "mcp-playwright", "name": "Playwright", "kind": "mcp", "published": true, "connected": false}
+      ]
+    }
+  ]
+}
