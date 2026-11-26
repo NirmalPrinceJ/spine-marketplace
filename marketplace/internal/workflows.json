@@ -1,0 +1,10 @@
+{
+  "marketplace": "internal",
+  "category": "Workflows",
+  "published": true,
+  "packages": [
+    {"id": "workflow-connection", "name": "Connection lifecycle", "kind": "workflow", "market": "internal", "category": "Workflows", "reads": ["Consent", "Bind", "Readiness"], "note": "Native workflow name. Not an installed orchestration package."},
+    {"id": "workflow-approval", "name": "Approval", "kind": "workflow", "market": "internal", "category": "Workflows", "reads": ["Plan", "Decision"], "note": "Native workflow name. Not an installed orchestration package."},
+    {"id": "workflow-handoff", "name": "Cross-host handoff", "kind": "workflow", "market": "internal", "category": "Workflows", "reads": ["Host pair"], "note": "Native workflow name. IW-Continuity-bridge is not connected."}
+  ]
+}

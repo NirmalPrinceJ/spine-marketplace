@@ -1,0 +1,9 @@
+{
+  "marketplace": "internal",
+  "category": "Knowledge packages",
+  "published": true,
+  "packages": [
+    {"id": "knowledge-business-context", "name": "Business context", "kind": "package", "market": "internal", "category": "Knowledge packages", "reads": ["Entities", "Events"], "note": "Knowledge package name. Not published as a schema release."},
+    {"id": "knowledge-playbooks", "name": "Playbooks", "kind": "package", "market": "internal", "category": "Knowledge packages", "reads": ["Guides"], "note": "Knowledge package name. Not published."}
+  ]
+}

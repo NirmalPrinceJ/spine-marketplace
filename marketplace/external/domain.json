@@ -1,0 +1,12 @@
+{
+  "marketplace": "external",
+  "category": "Domain connectors",
+  "published": true,
+  "packages": [
+    {"id": "gong", "name": "Gong", "kind": "connector", "market": "external", "shelf": "domain", "category": "Sales", "reads": ["Calls", "Deals"], "note": "Sales connector. No Gong adapter is wired."},
+    {"id": "docusign", "name": "DocuSign", "kind": "connector", "market": "external", "shelf": "domain", "category": "Legal", "reads": ["Envelopes"], "note": "Legal connector. No DocuSign adapter is wired."},
+    {"id": "bamboohr", "name": "BambooHR", "kind": "connector", "market": "external", "shelf": "domain", "category": "People", "reads": ["Employees"], "note": "People connector. No BambooHR adapter is wired."},
+    {"id": "workday", "name": "Workday", "kind": "connector", "market": "external", "shelf": "domain", "category": "People", "reads": ["Workers"], "note": "People connector. No Workday adapter is wired."},
+    {"id": "amplitude", "name": "Amplitude", "kind": "connector", "market": "external", "shelf": "domain", "category": "Product", "reads": ["Events"], "note": "Product connector. No Amplitude adapter is wired."}
+  ]
+}

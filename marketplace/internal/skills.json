@@ -1,0 +1,11 @@
+{
+  "marketplace": "internal",
+  "category": "Skills",
+  "published": true,
+  "packages": [
+    {"id": "skill-discovery", "name": "Connector discovery", "kind": "skill", "market": "internal", "category": "Skills", "reads": ["Connectors"], "note": "Reusable skill name. Not installed."},
+    {"id": "skill-schema-map", "name": "Schema mapping", "kind": "skill", "market": "internal", "category": "Skills", "reads": ["Schemas"], "note": "Reusable skill name. Not installed."},
+    {"id": "skill-triage", "name": "Signal triage", "kind": "skill", "market": "internal", "category": "Skills", "reads": ["Signals"], "note": "Reusable skill name. Not installed."},
+    {"id": "skill-governed-execution", "name": "Governed execution", "kind": "skill", "market": "internal", "category": "Skills", "reads": ["Approvals"], "note": "Reusable skill name. Not installed."}
+  ]
+}

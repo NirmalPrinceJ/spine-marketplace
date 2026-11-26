@@ -1,0 +1,18 @@
+{
+  "marketplace": "external",
+  "category": "Project infrastructure",
+  "published": true,
+  "packages": [
+    {"id": "gitlab", "name": "GitLab", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Repositories", "Pipelines"], "note": "Project infrastructure listing. No GitLab adapter is wired."},
+    {"id": "github-actions", "name": "GitHub Actions", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Workflows", "Runs"], "note": "Project infrastructure listing. No Actions adapter is wired."},
+    {"id": "vercel", "name": "Vercel", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Projects", "Deployments"], "note": "Project infrastructure listing. No Vercel adapter is wired."},
+    {"id": "aws", "name": "AWS", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Accounts", "Resources"], "note": "Project infrastructure listing. No AWS adapter is wired."},
+    {"id": "gcp", "name": "Google Cloud", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Projects", "Resources"], "note": "Project infrastructure listing. No Google Cloud adapter is wired."},
+    {"id": "azure", "name": "Microsoft Azure", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Subscriptions", "Resources"], "note": "Project infrastructure listing. No Azure adapter is wired."},
+    {"id": "docker", "name": "Docker", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Images", "Repositories"], "note": "Project infrastructure listing. No Docker adapter is wired."},
+    {"id": "kubernetes", "name": "Kubernetes", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Clusters", "Workloads"], "note": "Project infrastructure listing. No Kubernetes adapter is wired."},
+    {"id": "terraform", "name": "Terraform", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Workspaces", "Runs"], "note": "Project infrastructure listing. No Terraform adapter is wired."},
+    {"id": "datadog", "name": "Datadog", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Monitors", "Services"], "note": "Project infrastructure listing. No Datadog adapter is wired."},
+    {"id": "pagerduty", "name": "PagerDuty", "kind": "connector", "market": "external", "shelf": "project", "category": "Project infrastructure", "reads": ["Incidents", "Services"], "note": "Project infrastructure listing. No PagerDuty adapter is wired."}
+  ]
+}

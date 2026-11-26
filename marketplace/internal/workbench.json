@@ -1,0 +1,19 @@
+{
+  "marketplace": "internal",
+  "category": "Workbench packages",
+  "published": true,
+  "packages": [
+    {"id": "wb-executive", "name": "Executive", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-sales", "name": "Sales", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-revenue-operations", "name": "Revenue operations", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-customer-success", "name": "Customer success", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-customer-support", "name": "Customer support", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-marketing", "name": "Marketing", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-finance", "name": "Finance", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-operations", "name": "Operations", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-product", "name": "Product", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-engineering", "name": "Engineering", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-people", "name": "People", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."},
+    {"id": "wb-legal", "name": "Legal", "kind": "package", "market": "internal", "category": "Workbench packages", "reads": ["Domain view"], "note": "Workbench package. It is not a deployed application."}
+  ]
+}

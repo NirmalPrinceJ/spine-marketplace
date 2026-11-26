@@ -87,6 +87,34 @@
         {"id": "mcp-stripe", "name": "Stripe", "kind": "mcp", "published": true, "connected": false},
         {"id": "mcp-playwright", "name": "Playwright", "kind": "mcp", "published": true, "connected": false}
       ]
+    },
+    {
+      "id": "project",
+      "name": "Project infrastructure",
+      "packages": [
+        {"id": "gitlab", "name": "GitLab", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "github-actions", "name": "GitHub Actions", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "vercel", "name": "Vercel", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "aws", "name": "AWS", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "gcp", "name": "Google Cloud", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "azure", "name": "Microsoft Azure", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "docker", "name": "Docker", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "kubernetes", "name": "Kubernetes", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "terraform", "name": "Terraform", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "datadog", "name": "Datadog", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "pagerduty", "name": "PagerDuty", "kind": "connector", "published": true, "connected": false, "liveRead": false}
+      ]
+    },
+    {
+      "id": "domain",
+      "name": "Domain connectors",
+      "packages": [
+        {"id": "gong", "name": "Gong", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "docusign", "name": "DocuSign", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "bamboohr", "name": "BambooHR", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "workday", "name": "Workday", "kind": "connector", "published": true, "connected": false, "liveRead": false},
+        {"id": "amplitude", "name": "Amplitude", "kind": "connector", "published": true, "connected": false, "liveRead": false}
+      ]
     }
   ]
 }
