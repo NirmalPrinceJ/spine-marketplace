@@ -1,10 +1,13 @@
 {
   "name": "spine-network-vscode",
-  "version": "0.0.0-unreleased",
+  "version": "0.1.0",
   "private": true,
   "spine": {
     "endpoint": "https://mcp.spineworkspace.com/mcp",
-    "published": false,
-    "note": "VS Code extension notes. Not packaged."
+    "published": true,
+    "catalog": "https://github.com/NirmalPrinceJ/spine-marketplace",
+    "hostMarketplaceSubmitted": false,
+    "connected": false,
+    "note": "Published in the Spine catalog. Not submitted to the VS Code marketplace. Not installed."
   }
 }
