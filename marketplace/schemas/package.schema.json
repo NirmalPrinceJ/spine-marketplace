@@ -3,11 +3,14 @@
   "title": "Marketplace package detail",
   "type": "object",
   "additionalProperties": false,
+  "dependentRequired": {"surfaceSlug": ["domainId"]},
   "required": ["id", "name", "kind", "market", "category", "note", "published", "connected", "source"],
   "$defs": {
     "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$"},
     "strings": {"type": "array", "items": {"type": "string", "minLength": 1}},
-    "ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}}
+    "ids": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "references": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "text": {"type": "string", "minLength": 1}
   },
   "properties": {
     "id": {"$ref": "#/$defs/id"},
@@ -24,6 +27,20 @@
     "hostMarketplaceSubmitted": {"const": false},
     "platformId": {"$ref": "#/$defs/id"},
     "domainSlug": {"$ref": "#/$defs/id"},
+    "domainId": {"$ref": "#/$defs/id"},
+    "surfaceSlug": {"$ref": "#/$defs/id"},
+    "delivery": {"const": "catalog-template"},
+    "capabilityIds": {"$ref": "#/$defs/references"},
+    "skillIds": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/id"}},
+    "trigger": {"$ref": "#/$defs/text"},
+    "output": {"$ref": "#/$defs/text"},
+    "verification": {"$ref": "#/$defs/text"},
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewer", "requiredFor"],
+      "properties": {"reviewer": {"$ref": "#/$defs/text"}, "requiredFor": {"$ref": "#/$defs/text"}}
+    },
     "aliases": {"$ref": "#/$defs/ids"},
     "reads": {"$ref": "#/$defs/strings"},
     "departments": {"$ref": "#/$defs/strings"},
@@ -40,5 +57,22 @@
     "registration": {"const": "not_registered"},
     "linkedConnector": {"anyOf": [{"$ref": "#/$defs/id"}, {"type": "null"}]},
     "distribution": {"type": "string", "pattern": "^distribution/[a-z0-9-]+/package\\.json$"}
-  }
+  },
+  "allOf": [
+    {
+      "if": {"required": ["domainId"]},
+      "then": {
+        "required": ["delivery", "output"],
+        "properties": {"market": {"const": "internal"}, "kind": {"enum": ["skill", "workflow"]}}
+      }
+    },
+    {
+      "if": {"required": ["domainId", "kind"], "properties": {"kind": {"const": "skill"}}},
+      "then": {"required": ["reads", "capabilityIds"], "properties": {"reads": {"type": "array", "minItems": 1}}}
+    },
+    {
+      "if": {"required": ["domainId", "kind"], "properties": {"kind": {"const": "workflow"}}},
+      "then": {"required": ["skillIds", "trigger", "approval", "verification"]}
+    }
+  ]
 }

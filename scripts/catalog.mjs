@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { dirname, join } from "node:path";
 import Ajv from "ajv/dist/2020.js";
 import { buildDistribution } from "./distribution.mjs";
+import { buildDomainPacks, domainPackPath } from "./domain-packs.mjs";
 import {
   catalogUrl, gatewayUrl, json, projectGateway, readJson, root, uniqueBy,
 } from "./sources.mjs";
@@ -78,6 +79,9 @@ const external = [
 ];
 
 const network = gateway.internal.spineNetwork;
+const workbench = editorial.internalGroups.find((group) => group.id === "workbench");
+const domainPacks = buildDomainPacks(load("sources/domain-packs.json"), workbench.packages, contract.tools);
+const domainEntries = new Map([["skill", domainPacks.skills], ["workflow", domainPacks.workflows]]);
 const internal = [
   {
     id: "host", name: "Host packages", file: "host-packages",
@@ -86,10 +90,15 @@ const internal = [
       source: pkg.hostId ? "spine-catalog" : "platform-gateway",
       ...(!pkg.hostId && { platformId: network.id }),
       distribution: pkg.manifest, hostMarketplaceSubmitted: false,
-      note: "Distribution metadata for the shared Spine Network MCP endpoint.",
+      note: pkg.hostId
+        ? "Distribution metadata for the shared Spine Network MCP endpoint."
+        : "Shared MCP entry for permitted business context, Work, continuity and governed capabilities.",
     })),
   },
-  ...editorial.internalGroups.filter((group) => group.id !== "workbench"),
+  ...editorial.internalGroups.filter((group) => group !== workbench).map((group) => ({
+    ...group,
+    packages: [...group.packages, ...(domainEntries.get(group.id) ?? [])],
+  })),
   {
     id: "capability", name: "Capabilities", file: "capabilities",
     packages: contract.tools.map((name) => ({
@@ -97,7 +106,7 @@ const internal = [
       note: "Public MCP contract name. Workspace policy governs tool access and execution.",
     })),
   },
-  editorial.internalGroups.find((group) => group.id === "workbench"),
+  workbench,
   gatewayGroup("accelerator", "Accelerators", "accelerators", "package", gateway.internal.accelerators,
     "Platform accelerator listing. Readiness follows its connector requirements."),
   gatewayGroup("mcp-bundle", "MCP bundles", "mcp-bundles", "package", gateway.internal.mcpTools,
@@ -112,6 +121,23 @@ const internalGroups = internal.map((group) => generateGroup("internal", group))
 const externalCount = externalShelves.reduce((total, group) => total + group.packages.length, 0);
 const internalPackages = internalGroups.flatMap((group) =>
   group.packages.map((pkg) => ({ ...pkg, category: group.id })));
+const internalById = new Map(internalPackages.map((pkg) => [pkg.id, pkg]));
+const { network: networkPack, continuity } = domainPacks.index.shared;
+assert.equal(internalById.get(networkPack.packageId)?.kind, "mcp", "Missing Spine Network MCP package");
+assert.equal(internalById.get(continuity.packageId)?.kind, "service", "Missing IW-Continuity Bridge package");
+for (const entry of [networkPack, continuity]) {
+  assert.equal(internalById.get(entry.skillId)?.kind, "skill", `Missing shared skill: ${entry.skillId}`);
+  assert.equal(internalById.get(entry.workflowId)?.kind, "workflow", `Missing shared workflow: ${entry.workflowId}`);
+}
+for (const entry of internal.flatMap((group) => group.packages)) {
+  for (const id of entry.skillIds ?? []) {
+    assert.equal(internalById.get(id)?.kind, "skill", `Missing skill ${id} in ${entry.id}`);
+  }
+  for (const id of entry.capabilityIds ?? []) {
+    assert.equal(internalById.get(id)?.kind, "capability", `Missing public tool ${id} in ${entry.id}`);
+  }
+}
+files.set(domainPackPath, json(domainPacks.index));
 
 files.set("marketplace/external/marketplace.json", json({
   marketplace: "external", published: true, publishedAt, connected: false,
@@ -121,6 +147,7 @@ files.set("marketplace/external/marketplace.json", json({
 files.set("marketplace/internal/marketplace.json", json({
   marketplace: "internal", published: true, publishedAt, connected: false,
   note: "Spine packages available for discovery. Runtime readiness and access are evaluated by Platform.",
+  domainPacks: domainPackPath,
   groups: internalGroups.map(({ id, name, detail }) => ({ id, name, detail })),
   packages: internalPackages,
 }));
@@ -131,8 +158,16 @@ files.set("marketplace/catalog.json", json({
   external: "marketplace/external/marketplace.json",
   distribution: "distribution/index.json",
   schema: "marketplace/schemas/package.schema.json",
+  domainPacks: domainPackPath,
   gateway: { url: gatewayUrl, version: gateway.version, curatedAt: gateway.curatedAt, counts: gateway.counts },
-  counts: { external: externalCount, internal: internalPackages.length, distribution: distribution.length },
+  counts: {
+    external: externalCount,
+    internal: internalPackages.length,
+    distribution: distribution.length,
+    domainPacks: domainPacks.index.packs.length,
+    domainSkills: domainPacks.skills.length,
+    domainWorkflows: domainPacks.workflows.length,
+  },
   note: "Public discovery and distribution. Installation, connection, and authorization live in Platform.",
 }));
 
@@ -205,6 +240,7 @@ function generateGroup(market, group) {
 function compact(pkg) {
   const keys = [
     "id", "name", "kind", "published", "connected", "source", "platformId", "aliases", "domainSlug",
+    "domainId", "surfaceSlug", "delivery",
     "routes", "availability", "liveRead", "hostMarketplaceSubmitted", "distribution",
   ];
   return Object.fromEntries(keys.filter((key) => key in pkg).map((key) => [key, pkg[key]]));

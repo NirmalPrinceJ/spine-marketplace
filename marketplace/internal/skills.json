@@ -58,6 +58,1067 @@
       "market": "internal",
       "published": true,
       "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-spine-network-discovery",
+      "name": "Discover permitted Spine Network capabilities",
+      "kind": "skill",
+      "delivery": "catalog-template",
+      "reads": [
+        "Active Work context",
+        "Available actions"
+      ],
+      "capabilityIds": [
+        "cap-get_active_context",
+        "cap-get_available_actions"
+      ],
+      "output": "Evidence brief listing the context and actions available to the signed-in actor",
+      "note": "Inspect the context and capabilities the Platform actually grants for the selected Work.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-continuity-handoff",
+      "name": "Prepare an IW-Continuity handoff",
+      "kind": "skill",
+      "delivery": "catalog-template",
+      "reads": [
+        "Work ID",
+        "Permitted continuity",
+        "Prepared Work"
+      ],
+      "capabilityIds": [
+        "cap-get_my_continuity",
+        "cap-get_work",
+        "cap-get_prepared_work"
+      ],
+      "output": "Scoped handoff brief with Work ID, decisions, pending commitments and next action",
+      "note": "Use permitted context and evidence references to prepare a handoff for an authorized participant.",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-executive-objective-evidence",
+      "kind": "skill",
+      "name": "Review objective evidence",
+      "domainId": "executive",
+      "delivery": "catalog-template",
+      "note": "Trace progress against adopted objectives and flag gaps that require an owner.",
+      "reads": [
+        "Adopted objectives",
+        "KPI history",
+        "Source evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_goals",
+        "cap-get_kpis",
+        "cap-get_evidence"
+      ],
+      "output": "Objective scorecard with source references and evidence gaps",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-executive-decision-brief",
+      "kind": "skill",
+      "name": "Prepare a decision brief",
+      "domainId": "executive",
+      "delivery": "catalog-template",
+      "note": "Connect a pending leadership decision to the commitments it changes.",
+      "reads": [
+        "Open decisions",
+        "Prior commitments",
+        "Dependencies"
+      ],
+      "capabilityIds": [
+        "cap-get_decisions",
+        "cap-get_commitments",
+        "cap-get_related"
+      ],
+      "output": "Decision brief with options, dependencies and proposed owners",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-executive-portfolio-impact",
+      "kind": "skill",
+      "name": "Summarize portfolio impact",
+      "domainId": "executive",
+      "delivery": "catalog-template",
+      "note": "Group changes by business impact and identify the Work that requires leadership attention.",
+      "reads": [
+        "Portfolio Work",
+        "Changes",
+        "Impact evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_impact_summary"
+      ],
+      "output": "Portfolio impact brief ordered by affected objectives and Work",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-sales-deal-qualification",
+      "kind": "skill",
+      "name": "Qualify deal evidence",
+      "domainId": "sales",
+      "delivery": "catalog-template",
+      "note": "Check stage evidence and buyer commitments against the authorized account context.",
+      "reads": [
+        "Account ID",
+        "Opportunity records",
+        "Stakeholders",
+        "Next steps"
+      ],
+      "capabilityIds": [
+        "cap-get_entity_detail",
+        "cap-get_related",
+        "cap-get_evidence"
+      ],
+      "output": "Opportunity brief with verified signals and missing qualification evidence",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-sales-forecast-review",
+      "kind": "skill",
+      "name": "Review forecast assumptions",
+      "domainId": "sales",
+      "delivery": "catalog-template",
+      "note": "Explain movements in the forecast and call out assumptions that need seller confirmation.",
+      "reads": [
+        "Pipeline snapshot",
+        "Forecast changes",
+        "Commitments"
+      ],
+      "capabilityIds": [
+        "cap-get_kpis",
+        "cap-get_changes",
+        "cap-get_commitments"
+      ],
+      "output": "Forecast variance brief with traceable deals and assumptions",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-sales-customer-handoff",
+      "kind": "skill",
+      "name": "Prepare a closed-won handoff",
+      "domainId": "sales",
+      "delivery": "catalog-template",
+      "note": "Carry customer objectives, stakeholders and commitments into post-sale ownership.",
+      "reads": [
+        "Account ID",
+        "Closed opportunity",
+        "Commercial commitments"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_commitments",
+        "cap-get_work"
+      ],
+      "output": "Account Success handoff brief linked to the originating Work",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-revenue-operations-pipeline-reconciliation",
+      "kind": "skill",
+      "name": "Reconcile pipeline records",
+      "domainId": "revenue-operations",
+      "delivery": "catalog-template",
+      "note": "Identify duplicate, stale and conflicting CRM records that distort reporting.",
+      "reads": [
+        "Source CRM records",
+        "Pipeline snapshots",
+        "Entity relationships"
+      ],
+      "capabilityIds": [
+        "cap-get_changes",
+        "cap-get_related",
+        "cap-get_evidence"
+      ],
+      "output": "Discrepancy register with source versions and affected records",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-revenue-operations-funnel-diagnostics",
+      "kind": "skill",
+      "name": "Diagnose funnel changes",
+      "domainId": "revenue-operations",
+      "delivery": "catalog-template",
+      "note": "Compare conversion and aging against the authorized funnel definitions.",
+      "reads": [
+        "Stage transitions",
+        "Conversion KPIs",
+        "Attribution evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_kpis",
+        "cap-get_history",
+        "cap-get_signals"
+      ],
+      "output": "Funnel variance brief with impacted stages and evidence gaps",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-revenue-operations-routing-impact",
+      "kind": "skill",
+      "name": "Assess routing change impact",
+      "domainId": "revenue-operations",
+      "delivery": "catalog-template",
+      "note": "Prepare the impact case for an ownership, territory or routing change.",
+      "reads": [
+        "Routing rules",
+        "Ownership assignments",
+        "Affected Work"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_change_impact",
+        "cap-get_available_actions"
+      ],
+      "output": "Proposed routing change with affected owners and verification conditions",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-success-account-health",
+      "kind": "skill",
+      "name": "Explain account health",
+      "domainId": "customer-success",
+      "delivery": "catalog-template",
+      "note": "Explain changes in account health using evidence linked to the authorized Account ID.",
+      "reads": [
+        "Account ID",
+        "Health signals",
+        "Source evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_signals",
+        "cap-get_evidence"
+      ],
+      "output": "Account health brief with cited drivers and confidence gaps",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-success-renewal-readiness",
+      "kind": "skill",
+      "name": "Assess renewal readiness",
+      "domainId": "customer-success",
+      "delivery": "catalog-template",
+      "note": "Identify open obligations and evidence needed before a renewal decision.",
+      "reads": [
+        "Account ID",
+        "Renewal dates",
+        "Adoption KPIs",
+        "Commitments"
+      ],
+      "capabilityIds": [
+        "cap-get_kpis",
+        "cap-get_commitments",
+        "cap-get_history"
+      ],
+      "output": "Renewal brief with value evidence, owners and decision dates",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-success-success-plan",
+      "kind": "skill",
+      "name": "Prepare a success plan",
+      "domainId": "customer-success",
+      "delivery": "catalog-template",
+      "note": "Align proposed actions to the customer's recorded objectives and known risks.",
+      "reads": [
+        "Account ID",
+        "Customer objectives",
+        "Open risks",
+        "Active Work"
+      ],
+      "capabilityIds": [
+        "cap-get_goals",
+        "cap-get_signals",
+        "cap-get_work"
+      ],
+      "output": "Draft success plan with milestones, dependencies and proposed owners",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-success-integration-diagnostics",
+      "kind": "skill",
+      "name": "Investigate integration health",
+      "domainId": "customer-success",
+      "surfaceSlug": "technical-account-success",
+      "delivery": "catalog-template",
+      "note": "Correlate recent integration changes with observed customer impact.",
+      "reads": [
+        "Account ID",
+        "Integration health",
+        "Technical incidents",
+        "Change events"
+      ],
+      "capabilityIds": [
+        "cap-get_signals",
+        "cap-get_changes",
+        "cap-get_evidence"
+      ],
+      "output": "Technical health brief with confirmed signals and investigation priorities",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-success-technical-escalation",
+      "kind": "skill",
+      "name": "Prepare a technical escalation",
+      "domainId": "customer-success",
+      "surfaceSlug": "technical-account-success",
+      "delivery": "catalog-template",
+      "note": "Package the authorized evidence an engineering owner needs to act on a customer blocker.",
+      "reads": [
+        "Account ID",
+        "Incident evidence",
+        "Technical ownership",
+        "Reproduction evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_related",
+        "cap-get_work"
+      ],
+      "output": "Engineering handoff with severity, impact, Work ID and evidence",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-success-implementation-readiness",
+      "kind": "skill",
+      "name": "Review implementation readiness",
+      "domainId": "customer-success",
+      "surfaceSlug": "technical-account-success",
+      "delivery": "catalog-template",
+      "note": "Check implementation gates against agreed criteria and identify unresolved blockers.",
+      "reads": [
+        "Account ID",
+        "Implementation milestones",
+        "Acceptance criteria",
+        "Integration test evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_commitments",
+        "cap-get_evidence"
+      ],
+      "output": "Readiness brief with customer acceptance, open risks and validation evidence",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-support-case-triage",
+      "kind": "skill",
+      "name": "Triage case evidence",
+      "domainId": "customer-support",
+      "delivery": "catalog-template",
+      "note": "Identify operational impact and tie the case to its authorized customer and related incidents.",
+      "reads": [
+        "Support case",
+        "Service targets",
+        "Customer context"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_signals",
+        "cap-get_related"
+      ],
+      "output": "Case triage brief with urgency, owner and escalation criteria",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-support-response-draft",
+      "kind": "skill",
+      "name": "Draft an evidence-based response",
+      "domainId": "customer-support",
+      "delivery": "catalog-template",
+      "note": "Prepare a response using permitted case evidence and verified knowledge.",
+      "reads": [
+        "Case history",
+        "Approved knowledge",
+        "Prior customer commitments"
+      ],
+      "capabilityIds": [
+        "cap-get_history",
+        "cap-get_relevant_knowledge",
+        "cap-get_commitments"
+      ],
+      "output": "Reviewed-source response draft with evidence references",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-customer-support-resolution-review",
+      "kind": "skill",
+      "name": "Verify resolution evidence",
+      "domainId": "customer-support",
+      "delivery": "catalog-template",
+      "note": "Establish whether the observed customer issue is resolved before recommending closure.",
+      "reads": [
+        "Case lifecycle",
+        "Resolution evidence",
+        "Related incidents"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_evidence",
+        "cap-get_related"
+      ],
+      "output": "Resolution brief with remaining follow-up and customer verification",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-marketing-campaign-brief",
+      "kind": "skill",
+      "name": "Prepare a campaign brief",
+      "domainId": "marketing",
+      "delivery": "catalog-template",
+      "note": "Align campaign planning to adopted objectives and approved source material.",
+      "reads": [
+        "Campaign objectives",
+        "Approved messaging",
+        "Channel plan"
+      ],
+      "capabilityIds": [
+        "cap-get_goals",
+        "cap-get_context",
+        "cap-get_relevant_knowledge"
+      ],
+      "output": "Campaign brief with audience, messaging, owner and success measures",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-marketing-audience-review",
+      "kind": "skill",
+      "name": "Review audience readiness",
+      "domainId": "marketing",
+      "delivery": "catalog-template",
+      "note": "Surface missing audience approvals and confirm launch dependencies.",
+      "reads": [
+        "Audience definitions",
+        "Approved targeting rules",
+        "Campaign dependencies"
+      ],
+      "capabilityIds": [
+        "cap-get_entity_detail",
+        "cap-get_related",
+        "cap-get_evidence"
+      ],
+      "output": "Audience readiness brief with evidence and unresolved approval checks",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-marketing-performance-attribution",
+      "kind": "skill",
+      "name": "Explain campaign performance",
+      "domainId": "marketing",
+      "delivery": "catalog-template",
+      "note": "Compare outcomes to agreed campaign measures and explain supported changes.",
+      "reads": [
+        "Campaign metrics",
+        "Attribution basis",
+        "Channel changes"
+      ],
+      "capabilityIds": [
+        "cap-get_kpis",
+        "cap-get_changes",
+        "cap-get_evidence"
+      ],
+      "output": "Performance brief with contributing channels and attribution limits",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-finance-invoice-reconciliation",
+      "kind": "skill",
+      "name": "Reconcile invoice evidence",
+      "domainId": "finance",
+      "delivery": "catalog-template",
+      "note": "Match amounts, currencies and record versions across permitted billing and payment evidence.",
+      "reads": [
+        "Invoice records",
+        "Payment receipts",
+        "Ledger references"
+      ],
+      "capabilityIds": [
+        "cap-get_entity_detail",
+        "cap-get_related",
+        "cap-get_evidence"
+      ],
+      "output": "Invoice reconciliation list with matched receipts and unresolved differences",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-finance-variance-review",
+      "kind": "skill",
+      "name": "Explain financial variance",
+      "domainId": "finance",
+      "delivery": "catalog-template",
+      "note": "Explain observed variances against the approved baseline and surface unresolved items for Finance.",
+      "reads": [
+        "Approved financial baseline",
+        "Actuals",
+        "Period-end evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_kpis",
+        "cap-get_changes",
+        "cap-get_evidence"
+      ],
+      "output": "Source-backed variance brief with timing and data gaps",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-finance-billing-exception",
+      "kind": "skill",
+      "name": "Prepare a billing exception",
+      "domainId": "finance",
+      "delivery": "catalog-template",
+      "note": "Gather the relevant invoice and contract evidence before preparing an exception for review.",
+      "reads": [
+        "Account and invoice references",
+        "Billing terms",
+        "Prior approvals"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_history",
+        "cap-get_available_actions"
+      ],
+      "output": "Billing exception brief with proposed resolution and expected readback",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-operations-handoff-mapping",
+      "kind": "skill",
+      "name": "Trace process handoffs",
+      "domainId": "operations",
+      "delivery": "catalog-template",
+      "note": "Identify where ownership changes and what evidence a receiving team needs.",
+      "reads": [
+        "Process stages",
+        "Work owners",
+        "Dependencies"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_related",
+        "cap-get_commitments"
+      ],
+      "output": "Process map with pending handoffs, owners and blocking commitments",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-operations-cycle-time-analysis",
+      "kind": "skill",
+      "name": "Analyze process cycle time",
+      "domainId": "operations",
+      "delivery": "catalog-template",
+      "note": "Compare observed cycle time against operating targets and identify recurring delays.",
+      "reads": [
+        "Work timestamps",
+        "Process targets",
+        "Exception history"
+      ],
+      "capabilityIds": [
+        "cap-get_kpis",
+        "cap-get_history",
+        "cap-get_signals"
+      ],
+      "output": "Bottleneck brief with elapsed-time breakdown and source context",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-operations-runbook-readiness",
+      "kind": "skill",
+      "name": "Review runbook readiness",
+      "domainId": "operations",
+      "delivery": "catalog-template",
+      "note": "Compare the proposed runbook to current practice and identify missing controls or owners.",
+      "reads": [
+        "Runbook versions",
+        "Process dependencies",
+        "Control evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_relevant_knowledge",
+        "cap-get_related",
+        "cap-get_evidence"
+      ],
+      "output": "Runbook revision brief with control checks and validation criteria",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-product-feedback-synthesis",
+      "kind": "skill",
+      "name": "Synthesize product feedback",
+      "domainId": "product",
+      "delivery": "catalog-template",
+      "note": "Group related requests and connect them to account context where authorized.",
+      "reads": [
+        "Customer feedback",
+        "Related requests",
+        "Adoption context"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_related",
+        "cap-get_evidence"
+      ],
+      "output": "Evidence-linked feedback themes with affected customers and gaps",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-product-adoption-review",
+      "kind": "skill",
+      "name": "Assess feature adoption",
+      "domainId": "product",
+      "delivery": "catalog-template",
+      "note": "Compare usage against adopted success criteria and identify follow-up needs.",
+      "reads": [
+        "Adoption KPIs",
+        "Feature changes",
+        "Support signals"
+      ],
+      "capabilityIds": [
+        "cap-get_kpis",
+        "cap-get_changes",
+        "cap-get_signals"
+      ],
+      "output": "Adoption brief with measured usage and unresolved friction",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-product-priority-brief",
+      "kind": "skill",
+      "name": "Prepare a roadmap priority brief",
+      "domainId": "product",
+      "delivery": "catalog-template",
+      "note": "Compare candidate Work against customer needs, objectives and delivery dependencies.",
+      "reads": [
+        "Product objectives",
+        "Affected Work",
+        "Evidence of impact"
+      ],
+      "capabilityIds": [
+        "cap-get_goals",
+        "cap-get_work",
+        "cap-get_impact_summary"
+      ],
+      "output": "Roadmap options with evidence, trade-offs and known dependencies",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-engineering-incident-evidence",
+      "kind": "skill",
+      "name": "Assemble incident evidence",
+      "domainId": "engineering",
+      "delivery": "catalog-template",
+      "note": "Match operational symptoms to deployments and dependencies using the permitted evidence.",
+      "reads": [
+        "Service signals",
+        "Change timeline",
+        "Verification evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_signals",
+        "cap-get_changes",
+        "cap-get_evidence"
+      ],
+      "output": "Incident timeline with affected services and verified observations",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-engineering-release-readiness",
+      "kind": "skill",
+      "name": "Assess release readiness",
+      "domainId": "engineering",
+      "delivery": "catalog-template",
+      "note": "Identify missing validation and confirm the expected outcome for the release candidate.",
+      "reads": [
+        "Release scope",
+        "Acceptance tests",
+        "Change and rollback plans"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_evidence",
+        "cap-get_change_impact"
+      ],
+      "output": "Readiness brief with test coverage, change risk and rollback checks",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-engineering-delivery-risk",
+      "kind": "skill",
+      "name": "Assess delivery risk",
+      "domainId": "engineering",
+      "delivery": "catalog-template",
+      "note": "Trace dependencies and commitments that could affect the delivery plan.",
+      "reads": [
+        "Milestones",
+        "Blocking Work",
+        "Commitments"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_related",
+        "cap-get_commitments"
+      ],
+      "output": "Delivery risk brief with dependencies, owners and checkpoints",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-people-hiring-coordination",
+      "kind": "skill",
+      "name": "Prepare hiring process coordination",
+      "domainId": "people",
+      "delivery": "catalog-template",
+      "note": "Track authorized recruiting process tasks and route human hiring decisions to their owners.",
+      "reads": [
+        "Authorized requisition",
+        "Interview milestones",
+        "Pending process tasks"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_context",
+        "cap-get_commitments"
+      ],
+      "output": "Process brief with interview schedules, owners and outstanding steps",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-people-onboarding-readiness",
+      "kind": "skill",
+      "name": "Review employee onboarding readiness",
+      "domainId": "people",
+      "delivery": "catalog-template",
+      "note": "Identify outstanding onboarding work from access-controlled People context.",
+      "reads": [
+        "Authorized onboarding tasks",
+        "Joiner milestones",
+        "Equipment and access status"
+      ],
+      "capabilityIds": [
+        "cap-get_work",
+        "cap-get_related",
+        "cap-get_evidence"
+      ],
+      "output": "Onboarding readiness brief with restricted references and responsible owners",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-people-policy-guidance",
+      "kind": "skill",
+      "name": "Find approved People policy",
+      "domainId": "people",
+      "delivery": "catalog-template",
+      "note": "Retrieve policy versions applicable to the requested process and surface items for human review.",
+      "reads": [
+        "Published People policy",
+        "Effective dates",
+        "Role-specific guidance"
+      ],
+      "capabilityIds": [
+        "cap-get_relevant_knowledge",
+        "cap-get_history",
+        "cap-get_evidence"
+      ],
+      "output": "Policy references and questions for the authorized People owner",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-legal-contract-review-prep",
+      "kind": "skill",
+      "name": "Prepare a contract review packet",
+      "domainId": "legal",
+      "delivery": "catalog-template",
+      "note": "Collect changed clauses and policy references for the authorized legal reviewer.",
+      "reads": [
+        "Authorized drafts",
+        "Version history",
+        "Approved playbook references"
+      ],
+      "capabilityIds": [
+        "cap-get_history",
+        "cap-get_relevant_knowledge",
+        "cap-get_evidence"
+      ],
+      "output": "Versioned review packet with sourced differences and questions for counsel",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-legal-obligation-index",
+      "kind": "skill",
+      "name": "Index approved obligations",
+      "domainId": "legal",
+      "delivery": "catalog-template",
+      "note": "Trace approved obligations to agreement evidence and identify follow-ups for counsel.",
+      "reads": [
+        "Executed agreement",
+        "Confirmed obligations",
+        "Owners and dates"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_commitments",
+        "cap-get_related"
+      ],
+      "output": "Obligation review list with source references, dates and owners",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-legal-control-evidence",
+      "kind": "skill",
+      "name": "Assemble compliance control evidence",
+      "domainId": "legal",
+      "delivery": "catalog-template",
+      "note": "Link control evidence to the applicable Work and record gaps requiring a human decision.",
+      "reads": [
+        "Applicable controls",
+        "Source evidence",
+        "Open findings"
+      ],
+      "capabilityIds": [
+        "cap-get_evidence",
+        "cap-get_signals",
+        "cap-get_work"
+      ],
+      "output": "Control evidence packet with scope, dates and evidence gaps",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-platform-administration-connector-readiness",
+      "kind": "skill",
+      "name": "Review connector activation readiness",
+      "domainId": "platform-administration",
+      "delivery": "catalog-template",
+      "note": "Compare the selected catalog route with the tenant's observed activation and verification evidence.",
+      "reads": [
+        "Connector listing",
+        "Tenant-scoped binding evidence",
+        "Connection readiness results"
+      ],
+      "capabilityIds": [
+        "cap-get_context",
+        "cap-get_evidence",
+        "cap-get_work"
+      ],
+      "output": "Connector activation brief with allowed scope and missing readiness evidence",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-platform-administration-mcp-access-review",
+      "kind": "skill",
+      "name": "Review Spine Network MCP access",
+      "domainId": "platform-administration",
+      "delivery": "catalog-template",
+      "note": "Confirm the capability scope the signed-in actor can use through Spine Network MCP.",
+      "reads": [
+        "Authorized workspace policy",
+        "Available capabilities",
+        "Access evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_active_context",
+        "cap-get_available_actions",
+        "cap-get_evidence"
+      ],
+      "output": "Access review with effective capability scope and policy dependencies",
+      "market": "internal",
+      "published": true,
+      "connected": false
+    },
+    {
+      "source": "spine-catalog",
+      "category": "Skills",
+      "id": "skill-platform-administration-continuity-validation",
+      "kind": "skill",
+      "name": "Verify an IW-Continuity handoff",
+      "domainId": "platform-administration",
+      "delivery": "catalog-template",
+      "note": "Compare authorized source and destination context for the same shared Work.",
+      "reads": [
+        "Work ID",
+        "Permitted continuity references",
+        "Pending commitments",
+        "Handoff evidence"
+      ],
+      "capabilityIds": [
+        "cap-get_my_continuity",
+        "cap-get_context_continuity",
+        "cap-get_work"
+      ],
+      "output": "Continuity verification brief with matched Work, decisions and outstanding steps",
+      "market": "internal",
+      "published": true,
+      "connected": false
     }
   ]
 }

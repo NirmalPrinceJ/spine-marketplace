@@ -8,6 +8,7 @@
   "external": "marketplace/external/marketplace.json",
   "distribution": "distribution/index.json",
   "schema": "marketplace/schemas/package.schema.json",
+  "domainPacks": "marketplace/internal/domain-packs.json",
   "gateway": {
     "url": "https://gateway.spineworkspace.com/api/v1/connectors/catalog",
     "version": "spine-marketplace.v1",
@@ -23,8 +24,11 @@
   },
   "counts": {
     "external": 224,
-    "internal": 84,
-    "distribution": 10
+    "internal": 157,
+    "distribution": 10,
+    "domainPacks": 13,
+    "domainSkills": 42,
+    "domainWorkflows": 28
   },
   "note": "Public discovery and distribution. Installation, connection, and authorization live in Platform."
 }
