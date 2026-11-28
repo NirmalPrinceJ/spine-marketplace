@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
@@ -97,4 +98,18 @@ test("Workbench packages use the routed domains and keep legacy names resolvable
   assert.equal(aliases.get("wb-customer-support"), "service");
   assert.equal(aliases.get("wb-customer-success"), "account-success");
   for (const pkg of packs) assert.equal(pkg.id, `wb-${pkg.domainSlug}`);
+});
+
+test("catalog.json carries verified SHA-256 provenance checksums and runtime compatibility", () => {
+  const catalog = read("marketplace/catalog.json");
+  assert.equal(catalog.compatibility?.runtimeContract, "2026-11-28.platform-runtime.v1");
+  assert.equal(catalog.provenance?.algorithm, "sha256");
+  assert.match(catalog.provenance?.catalogChecksum ?? "", /^sha256:[0-9a-f]{64}$/);
+  const digest = (rel) =>
+    `sha256:${createHash("sha256").update(readFileSync(join(root, rel), "utf8")).digest("hex")}`;
+  assert.equal(catalog.provenance.artifacts.external, digest(catalog.external));
+  assert.equal(catalog.provenance.artifacts.internal, digest(catalog.internal));
+  assert.equal(catalog.provenance.artifacts.distribution, digest(catalog.distribution));
+  assert.equal(catalog.provenance.artifacts.domainPacks, digest(catalog.domainPacks));
+  assert.equal(catalog.provenance.artifacts.schema, digest(catalog.schema));
 });

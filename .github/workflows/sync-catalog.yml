@@ -1,0 +1,47 @@
+name: Sync Gateway Marketplace Catalog
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: "22"
+          package-manager-cache: false
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Sync live Gateway catalog snapshot and regenerate provenance
+        run: |
+          npm run sync:gateway
+          npm run generate
+          npm test
+      - name: Open sync PR if catalog changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet; then
+            echo "Catalog is already synchronized with live Gateway."
+            exit 0
+          fi
+          BRANCH="automation/sync-gateway-catalog"
+          git config user.name "spine-marketplace-bot"
+          git config user.email "bot@spineworkspace.com"
+          git checkout -B "$BRANCH"
+          git add marketplace distribution
+          git commit -m "chore(catalog): sync live Gateway marketplace catalog and SHA-256 provenance"
+          git push --force origin "$BRANCH"
+          gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "chore(catalog): sync live Gateway marketplace catalog" \
+            --body "Automated sync against https://gateway.spineworkspace.com/api/v1/connectors/catalog with verified SHA-256 provenance checksums and offline catalog tests." \
+            || gh pr edit "$BRANCH" --body "Updated automated sync against live Gateway catalog with verified SHA-256 provenance checksums."

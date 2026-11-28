@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import Ajv from "ajv/dist/2020.js";
@@ -151,6 +152,22 @@ files.set("marketplace/internal/marketplace.json", json({
   groups: internalGroups.map(({ id, name, detail }) => ({ id, name, detail })),
   packages: internalPackages,
 }));
+const sha256 = (text) => `sha256:${createHash("sha256").update(text).digest("hex")}`;
+const schemaContent = readFileSync(join(root, "marketplace/schemas/package.schema.json"), "utf8");
+const artifactChecksums = {
+  external: sha256(files.get("marketplace/external/marketplace.json")),
+  internal: sha256(files.get("marketplace/internal/marketplace.json")),
+  distribution: sha256(files.get("distribution/index.json")),
+  domainPacks: sha256(files.get(domainPackPath)),
+  schema: sha256(schemaContent),
+};
+const catalogChecksum = sha256(
+  Object.entries(artifactChecksums)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([k, v]) => `${k}=${v}`)
+    .join("\n"),
+);
+
 files.set("marketplace/catalog.json", json({
   name: "spineworkspace-marketplace", version: "spine-marketplace-export.v1",
   published: true, publishedAt: "2026-11-25", catalog: catalogUrl,
@@ -159,6 +176,17 @@ files.set("marketplace/catalog.json", json({
   distribution: "distribution/index.json",
   schema: "marketplace/schemas/package.schema.json",
   domainPacks: domainPackPath,
+  compatibility: {
+    runtimeContract: "2026-11-28.platform-runtime.v1",
+    gatewayContract: gateway.version,
+  },
+  provenance: {
+    algorithm: "sha256",
+    catalogChecksum,
+    gatewaySource: gatewayUrl,
+    mcpRevision: contract.source.revision,
+    artifacts: artifactChecksums,
+  },
   gateway: { url: gatewayUrl, version: gateway.version, curatedAt: gateway.curatedAt, counts: gateway.counts },
   counts: {
     external: externalCount,

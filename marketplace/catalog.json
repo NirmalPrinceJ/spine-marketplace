@@ -9,6 +9,23 @@
   "distribution": "distribution/index.json",
   "schema": "marketplace/schemas/package.schema.json",
   "domainPacks": "marketplace/internal/domain-packs.json",
+  "compatibility": {
+    "runtimeContract": "2026-11-28.platform-runtime.v1",
+    "gatewayContract": "spine-marketplace.v1"
+  },
+  "provenance": {
+    "algorithm": "sha256",
+    "catalogChecksum": "sha256:68f23af2eeb2938c8c768b2d8ce2423e6ea09584fac78e03f6f74417d99c205a",
+    "gatewaySource": "https://gateway.spineworkspace.com/api/v1/connectors/catalog",
+    "mcpRevision": "f9cd42b622a6b75c3e6a73a72c94dbff0c18e7ce",
+    "artifacts": {
+      "external": "sha256:4b2ec5ba3611fe56c22566f51b69be280eb94ed54e02d9394971b434988c331b",
+      "internal": "sha256:f843573d6753ef1e3d9dd67e70df501c998b31f12960e1f4cb81a3bd99f358e4",
+      "distribution": "sha256:8ffc55f919849af5724a492435c482251ec0e202a0fe3e45cd696ea282176aea",
+      "domainPacks": "sha256:886ac39d3fc186a0cf589cf34b7d16cfb12a7ec7ee8c8745bd546fae56c5dec4",
+      "schema": "sha256:eb5aff3c2461764a70c5e822bcb0e6554f3b4f15d6a14f7a4ad5e0f291b1e192"
+    }
+  },
   "gateway": {
     "url": "https://gateway.spineworkspace.com/api/v1/connectors/catalog",
     "version": "spine-marketplace.v1",
